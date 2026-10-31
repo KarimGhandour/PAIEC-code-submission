@@ -9,13 +9,16 @@
   "exact_inference_source_files": 34,
   "paid_inference_calls": 0,
   "uploads": 0,
-  "github_authenticated": false,
-  "published": false,
   "clean_environment_dependencies": "Pinned local packages reused offline; no fresh dependency download",
   "license": "MIT code; external assets excluded",
   "release_tag_proposed": "v1.0.0-r1",
   "staged_file_count": 118,
   "heuristic_secret_scan": "PASS",
   "known_configured_credential_byte_scan": "PASS",
-  "prohibited_file_scan": "PASS"
+  "prohibited_file_scan": "PASS",
+  "github_authenticated_at_initial_review": false,
+  "published_at_initial_review": false,
+  "public_release_authorized": true,
+  "canonical_repository": "https://github.com/KarimGhandour/PAIEC-code-submission",
+  "release_url": "https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1"
 }

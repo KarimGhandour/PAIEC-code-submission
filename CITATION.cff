@@ -8,4 +8,6 @@ authors:
 version: 1.0.0
 date-released: 2026-10-30
 license: MIT
+repository-code: "https://github.com/KarimGhandour/PAIEC-code-submission"
+url: "https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1"
 abstract: "Frozen R1 source and offline reproducibility material for a PAIEC 2026 predictor. Historical Codex CLI results are distinct from Responses API and hosted evaluation."

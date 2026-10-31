@@ -3,6 +3,9 @@
 **Frozen GPT-6 Luna Standard/Medium R1 source, offline tests, and scientific analysis material.**
 Developed by **Karim Ghandour** for the NeurIPS 2026 Predictive AI Evaluation Competition.
 
+Canonical repository: [KarimGhandour/PAIEC-code-submission](https://github.com/KarimGhandour/PAIEC-code-submission).
+Code release: [v1.0.0-r1](https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1).
+
 This project studies forecasting an AI system's success on a particular task. It
 adapts the organizer-provided Bayesian Linguistic Evaluator (BLE), credited to
 [Stanford AIMS Foundations](https://github.com/aims-foundations/paiec_baseline), with
@@ -45,6 +48,8 @@ successful R1 forecast and is not offered as a separate competition candidate.**
 Python 3.12 is the tested version. From a clean checkout:
 
 ```sh
+git clone https://github.com/KarimGhandour/PAIEC-code-submission.git
+cd PAIEC-code-submission
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
@@ -141,6 +146,7 @@ This license does not relicense Measurement DB, benchmark sources, model weights
 provider services or research records. All dependencies remain under their own terms.
 No institutional affiliation, contact address or endorsement is asserted.
 
-Publication is pending maintainer authorization. `CITATION.cff` describes the planned
-v1.0.0 code release; no public URL or DOI is claimed before publication. Prefer the
-published commit and immutable archival release when citing it.
+`CITATION.cff` identifies this repository and the `v1.0.0-r1` code release. Prefer
+the exact published commit and treat the release tag as immutable when citing it.
+No DOI is claimed. Historical experimental scores remain distinct from API and
+hosted evaluation results regardless of publication status.

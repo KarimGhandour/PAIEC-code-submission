@@ -1,7 +1,9 @@
 # Public release review
 
-Status: locally prepared; **not published or pushed**. GitHub authentication was
-unavailable. Public release still requires explicit maintainer authorization.
+The maintainer authorized publication to
+https://github.com/KarimGhandour/PAIEC-code-submission under tag `v1.0.0-r1`.
+This report records local release checks, not proof that a GitHub push or release
+has completed. Confirm the remote commit and release separately.
 
 | Check | Result |
 |---|---|
@@ -46,5 +48,6 @@ review and a clean one-commit history supplement the automated checks.
 The exact release file list is `RELEASE_FILE_INVENTORY.txt`; source/content sizes
 are summarized in `artifacts/manifests/release_checks.json`. The final commit ID is
 reported separately rather than recursively embedded in its own contents. The
-publication commands and proposed immutable-by-policy tag `v1.0.0-r1` are in
-`docs/publishing.md`. Do not execute them before explicit release authorization.
+publication commands and immutable-by-policy tag `v1.0.0-r1` are in
+`docs/publishing.md`. Inference spending and competition uploads remain separate
+from code-publication authorization.

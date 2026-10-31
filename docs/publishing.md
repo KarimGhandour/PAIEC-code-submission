@@ -1,41 +1,42 @@
-# Publication workflow — explicit authorization required
+# Canonical GitHub publication
 
-No remote repository has been created and no code has been pushed. GitHub
-authentication was unavailable during preparation. Do not infer publication from
-a local commit, version field, citation metadata or proposed URL.
+Repository: https://github.com/KarimGhandour/PAIEC-code-submission
 
-Proposed repository: `paiec-r1-audited-ble`.
-Description: `Frozen PAIEC GPT-6 Luna R1 audited BLE source, offline tests and reproducibility analyses.`
-Recommended annotated release tag: `v1.0.0-r1`.
+The repository already exists. **Do not create another repository.** The local
+directory and Python distribution can retain the name `paiec-r1-audited-ble`.
+The maintainer explicitly authorized publication of this vetted source and release;
+that authorization does not extend to inference or competition submissions.
 
-After the maintainer authorizes public release, authenticate locally using the
-normal GitHub CLI flow. Never provide tokens in chat or source. From this repository:
+Before publishing, check remote refs and preserve unrelated work. Never force-push.
+From the local repository, with working existing Git/GitHub credentials:
 
 ```sh
-gh auth login
-OWNER=$(gh api user --jq .login)
-gh repo create "$OWNER/paiec-r1-audited-ble" --public --source=. --remote=origin --description "Frozen PAIEC GPT-6 Luna R1 audited BLE source, offline tests and reproducibility analyses"
+git remote get-url origin
+git ls-remote origin
+python scripts/check_source.py
+python -m unittest discover -s tests -v
+python scripts/scan_release.py --git
 git push -u origin main
 git tag -a v1.0.0-r1 -m "Frozen R1 Medium source and public reproducibility release"
 git push origin v1.0.0-r1
-gh release create v1.0.0-r1 --verify-tag --title "R1 Medium reproducibility release" --notes-file RELEASE_NOTES.md
+gh release create v1.0.0-r1 --repo KarimGhandour/PAIEC-code-submission --verify-tag --title "R1 Medium reproducibility release" --notes-file RELEASE_NOTES.md
 ```
 
-These are prepared commands, **not authorization to execute them**. Before pushing,
-run `python scripts/scan_release.py --git` and inspect `git ls-files`. The current
-initial commit uses the author's supplied name with an empty email rather than
-inventing or exposing a contact address. Configure a verified privacy-preserving
-GitHub identity before future commits if desired.
+`origin` must equal `https://github.com/KarimGhandour/PAIEC-code-submission.git`.
+If the local tag already exists, verify its commit instead of recreating or moving
+it. Stop on unexpected remote history, tag conflicts or security findings.
+Do not attach private Codabench ZIPs or restricted assets to the GitHub release.
 
-After creation, add the verified `repository-code` URL to CITATION.cff in a reviewed
-metadata-only commit if desired. No account name, public URL, DOI or affiliation
-has been invented in this repository.
+Authentication is handled locally by Git/gh. Never put credentials in source or
+command arguments. A failed credential does not establish that the repository
+owner's account is unavailable; diagnose the credential identity separately.
 
-OpenReview URL formats, after actual publication:
+Citation links:
 
-- Release: `https://github.com/OWNER/paiec-r1-audited-ble/releases/tag/v1.0.0-r1`
-- Frozen commit: `https://github.com/OWNER/paiec-r1-audited-ble/tree/FULL_COMMIT_SHA`
+- Repository: https://github.com/KarimGhandour/PAIEC-code-submission
+- Release: https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1
+- Frozen commit: `https://github.com/KarimGhandour/PAIEC-code-submission/tree/FULL_COMMIT_SHA`
 
-A Git tag is technically mutable. Treat the release tag as immutable by policy,
-retain its exact commit SHA, and prefer an archival DOI if one is later actually
-minted. No DOI is claimed or created by this workflow.
+An annotated tag remains technically mutable. Treat `v1.0.0-r1` as immutable by
+policy, retain its full commit SHA, and cite an archival DOI only if one is later
+actually minted. No DOI, institutional affiliation or contact address is invented.
