@@ -1,0 +1,361 @@
+{
+  "aggregation": "flat",
+  "methods": [
+    "A0",
+    "R1_initial",
+    "R1",
+    "R2_initial",
+    "R2"
+  ],
+  "cells": [
+    {
+      "family": "kernelbench",
+      "subject_stratum": "stratum-1",
+      "budget": 0,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 1.0088000000000001,
+          "nll": 2.5822989957966493
+        },
+        "R1_initial": {
+          "brier": 0.9508,
+          "nll": 2.664990711641763
+        },
+        "R1": {
+          "brier": 0.9039999999999999,
+          "nll": 2.5665506388285104
+        },
+        "R2_initial": {
+          "brier": 0.7309,
+          "nll": 1.9449106487222299
+        },
+        "R2": {
+          "brier": 0.7309,
+          "nll": 1.9449106487222299
+        }
+      }
+    },
+    {
+      "family": "kernelbench",
+      "subject_stratum": "stratum-1",
+      "budget": 7,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.8788,
+          "nll": 2.7241795830320936
+        },
+        "R1_initial": {
+          "brier": 0.6676,
+          "nll": 1.7837912995788783
+        },
+        "R1": {
+          "brier": 0.7076000000000001,
+          "nll": 1.910543005218022
+        },
+        "R2_initial": {
+          "brier": 0.5809,
+          "nll": 1.5606477482646683
+        },
+        "R2": {
+          "brier": 0.5508,
+          "nll": 1.4714166145367256
+        }
+      }
+    },
+    {
+      "family": "kernelbench",
+      "subject_stratum": "stratum-3",
+      "budget": 0,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.31810000000000005,
+          "nll": 1.0133524447172864
+        },
+        "R1_initial": {
+          "brier": 0.3789,
+          "nll": 1.1425641761972924
+        },
+        "R1": {
+          "brier": 0.35279999999999995,
+          "nll": 1.0894543508833439
+        },
+        "R2_initial": {
+          "brier": 0.6548,
+          "nll": 1.701553201341906
+        },
+        "R2": {
+          "brier": 0.6548,
+          "nll": 1.701553201341906
+        }
+      }
+    },
+    {
+      "family": "kernelbench",
+      "subject_stratum": "stratum-3",
+      "budget": 7,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.274,
+          "nll": 0.9243229035714193
+        },
+        "R1_initial": {
+          "brier": 0.33640000000000003,
+          "nll": 1.0555527992076628
+        },
+        "R1": {
+          "brier": 0.2896,
+          "nll": 0.9571127263944101
+        },
+        "R2_initial": {
+          "brier": 0.43040000000000006,
+          "nll": 1.2447947988461912
+        },
+        "R2": {
+          "brier": 0.2896,
+          "nll": 0.9571127263944101
+        }
+      }
+    },
+    {
+      "family": "cellverse",
+      "subject_stratum": "stratum-4",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.6635000000000001,
+          "nll": 1.8493525657641336
+        },
+        "R1_initial": {
+          "brier": 1.1558000000000002,
+          "nll": 3.1037630177676965
+        },
+        "R1": {
+          "brier": 0.9901000000000002,
+          "nll": 2.6665919930087374
+        },
+        "R2_initial": {
+          "brier": 1.0168,
+          "nll": 2.728070067993202
+        },
+        "R2": {
+          "brier": 1.0168,
+          "nll": 2.728070067993202
+        }
+      }
+    },
+    {
+      "family": "cellverse",
+      "subject_stratum": "stratum-4",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.5432,
+          "nll": 1.7046105017044368
+        },
+        "R1_initial": {
+          "brier": 1.0131000000000001,
+          "nll": 2.794997289249321
+        },
+        "R1": {
+          "brier": 0.8098000000000001,
+          "nll": 2.366542662916458
+        },
+        "R2_initial": {
+          "brier": 0.7134,
+          "nll": 2.0912679993588386
+        },
+        "R2": {
+          "brier": 0.7178,
+          "nll": 2.113740855210897
+        }
+      }
+    },
+    {
+      "family": "mmlupro",
+      "subject_stratum": "stratum-2",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.1273,
+          "nll": 0.7438467985766125
+        },
+        "R1_initial": {
+          "brier": 0.36369999999999997,
+          "nll": 1.4057414356324534
+        },
+        "R1": {
+          "brier": 0.28559999999999997,
+          "nll": 1.2189971060250504
+        },
+        "R2_initial": {
+          "brier": 0.20850000000000002,
+          "nll": 0.9959835007834037
+        },
+        "R2": {
+          "brier": 0.20850000000000002,
+          "nll": 0.9959835007834037
+        }
+      }
+    },
+    {
+      "family": "mmlupro",
+      "subject_stratum": "stratum-2",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.17600000000000002,
+          "nll": 0.9051276713284591
+        },
+        "R1_initial": {
+          "brier": 0.4797,
+          "nll": 1.689676639318147
+        },
+        "R1": {
+          "brier": 0.30340000000000006,
+          "nll": 1.2525749861651534
+        },
+        "R2_initial": {
+          "brier": 0.5397,
+          "nll": 1.8023699619401197
+        },
+        "R2": {
+          "brier": 0.48009999999999997,
+          "nll": 1.6742785592070253
+        }
+      }
+    },
+    {
+      "family": "statqa",
+      "subject_stratum": "stratum-5",
+      "budget": 0,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.8109,
+          "nll": 2.111964733385396
+        },
+        "R1_initial": {
+          "brier": 0.6148,
+          "nll": 1.6215104936683695
+        },
+        "R1": {
+          "brier": 0.5580999999999998,
+          "nll": 1.509592577464384
+        },
+        "R2_initial": {
+          "brier": 0.5683999999999999,
+          "nll": 1.5324768712979722
+        },
+        "R2": {
+          "brier": 0.5683999999999999,
+          "nll": 1.5324768712979722
+        }
+      }
+    },
+    {
+      "family": "statqa",
+      "subject_stratum": "stratum-5",
+      "budget": 7,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.072,
+          "nll": 0.4022702172116452
+        },
+        "R1_initial": {
+          "brier": 0.09000000000000002,
+          "nll": 0.47288778442559865
+        },
+        "R1": {
+          "brier": 0.072,
+          "nll": 0.4022702172116452
+        },
+        "R2_initial": {
+          "brier": 0.08839999999999998,
+          "nll": 0.4716049106127093
+        },
+        "R2": {
+          "brier": 0.08839999999999998,
+          "nll": 0.4716049106127093
+        }
+      }
+    },
+    {
+      "family": "statqa",
+      "subject_stratum": "stratum-6",
+      "budget": 0,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.7199999999999999,
+          "nll": 1.960414835258195
+        },
+        "R1_initial": {
+          "brier": 0.544,
+          "nll": 1.447319062957665
+        },
+        "R1": {
+          "brier": 0.4880000000000001,
+          "nll": 1.3137876703331428
+        },
+        "R2_initial": {
+          "brier": 0.5508,
+          "nll": 1.4714166145367256
+        },
+        "R2": {
+          "brier": 0.5508,
+          "nll": 1.4714166145367256
+        }
+      }
+    },
+    {
+      "family": "statqa",
+      "subject_stratum": "stratum-6",
+      "budget": 7,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.554,
+          "nll": 1.4996870484749811
+        },
+        "R1_initial": {
+          "brier": 0.4033,
+          "nll": 1.172474137266565
+        },
+        "R1": {
+          "brier": 0.4265,
+          "nll": 1.2201021862558197
+        },
+        "R2_initial": {
+          "brier": 0.3872,
+          "nll": 1.159636990505884
+        },
+        "R2": {
+          "brier": 0.3872,
+          "nll": 1.159636990505884
+        }
+      }
+    }
+  ],
+  "availability": "Only aggregate loss cells; no item outcomes, predictions, prompts, or source/subject identifiers. Rechecks aggregation, not raw forecasting accuracy or bootstrap intervals."
+}

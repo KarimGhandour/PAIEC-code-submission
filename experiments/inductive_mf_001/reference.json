@@ -1,0 +1,202 @@
+{
+  "experiment": "INDUCTIVE-MF-001",
+  "encoder": "google/embeddinggemma-2",
+  "encoder_revision": "21ad7b3a498496f5c3e5de0d9afecd706e172a04",
+  "held_items": {
+    "algotune": {
+      "items": 154,
+      "configurations": 18,
+      "responses": 2772,
+      "scores": {
+        "subject": {
+          "brier": 0.19578336897972273,
+          "nll": 0.5774452453859252
+        },
+        "factor": {
+          "brier": 0.25833067030293727,
+          "nll": 0.8591650352898801
+        },
+        "privileged_oracle": {
+          "brier": 0.15286853795993277,
+          "nll": 0.46871498142510437
+        }
+      },
+      "item_ranking_spearman": 0.2982767081977997
+    },
+    "editbench": {
+      "items": 540,
+      "configurations": 43,
+      "responses": 23220,
+      "scores": {
+        "subject": {
+          "brier": 0.2431053035145435,
+          "nll": 0.6791355949765384
+        },
+        "factor": {
+          "brier": 0.15934615051314188,
+          "nll": 0.4921069392222629
+        },
+        "privileged_oracle": {
+          "brier": 0.1395707433959104,
+          "nll": 0.4274174200061799
+        }
+      },
+      "item_ranking_spearman": 0.8231934675087974
+    }
+  },
+  "held_item_equal_family_macro": {
+    "subject": {
+      "brier": 0.2194443362471331,
+      "nll": 0.6282904201812318
+    },
+    "factor": {
+      "brier": 0.20883841040803958,
+      "nll": 0.6756359872560715
+    },
+    "privileged_oracle": {
+      "brier": 0.1462196406779216,
+      "nll": 0.4480662007156421
+    }
+  },
+  "transfer": {
+    "algotune_to_editbench": {
+      "source": "algotune",
+      "target": "editbench",
+      "evaluation_items": 533,
+      "evaluation_responses": 5863,
+      "target_configurations": 11,
+      "source_configurations": 9,
+      "shared_foundation_identities": 9,
+      "scores": {
+        "A_source_subject": {
+          "brier": 0.3090410345335298,
+          "nll": 0.8330408752836567
+        },
+        "B_calibrated_subject": {
+          "brier": 0.27299364899710277,
+          "nll": 0.7438140712105225
+        },
+        "factor_budget_zero": {
+          "brier": 0.3871862841369124,
+          "nll": 1.3336621573786132
+        },
+        "C_calibrated_factor": {
+          "brier": 0.34042013963555473,
+          "nll": 1.055920866199865
+        },
+        "factor_bias_only_diagnostic": {
+          "brier": 0.34091115175944126,
+          "nll": 1.059471382384074
+        },
+        "privileged_oracle": {
+          "brier": 0.1570253513536118,
+          "nll": 0.4806197783117982
+        }
+      },
+      "incremental_brier_gain": -0.06742649063845196,
+      "calibration_gain": 0.03604738553642706,
+      "residual_ranking_spearman": 0.040422150572609485,
+      "fraction_items_improved": 0.275797373358349,
+      "unknown_metadata_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    "editbench_to_algotune": {
+      "source": "editbench",
+      "target": "algotune",
+      "evaluation_items": 147,
+      "evaluation_responses": 1323,
+      "target_configurations": 9,
+      "source_configurations": 11,
+      "shared_foundation_identities": 9,
+      "scores": {
+        "A_source_subject": {
+          "brier": 0.2633860428457938,
+          "nll": 0.722374947562428
+        },
+        "B_calibrated_subject": {
+          "brier": 0.21608495740892458,
+          "nll": 0.6267964941802605
+        },
+        "factor_budget_zero": {
+          "brier": 0.32151811712253847,
+          "nll": 0.9952475570324062
+        },
+        "C_calibrated_factor": {
+          "brier": 0.2833717979669161,
+          "nll": 0.9081656769522773
+        },
+        "factor_bias_only_diagnostic": {
+          "brier": 0.2838310443607257,
+          "nll": 0.9108878890857093
+        },
+        "privileged_oracle": {
+          "brier": 0.15778533635676492,
+          "nll": 0.4872553051308133
+        }
+      },
+      "incremental_brier_gain": -0.0672868405579915,
+      "calibration_gain": 0.04730108543686923,
+      "residual_ranking_spearman": 0.024905116196617342,
+      "fraction_items_improved": 0.35374149659863946,
+      "unknown_metadata_token_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "transfer_equal_direction_macro": {
+    "A_source_subject": {
+      "brier": 0.2862135386896618,
+      "nll": 0.7777079114230423
+    },
+    "B_calibrated_subject": {
+      "brier": 0.24453930320301367,
+      "nll": 0.6853052826953915
+    },
+    "factor_budget_zero": {
+      "brier": 0.35435220062972544,
+      "nll": 1.1644548572055098
+    },
+    "C_calibrated_factor": {
+      "brier": 0.3118959688012354,
+      "nll": 0.9820432715760712
+    },
+    "factor_bias_only_diagnostic": {
+      "brier": 0.31237109806008345,
+      "nll": 0.9851796357348916
+    },
+    "privileged_oracle": {
+      "brier": 0.15740534385518834,
+      "nll": 0.48393754172130576
+    }
+  },
+  "training_seconds": 2.9884136239925283,
+  "elapsed_seconds": 6.920360874995822,
+  "peak_rss_gb": 0.426541056,
+  "training_device": "cpu",
+  "latent_dimension": 16,
+  "embedding_dimension": 768,
+  "scale_colab": false,
+  "scale_rule": "Both transfer directions improve calibrated Brier by >0.005; exploratory two-family evidence only.",
+  "paid_api_calls": 0,
+  "generative_inference_calls": 0,
+  "scope": "694 permitted text/code items, 25992 outcomes; grouped item diagnostic and fixed-seven-label strict source-only family transfer. Oracle is privileged, never an input. No comparison to unmatched Luna forecasts."
+}

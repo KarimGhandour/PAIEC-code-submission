@@ -1,0 +1,8 @@
+{
+  "backend": "audited-MiniLM-local",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "dimensions": 384,
+  "normalized": true,
+  "representation_policy": "Same preprocessing and pinned local MiniLM for items/queries. Fulltext if<=2400chars, otherwise1700-character head plus600-character tail. BABILong uses task instruction/question/context-length metadata, explicitly an approximation without full long-context text. MiniLM truncates final representation to256 tokens."
+}

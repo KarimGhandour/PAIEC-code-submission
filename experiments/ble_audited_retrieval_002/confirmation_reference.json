@@ -1,0 +1,109 @@
+{
+  "status": "CONFIRMATION_COMPLETE",
+  "selected_arm": "R1",
+  "planned_questions": 32,
+  "paired_questions": 32,
+  "paired_units": 64,
+  "source_groups_unique": 32,
+  "paired_improvement": {
+    "gain": 0.05015535714285718,
+    "family_source_cluster_95": [
+      0.0015691294642857193,
+      0.10305902901785716
+    ],
+    "draws": 2000,
+    "independent_families": 4,
+    "estimand": "Same equal subject/family/budget-cell macro as point score; family then subject-stratified source-group resampling. Budgets/trials remain together.",
+    "positive_means_improvement": true
+  },
+  "within_run_improvement": {
+    "gain": 0.01838839285714286,
+    "family_source_cluster_95": [
+      0.0008782087053571648,
+      0.04498440104166668
+    ],
+    "draws": 2000,
+    "independent_families": 4,
+    "estimand": "Same equal subject/family/budget-cell macro as point score; family then subject-stratified source-group resampling. Budgets/trials remain together.",
+    "positive_means_improvement": true
+  },
+  "prompting_improvement": {
+    "gain": 0.03176696428571432,
+    "family_source_cluster_95": [
+      -0.017207421874999972,
+      0.0874612109374999
+    ],
+    "draws": 2000,
+    "independent_families": 4,
+    "estimand": "Same equal subject/family/budget-cell macro as point score; family then subject-stratified source-group resampling. Budgets/trials remain together.",
+    "positive_means_improvement": true
+  },
+  "decomposition": {
+    "overall": {
+      "A0_brier": 0.20388303571428573,
+      "initial_brier": 0.1721160714285714,
+      "final_brier": 0.15372767857142855,
+      "prompting_gain": 0.03176696428571432,
+      "within_run_gain": 0.01838839285714286,
+      "total_gain": 0.05015535714285718
+    },
+    "lexeval": {
+      "A0_brier": 0.22590000000000002,
+      "initial_brier": 0.1716875,
+      "final_brier": 0.16494375,
+      "prompting_gain": 0.054212500000000025,
+      "within_run_gain": 0.006743749999999993,
+      "total_gain": 0.06095625000000002
+    },
+    "liveaopsbench": {
+      "A0_brier": 0.30569375000000004,
+      "initial_brier": 0.23903125,
+      "final_brier": 0.21130000000000002,
+      "prompting_gain": 0.06666250000000004,
+      "within_run_gain": 0.027731249999999985,
+      "total_gain": 0.09439375000000003
+    },
+    "matharena": {
+      "A0_brier": 0.29509375000000004,
+      "initial_brier": 0.2772625,
+      "final_brier": 0.23784374999999996,
+      "prompting_gain": 0.01783125000000002,
+      "within_run_gain": 0.03941875000000006,
+      "total_gain": 0.05725000000000008
+    },
+    "medagentboard": {
+      "A0_brier": 0.03445,
+      "initial_brier": 0.05305625,
+      "final_brier": 0.04288125,
+      "prompting_gain": -0.018606249999999998,
+      "within_run_gain": 0.010174999999999997,
+      "total_gain": -0.008431250000000001
+    },
+    "budget_0": {
+      "A0_brier": 0.2395857142857143,
+      "initial_brier": 0.19873928571428576,
+      "final_brier": 0.17575357142857143,
+      "prompting_gain": 0.040846428571428534,
+      "within_run_gain": 0.02298571428571433,
+      "total_gain": 0.06383214285714287
+    },
+    "budget_7": {
+      "A0_brier": 0.16818035714285715,
+      "initial_brier": 0.14549285714285715,
+      "final_brier": 0.13170178571428567,
+      "prompting_gain": 0.0226875,
+      "within_run_gain": 0.013791071428571472,
+      "total_gain": 0.03647857142857147
+    }
+  },
+  "family_gains": {
+    "lexeval": 0.06095625000000002,
+    "liveaopsbench": 0.09439375000000003,
+    "matharena": 0.05725000000000008,
+    "medagentboard": -0.008431250000000001
+  },
+  "promotion_criteria_passed": true,
+  "promotion_criteria": ">0 mean gain,95% interval lower>0,no family loss>.02; no post-test tuning",
+  "limitation": "Independent fresh question/source groups in four previously used release families; not validation on four never-seen families. Two sources are mathematical. ChatGPT Plus Codex differs from official hosted API.",
+  "only_two_budgets_no_ALC": true
+}

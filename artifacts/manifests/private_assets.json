@@ -1,0 +1,123 @@
+{
+  "source_compact_sha256": "414cc74f858235eb27614b6388adb767d1a54d24a5c150e4afc93730ef30df51",
+  "redistributed": false,
+  "files": {
+    "data/RETRIEVAL_ELIGIBILITY_AND_LICENSES.json": {
+      "sha256": "de3baa1e03732b89aa783024c3258ef4440b2971da154a47f1d922c665707d70",
+      "bytes": 200199
+    },
+    "data/active_permission_policy.json": {
+      "sha256": "5359ad08d02fa684e82dfe45960b9b5800d405b3ebd65db9b4d3be279ead5d77",
+      "bytes": 5040
+    },
+    "data/compact_assets.json": {
+      "sha256": "25ee5ebae9dc04b89efde7f41fb195fef059b84590f05d425856df5bc02713c0",
+      "bytes": 6818
+    },
+    "data/evidence.xz.bin": {
+      "sha256": "71c4794b96e2acd0f4f49c64aa5f982d8765f00767c38337461c5790a48e7eba",
+      "bytes": 382120380
+    },
+    "data/firewall_static_cache.json": {
+      "sha256": "1b09e48998484a1babd4f2b2cb7c22c9b242459df12e30bf186d1103688b4da4",
+      "bytes": 6177
+    },
+    "data/protected_inputs.json": {
+      "sha256": "26ec64c9bdcc2ef301fddf345f27109069e9808497340ab2dd4069699db217ed",
+      "bytes": 547490
+    },
+    "data/semantic_items.json": {
+      "sha256": "e00695e97ab98c974753c6f96c194c29e9b360ff50fa1e37f70eeeae77f803ba",
+      "bytes": 4914337
+    },
+    "data/semantic_manifest.json": {
+      "sha256": "b1437441f49d58a1e87574f1614928eafef1e4ebe923e5bee88dabdf6abed0a6",
+      "bytes": 6869
+    },
+    "data/semantic_vectors.npy": {
+      "sha256": "eca8f8c6566d6d0e3a4e0387bf62db9a3d841377f08d9a8c6aa38c78ed2377c9",
+      "bytes": 21195392
+    },
+    "data/traces/algotune.parquet": {
+      "sha256": "e24f36231ed05300c6ffcd85bdfb50109b4492ca27103d5e6d361abe1cd424a8",
+      "bytes": 996473
+    },
+    "data/traces/babilong.parquet": {
+      "sha256": "8f205b540e330ea843e049616da486d87fd1c8491cd7418430ee3406c4446e19",
+      "bytes": 65170911
+    },
+    "data/traces/brace.parquet": {
+      "sha256": "a7bfe6e4ea23e368465c20816e26014748a1962b9e26da887cc821721b4eda4f",
+      "bytes": 31503238
+    },
+    "data/traces/chartmuseum.parquet": {
+      "sha256": "dfa3e1cbb86f0f6e3d2a80957a91c9e7e6e1c5aaa036ef8bbc61ba45cc164ba3",
+      "bytes": 615
+    },
+    "data/traces/dave.parquet": {
+      "sha256": "cbf38f6199c41754f76fd064e4e40c878820111d4899311b4988152f5b153386",
+      "bytes": 280458
+    },
+    "data/traces/editbench.parquet": {
+      "sha256": "c86c3d80df03311059545b90fe37a7ecfdb9c77b1224b6e0e273962350c8ec5f",
+      "bytes": 170383
+    },
+    "data/traces/finegrain_t2i.parquet": {
+      "sha256": "c81e0b33a506cbb0e99ff165a821d1ee43068596a815e105f34e1a6179a0a970",
+      "bytes": 335722
+    },
+    "data/traces/swe_rebench.parquet": {
+      "sha256": "40e20611832bde68f1e5a3953597039a77800b254b43de9b3fcaf8ad1aeabfff",
+      "bytes": 4290331
+    },
+    "models/minilm/1_Pooling/config.json": {
+      "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+      "bytes": 190
+    },
+    "models/minilm/LICENSE-APACHE-2.0.txt": {
+      "sha256": "624b030fd62b8b989dd502d5bb6322cbc0dbb524ab9c9708f32efe33d7275735",
+      "bytes": 11338
+    },
+    "models/minilm/README.md": {
+      "sha256": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+      "bytes": 10454
+    },
+    "models/minilm/config.json": {
+      "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "bytes": 612
+    },
+    "models/minilm/config_sentence_transformers.json": {
+      "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+      "bytes": 116
+    },
+    "models/minilm/model.safetensors": {
+      "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "bytes": 90868376
+    },
+    "models/minilm/modules.json": {
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "bytes": 349
+    },
+    "models/minilm/sentence_bert_config.json": {
+      "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+      "bytes": 53
+    },
+    "models/minilm/special_tokens_map.json": {
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "bytes": 112
+    },
+    "models/minilm/tokenizer.json": {
+      "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "bytes": 466247
+    },
+    "models/minilm/tokenizer_config.json": {
+      "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "bytes": 350
+    },
+    "models/minilm/vocab.txt": {
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    }
+  },
+  "exclusions": "No protected task text, outcomes, weights, DB, embeddings, traces, config or private ZIP is included."
+}

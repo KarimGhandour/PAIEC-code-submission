@@ -1,0 +1,508 @@
+#!/usr/bin/env python3
+"""INDUCTIVE-MF-001: frozen EmbeddingGemma 2 + rank-16 response model.
+
+No generative inference, APIs, target-label training, or parameter searches.
+Commands: prepare, embed, evaluate. Previous experiments are read-only inputs.
+"""
+import argparse
+import hashlib
+import json
+import os
+from pathlib import Path
+import resource
+import sys
+import time
+
+import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+RUN = ROOT / "runs/INDUCTIVE-MF-001"
+ENCODER = "google/embeddinggemma-2"
+REVISION = "21ad7b3a498496f5c3e5de0d9afecd706e172a04"
+FAMILIES = ("algotune", "editbench")
+SEED = 20261027
+DIM = 16
+EPOCHS = 200
+LR = 0.02
+VECTOR_PRECISION = 16.0
+CONTEXT = 8192
+
+
+def dump(path, obj):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
+
+
+def load(path):
+    return json.loads(path.read_text())
+
+
+def digest(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+
+
+def rss_gb():
+    scale = 1 if sys.platform == "darwin" else 1024
+    return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * scale / 1e9
+
+
+def prepare():
+    """Read only permitted text fields; no outcomes in the embedding cache."""
+    import pyarrow.parquet as pq
+    view = ROOT / "runs/CONTROLLED-PILOT-001/retrieval_view/data"
+    records = []
+    for family in FAMILIES:
+        rows = pq.read_table(view / family / "formatted_tables/items.parquet").to_pylist()
+        for item in sorted(rows, key=lambda x: x["item_id"]):
+            text = item["content"]
+            if item.get("item_features"):
+                text += "\n\nTask metadata: " + item["item_features"]
+            records.append({"family": family, "item_id": item["item_id"],
+                            "text": text, "input_sha256": digest(text)})
+    assert len(records) == 694 and len({r["item_id"] for r in records}) == 694
+    settings = {
+        "experiment": "INDUCTIVE-MF-001", "seed": SEED,
+        "encoder": ENCODER, "encoder_revision": REVISION,
+        "vision_config": None, "audio_config": None, "encoder_dtype": "float32",
+        "encoder_frozen": True, "embedding_dimension": 768, "normalized": True,
+        "embedding_prompt": "Document: title: none | text: ",
+        "context_tokens": CONTEXT,
+        "long_items": "Non-overlapping <=4096-token text chunks, token-weighted mean then L2 normalization. No text discarded.",
+        "latent_dimension": DIM, "optimizer": "Adam", "learning_rate": LR,
+        "epochs": EPOCHS, "device_training_default": "cpu", "threads": 4,
+        "regularization": {"mean_squared_system_vectors_and_biases": 0.01,
+                           "mean_squared_mapping_and_projection_weights": 0.001},
+        "metadata": ["foundation_model", "provider", "harness", "reasoning_effort"],
+        "question_projection": "Linear 768->16, L2-normalized projected vectors",
+        "acquired_intercept_precision": 1.0, "acquired_vector_precision": VECTOR_PRECISION,
+        "calibration": "Center question vectors on exactly seven acquired items; common frozen source-ability intercept prior; fit intercept and strongly regularized vector delta.",
+        "held_items": "Existing grouped five-fold ORACLE-GAP-RECONSTRUCTION-001 split; train shared projection on both families' training folds.",
+        "transfer": "One source family only, restricted to the nine shared foundation identities in training and evaluation; exact ORACLE-GAP-004 acquisition and evaluation groups.",
+        "metrics": "Brier and natural-log NLL, equal-family/direction macro; not acquisition ALC.",
+        "generative_inference_calls": 0, "paid_api_calls": 0, "hyperparameter_sweeps": 0,
+    }
+    for name, obj in (("inputs.json", records), ("settings.json", settings)):
+        path = RUN / name
+        if path.exists():
+            if load(path) != obj:
+                raise RuntimeError(f"Existing {name} differs; do not overwrite")
+        else:
+            dump(path, obj)
+    print(json.dumps({"prepared_items": len(records), "run": str(RUN)}), flush=True)
+
+
+def text_chunks(tokenizer, text, prompt):
+    """Keep every character, including code and trailing edit instructions."""
+    tokens = tokenizer(prompt + text, add_special_tokens=True, truncation=False)["input_ids"]
+    if len(tokens) <= CONTEXT:
+        return [text], [max(1, len(tokens))], len(tokens)
+    encoded = tokenizer(text, add_special_tokens=False, truncation=False, return_offsets_mapping=True)
+    offsets = encoded["offset_mapping"]
+    chunks, weights = [], []
+    start = 0
+    for stop in range(4096, len(offsets) + 4096, 4096):
+        stop = min(stop, len(offsets))
+        end = len(text) if stop == len(offsets) else offsets[stop][0]
+        chunk = text[start:end]
+        assert len(tokenizer(prompt + chunk, add_special_tokens=True)["input_ids"]) <= CONTEXT
+        chunks.append(chunk)
+        weights.append(stop - (len(weights) * 4096))
+        start = end
+    assert "".join(chunks) == text
+    return chunks, weights, len(tokens)
+
+
+def embed(device):
+    import torch
+    from sentence_transformers import SentenceTransformer
+    from huggingface_hub import hf_hub_download
+    start = time.monotonic()
+    records = load(RUN / "inputs.json")
+    if (RUN / "embeddings.npy").exists():
+        old = load(RUN / "embedding_info.json")
+        assert old["revision"] == REVISION
+        assert old["input_sha256"] == [r["input_sha256"] for r in records]
+        x = np.load(RUN / "embeddings.npy")
+        assert x.shape == (694, 768)
+        np.testing.assert_allclose(np.linalg.norm(x, axis=1), 1, atol=1e-5)
+        print(json.dumps({"reused_cache": True, "shape": list(x.shape)}))
+        return
+    torch.set_num_threads(4)
+    snapshot = str(Path(hf_hub_download(ENCODER, "config.json", revision=REVISION,
+                                       local_files_only=True)).parent)
+    if device == "auto":
+        device = "mps" if torch.backends.mps.is_available() else "cpu"
+    model = SentenceTransformer(snapshot, device=device,
+        config_kwargs={"vision_config": None, "audio_config": None},
+        model_kwargs={"dtype": torch.float32}, local_files_only=True)
+    model.eval()
+    backbone = model[0].model
+    assert backbone.vision_tower is None and backbone.audio_tower is None
+    for parameter in model.parameters():
+        parameter.requires_grad_(False)
+    model.max_seq_length = CONTEXT
+    parameters = sum(p.numel() for p in model.parameters())
+    assert 200_000_000 < parameters < 350_000_000, f"Not text-only 270M: {parameters}"
+    assert model.get_sentence_embedding_dimension() == 768
+    assert all(not p.requires_grad for p in model.parameters())
+    tokenizer = model.tokenizer
+    prompt = model.prompts["Document"]
+    jobs, item_info = [], []
+    for i, record in enumerate(records):
+        chunks, weights, count = text_chunks(tokenizer, record["text"], prompt)
+        item_info.append({"family": record["family"], "item_id": record["item_id"],
+                          "tokens": count, "chunks": len(chunks), "over_context": count > CONTEXT})
+        for chunk, weight in zip(chunks, weights):
+            length = len(tokenizer(prompt + chunk, add_special_tokens=True)["input_ids"])
+            jobs.append((length, i, chunk, weight))
+    # Resume completed item embeddings without duplicate forward passes.
+    parts = RUN / "embedding_parts"
+    parts.mkdir(exist_ok=True)
+    complete = {i for i in range(len(records)) if (parts / (records[i]["input_sha256"] + ".npy")).exists()}
+    jobs = sorted([j for j in jobs if j[1] not in complete], key=lambda x: x[0])
+    sums = np.zeros((len(records), 768), dtype=np.float64)
+    counts = np.zeros(len(records), dtype=np.int64)
+    done_chunks = np.zeros(len(records), dtype=np.int64)
+    position = 0
+    print(json.dumps({"encoder_loaded": True, "device": device, "parameters": parameters,
+                      "over_context_items": sum(r["over_context"] for r in item_info),
+                      "total_chunks": sum(r["chunks"] for r in item_info), "reused_items": len(complete)}), flush=True)
+    while position < len(jobs):
+        length = jobs[position][0]
+        # Long sequence shapes can retain large MPS graph/allocator pools on M1.
+        # Keep exact text/encoder settings, but use CPU above 4096 tokens.
+        if device == "mps" and length > 4096:
+            torch.mps.synchronize()
+            model.to("cpu")
+            torch.mps.empty_cache()
+            device = "cpu"
+            print(json.dumps({"long_input_device": "cpu", "first_tokens": length}), flush=True)
+        limit = 8 if length <= 512 else 2 if length <= 2048 else 1
+        batch = jobs[position:position + limit]
+        # Prevent a longer next item from making an otherwise short batch expensive.
+        while len(batch) > 1 and batch[-1][0] > (512 if limit == 8 else 2048):
+            batch.pop()
+        with torch.inference_mode():
+            vectors = model.encode([r[2] for r in batch], prompt_name="Document",
+                batch_size=len(batch), normalize_embeddings=True, convert_to_numpy=True,
+                show_progress_bar=False)
+        for (_, i, _, weight), vector in zip(batch, vectors):
+            assert np.isfinite(vector).all()
+            sums[i] += weight * vector
+            counts[i] += weight
+            done_chunks[i] += 1
+            if done_chunks[i] == item_info[i]["chunks"]:
+                pooled = sums[i] / counts[i]
+                pooled /= np.linalg.norm(pooled)
+                np.save(parts / (records[i]["input_sha256"] + ".npy"), pooled.astype(np.float32))
+                complete.add(i)
+        position += len(batch)
+        if device == "mps":
+            torch.mps.synchronize()
+            torch.mps.empty_cache()
+        print(json.dumps({"items_cached": len(complete), "chunks_processed": position,
+                          "seconds": round(time.monotonic() - start, 1), "peak_rss_gb": round(rss_gb(), 3)}), flush=True)
+    x = np.stack([np.load(parts / (r["input_sha256"] + ".npy")) for r in records])
+    assert x.shape == (694, 768)
+    np.testing.assert_allclose(np.linalg.norm(x, axis=1), 1, atol=1e-5)
+    np.save(RUN / "embeddings.npy", x)
+    dump(RUN / "embedding_info.json", {"encoder": ENCODER, "revision": REVISION,
+        "device": device, "dtype": "float32", "parameters_loaded": parameters,
+        "all_pretrained_weights_frozen": True, "vision_disabled": True, "audio_disabled": True,
+        "normalized": True, "dimension": 768, "context_tokens": CONTEXT,
+        "prompt": prompt, "items": item_info, "input_sha256": [r["input_sha256"] for r in records],
+        "over_context_items": sum(r["over_context"] for r in item_info),
+        "over_context_rate": sum(r["over_context"] for r in item_info) / len(records),
+        "discarded_text_characters": 0, "truncation_rate": 0.0,
+        "long_item_handling": "4096-token chunks, token-weighted mean and renormalization",
+        "elapsed_seconds": time.monotonic() - start, "peak_rss_gb": rss_gb(),
+        "mps_driver_allocated_gb_at_end": torch.mps.driver_allocated_memory() / 1e9 if device == "mps" else None})
+
+
+def metadata_tokens(subject, foundation):
+    return ["model=" + foundation,
+            "provider=" + str(subject.get("provider") or "missing").lower(),
+            "harness=" + str(subject.get("harness") or "missing").lower(),
+            "effort=" + str(subject.get("reasoning_effort") or "missing").lower()]
+
+
+def metadata_matrix(subjects, foundations, vocabulary=None):
+    rows = [metadata_tokens(s, f) for s, f in zip(subjects, foundations)]
+    if vocabulary is None:
+        vocabulary = sorted({token for row in rows for token in row})
+    lookup = {token: j for j, token in enumerate(vocabulary)}
+    x = np.zeros((len(rows), len(vocabulary)), dtype=np.float32)
+    for i, row in enumerate(rows):
+        for token in row:
+            if token in lookup:
+                x[i, lookup[token]] = 0.5
+    return x, vocabulary
+
+
+def train_factor(x, metadata, families, device):
+    """families contains (item row indices, subject row indices, observed y).
+
+    Only passed source/training labels are seen; missing cells never become zero.
+    """
+    import torch
+    from torch import nn
+    import torch.nn.functional as F
+    from oracle_gap_reconstruction import logit
+    start = time.monotonic()
+    torch.manual_seed(SEED)
+    np.random.seed(SEED)
+    torch.set_num_threads(4)
+    xt = torch.as_tensor(x, device=device)
+    mt = torch.as_tensor(metadata, device=device)
+    # Subject capability estimates and metadata initialization use training edges only.
+    successes = np.zeros(len(metadata))
+    totals = np.zeros(len(metadata))
+    tensors = []
+    for ii, ss, y in families:
+        mask = np.isfinite(y)
+        successes[ss] += np.nansum(y, axis=0)
+        totals[ss] += mask.sum(axis=0)
+        tensors.append((torch.as_tensor(ii, device=device), torch.as_tensor(ss, device=device),
+                        torch.as_tensor(np.nan_to_num(y), dtype=torch.float32, device=device),
+                        torch.as_tensor(mask, device=device)))
+    assert (totals > 0).all()
+    subject_prior = logit((successes + 1) / (totals + 2))
+    initial_global = float(np.mean(subject_prior))
+    initial_bias = np.linalg.solve(metadata.T @ metadata + np.eye(metadata.shape[1]),
+                                   metadata.T @ (subject_prior - initial_global))
+
+    class Factor(nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.projection = nn.Linear(768, DIM, bias=False)
+            self.system_mapping = nn.Linear(metadata.shape[1], DIM, bias=False)
+            self.bias_mapping = nn.Linear(metadata.shape[1], 1, bias=False)
+            self.global_bias = nn.Parameter(torch.tensor(initial_global, dtype=torch.float32))
+            nn.init.normal_(self.projection.weight, std=0.10)
+            nn.init.normal_(self.system_mapping.weight, std=0.05)
+            self.bias_mapping.weight.data.copy_(torch.as_tensor(initial_bias[None, :], dtype=torch.float32))
+
+        def components(self, q, m):
+            z = F.normalize(self.projection(q), dim=-1, eps=1e-8)
+            v = self.system_mapping(m)
+            b = self.global_bias + self.bias_mapping(m).squeeze(-1)
+            return z, v, b
+
+    model = Factor().to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=LR)
+    losses = []
+    for epoch in range(EPOCHS):
+        optimizer.zero_grad(set_to_none=True)
+        z, v, b = model.components(xt, mt)
+        family_losses = []
+        for ii, ss, yy, mask in tensors:
+            logits = z[ii] @ v[ss].T + b[ss]
+            family_losses.append(F.binary_cross_entropy_with_logits(logits[mask], yy[mask]))
+        bce = torch.stack(family_losses).mean()
+        regularization = 0.01 * (v.square().mean() + b.square().mean())
+        regularization += 0.001 * (model.projection.weight.square().mean() +
+                                  model.system_mapping.weight.square().mean() +
+                                  model.bias_mapping.weight.square().mean())
+        loss = bce + regularization
+        if not torch.isfinite(loss):
+            raise RuntimeError("Nonfinite training loss")
+        loss.backward()
+        optimizer.step()
+        if epoch in (0, 49, 99, 199):
+            losses.append({"epoch": epoch + 1, "bce": float(bce.detach().cpu()),
+                           "regularized_loss": float(loss.detach().cpu())})
+    model.eval()
+    with torch.inference_mode():
+        z, v, b = model.components(xt, mt)
+    components = tuple(t.cpu().numpy().astype(np.float64) for t in (z, v, b))
+    state = {key: value.detach().cpu() for key, value in model.state_dict().items()}
+    info = {"seconds": time.monotonic() - start, "losses": losses,
+            "trainable_parameters": sum(p.numel() for p in model.parameters()),
+            "training_observations": int(totals.sum()), "peak_rss_gb": rss_gb()}
+    return model, state, components, info
+
+
+def new_subject_components(state, metadata):
+    v = metadata @ state["system_mapping.weight"].numpy().T
+    b = float(state["global_bias"]) + (metadata @ state["bias_mapping.weight"].numpy().T).ravel()
+    return v.astype(float), b.astype(float)
+
+
+def adapt(z, source_vectors, acquired, acquired_y, prior, vector_precision=VECTOR_PRECISION):
+    """17-parameter MAP per subject, only seven labels and frozen item vectors.
+
+    Acquired-vector centering removes candidate constant shifts; all candidates
+    share the same SOURCE-only scalar ability prior (ORACLE-GAP-004).
+    """
+    from oracle_gap_reconstruction import sigmoid
+    assert len(acquired) == 7 and acquired_y.shape == (7, len(source_vectors))
+    centered = z - z[acquired].mean(axis=0)
+    design = np.column_stack([np.ones(len(z)), centered])
+    xa = design[acquired]
+    preds, records = [], []
+    for j, v in enumerate(source_vectors):
+        center = np.r_[prior[j], v]
+        precision = np.r_[1.0, np.repeat(vector_precision, DIM)]
+        beta = center.copy()
+        y = acquired_y[:, j]
+        def objective(w):
+            logits = xa @ w
+            return np.sum(np.logaddexp(0, logits) - y * logits) + 0.5 * np.sum(precision * (w - center) ** 2)
+        for _ in range(50):
+            p = sigmoid(xa @ beta)
+            gradient = xa.T @ (p - y) + precision * (beta - center)
+            hessian = xa.T @ ((p * (1-p))[:, None] * xa) + np.diag(precision)
+            step = np.linalg.solve(hessian, gradient)
+            if np.max(np.abs(step)) < 1e-10:
+                break
+            rate = 1.0
+            while objective(beta - rate * step) > objective(beta) + 1e-12 and rate > 1e-8:
+                rate *= 0.5
+            beta -= rate * step
+        assert np.max(np.abs(xa.T @ (sigmoid(xa @ beta)-y) + precision * (beta-center))) < 1e-7
+        preds.append(sigmoid(design @ beta))
+        records.append({"alpha": float(beta[0]), "prior": float(prior[j]),
+                        "vector_delta_norm": float(np.linalg.norm(beta[1:] - v)),
+                        "source_vector_norm": float(np.linalg.norm(v)),
+                        "successes": int(y.sum())})
+    return np.asarray(preds).T, records
+
+
+def evaluate(device):
+    import torch
+    from oracle_gap_reconstruction import panels, rank, metrics, logit, sigmoid, spearman
+    from oracle_gap_calibration import calibrate
+    start = time.monotonic()
+    if (RUN / "results.json").exists():
+        raise RuntimeError("Results already exist; no overwrite or tuning")
+    x = np.load(RUN / "embeddings.npy")
+    inputs = load(RUN / "inputs.json")
+    pp = panels()
+    locations = {}
+    subject_locations = {}
+    subjects, foundations = [], []
+    for family, panel in pp.items():
+        locations[family] = np.array([i for i, r in enumerate(inputs) if r["family"] == family])
+        assert [inputs[i]["item_id"] for i in locations[family]] == [r["item_id"] for r in panel["items"]]
+        subject_locations[family] = np.arange(len(subjects), len(subjects) + len(panel["subjects"]))
+        subjects.extend(panel["subjects"])
+        foundations.extend(panel["models"])
+    meta, vocabulary = metadata_matrix(subjects, foundations)
+    prediction = {f: np.full_like(a["y"], np.nan) for f, a in pp.items()}
+    training = []
+    folds = {}
+    for family, panel in pp.items():
+        groups = sorted(set(panel["groups"]), key=lambda g: rank(["oracle-fold", family, g]))
+        foldmap = {g: i % 5 for i, g in enumerate(groups)}
+        folds[family] = np.array([foldmap[g] for g in panel["groups"]])
+    for fold in range(5):
+        blocks = []
+        for family, panel in pp.items():
+            tr = np.flatnonzero(folds[family] != fold)
+            te = np.flatnonzero(folds[family] == fold)
+            assert not {panel["groups"][i] for i in tr} & {panel["groups"][i] for i in te}
+            blocks.append((locations[family][tr], subject_locations[family], panel["y"][tr]))
+        _, state, (z, v, b), info = train_factor(x, meta, blocks, device)
+        training.append({"fit": f"item_fold_{fold}", **info})
+        torch.save({"state_dict": state, "vocabulary": vocabulary}, RUN / f"item_fold_{fold}.pt")
+        for family, panel in pp.items():
+            te = np.flatnonzero(folds[family] == fold)
+            ss = subject_locations[family]
+            prediction[family][te] = sigmoid(z[locations[family][te]] @ v[ss].T + b[ss])
+        print(json.dumps({"completed_fold": fold, **info}), flush=True)
+    held_items = {}
+    for family, panel in pp.items():
+        frozen = np.load(ROOT / "runs/ORACLE-GAP-RECONSTRUCTION-001" / (family + "_offline_oracle.npz"))
+        np.testing.assert_array_equal(frozen["y"], panel["y"])
+        assert np.isfinite(prediction[family]).all()
+        methods = {"subject": frozen["subject"], "factor": prediction[family], "privileged_oracle": frozen["combined_oracle"]}
+        held_items[family] = {"items": len(panel["items"]), "configurations": len(panel["subjects"]),
+            "responses": int(panel["y"].size), "scores": {k: metrics(panel["y"], p) for k, p in methods.items()},
+            "item_ranking_spearman": spearman(prediction[family].mean(axis=1), panel["y"].mean(axis=1))}
+        np.savez_compressed(RUN / (family + "_held_item_predictions.npz"), **methods, folds=folds[family])
+    old = load(ROOT / "runs/ORACLE-GAP-003/results.json")
+    acquired = load(ROOT / "runs/ORACLE-GAP-004/acquisition_selection.json")
+    transfer = {}
+    for direction, description in old["directions"].items():
+        source, target = description["source"], description["target"]
+        src, tgt = pp[source], pp[target]
+        # Source vocabulary, mapping, projection and all optimizer updates see source only.
+        source_ids = [j for j, m in enumerate(src["models"]) if m in old["shared_foundation_models"]]
+        sm, svocab = metadata_matrix([src["subjects"][j] for j in source_ids],
+                                    [src["models"][j] for j in source_ids])
+        _, state, (z_all, _, _), info = train_factor(x, sm,
+            [(locations[source], np.arange(len(source_ids)), src["y"][:, source_ids])], device)
+        training.append({"fit": direction, **info})
+        ids = [j for j, m in enumerate(tgt["models"]) if m in old["shared_foundation_models"]]
+        tm, _ = metadata_matrix([tgt["subjects"][j] for j in ids], [tgt["models"][j] for j in ids], svocab)
+        vectors, bias = new_subject_components(state, tm)
+        z = z_all[locations[target]]
+        raw_logits = z @ vectors.T + bias
+        source_scalar = np.load(ROOT / "runs/ORACLE-GAP-003" / (direction + "_predictions_before_scoring.npz"))["subject"]
+        prior = logit(source_scalar[0])
+        ai = [r["index"] for r in acquired[direction]["acquired"]]
+        ei = acquired[direction]["evaluation_indices"]
+        assert not {tgt["groups"][i] for i in ai} & {tgt["groups"][i] for i in ei}
+        labels7 = tgt["y"][ai][:, ids]
+        baseline, _ = calibrate(logit(source_scalar), ai, labels7, prior)
+        bias_only, bias_info = calibrate(raw_logits, ai, labels7, prior)
+        factor, adaptation = adapt(z, vectors, ai, labels7, prior)
+        methods = {"A_source_subject": source_scalar, "B_calibrated_subject": baseline,
+                   "factor_budget_zero": sigmoid(raw_logits), "C_calibrated_factor": factor,
+                   "factor_bias_only_diagnostic": bias_only}
+        # Freeze predictions before accessing unacquired scoring outcomes or oracle.
+        np.savez_compressed(RUN / (direction + "_predictions_before_scoring.npz"), **methods)
+        torch.save({"state_dict": state, "vocabulary": svocab, "source": source}, RUN / (direction + ".pt"))
+        dump(RUN / (direction + "_adaptation.json"), {"subjects": [tgt["subjects"][j] for j in ids],
+             "bias_only": bias_info, "bias_and_vector": adaptation, "acquired_indices": ai,
+             "vector_precision": VECTOR_PRECISION})
+        frozen = np.load(ROOT / "runs/ORACLE-GAP-004" / (direction + "_evaluation.npz"))
+        np.testing.assert_array_equal(ei, frozen["evaluation_indices"])
+        np.testing.assert_allclose(baseline[ei], frozen["B_calibrated_subject"], atol=1e-12)
+        y = tgt["y"][ei][:, ids]
+        np.testing.assert_array_equal(y, frozen["y"])
+        scores = {key: metrics(y, value[ei]) for key, value in methods.items()}
+        scores["privileged_oracle"] = metrics(y, frozen["oracle"])
+        incremental = scores["B_calibrated_subject"]["brier"] - scores["C_calibrated_factor"]["brier"]
+        per_item_gain = np.mean((baseline[ei]-y)**2 - (factor[ei]-y)**2, axis=1)
+        transfer[direction] = {"source": source, "target": target, "evaluation_items": len(ei),
+            "evaluation_responses": int(y.size), "target_configurations": len(ids),
+            "source_configurations": len(source_ids), "shared_foundation_identities": len(set(tgt["models"][j] for j in ids)),
+            "scores": scores, "incremental_brier_gain": incremental,
+            "calibration_gain": scores["A_source_subject"]["brier"] - scores["B_calibrated_subject"]["brier"],
+            "residual_ranking_spearman": spearman((factor[ei]-baseline[ei]).mean(axis=1), (y-baseline[ei]).mean(axis=1)),
+            "fraction_items_improved": float(np.mean(per_item_gain > 0)),
+            "unknown_metadata_token_counts": [sum(t not in svocab for t in metadata_tokens(tgt["subjects"][j], tgt["models"][j])) for j in ids]}
+        np.savez_compressed(RUN / (direction + "_evaluation.npz"), y=y, oracle=frozen["oracle"],
+                            evaluation_indices=ei, **{k: v[ei] for k, v in methods.items()})
+        print(json.dumps({"completed_transfer": direction, **transfer[direction]}), flush=True)
+    held_macro = {k: {m: float(np.mean([r["scores"][k][m] for r in held_items.values()]))
+                      for m in ("brier", "nll")} for k in ("subject", "factor", "privileged_oracle")}
+    transfer_macro = {k: {m: float(np.mean([r["scores"][k][m] for r in transfer.values()]))
+                          for m in ("brier", "nll")} for k in next(iter(transfer.values()))["scores"]}
+    summary = {"experiment": "INDUCTIVE-MF-001", "encoder": ENCODER, "encoder_revision": REVISION,
+        "held_items": held_items, "held_item_equal_family_macro": held_macro,
+        "transfer": transfer, "transfer_equal_direction_macro": transfer_macro,
+        "training": training, "training_seconds": sum(r["seconds"] for r in training),
+        "elapsed_seconds": time.monotonic() - start, "peak_rss_gb": rss_gb(),
+        "training_device": device, "latent_dimension": DIM, "embedding_dimension": 768,
+        "scale_colab": all(r["incremental_brier_gain"] > 0.005 for r in transfer.values()),
+        "scale_rule": "Both transfer directions improve calibrated Brier by >0.005; exploratory two-family evidence only.",
+        "paid_api_calls": 0, "generative_inference_calls": 0,
+        "scope": "694 permitted text/code items, 25992 outcomes; grouped item diagnostic and fixed-seven-label strict source-only family transfer. Oracle is privileged, never an input. No comparison to unmatched Luna forecasts."}
+    dump(RUN / "results.json", summary)
+    print(json.dumps({k: v for k, v in summary.items() if k != "training"}, indent=2), flush=True)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("command", choices=("prepare", "embed", "evaluate"))
+    parser.add_argument("--device", default="auto")
+    args = parser.parse_args()
+    if args.command == "prepare":
+        prepare()
+    elif args.command == "embed":
+        embed(args.device)
+    else:
+        evaluate("cpu" if args.device == "auto" else args.device)

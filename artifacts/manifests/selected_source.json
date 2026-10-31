@@ -1,0 +1,211 @@
+{
+  "selected": "Frozen BLE R1 Standard/Medium",
+  "compact_sha256": "414cc74f858235eb27614b6388adb767d1a54d24a5c150e4afc93730ef30df51",
+  "full_sha256": "5c65cb4fa4e9a0454ed060492467c16e02ec2a0dd38bede53f52942c9ee66fce",
+  "source_files": [
+    {
+      "path": "submission/UPSTREAM_LICENSE.txt",
+      "compact_member": "UPSTREAM_LICENSE.txt",
+      "sha256": "1ab7537e8add1792395aaebf05f10451c9ae14fac31a01af66217731831c1ec0",
+      "bytes": 1095
+    },
+    {
+      "path": "submission/comp_pipeline/__init__.py",
+      "compact_member": "comp_pipeline/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "submission/comp_pipeline/script/__init__.py",
+      "compact_member": "comp_pipeline/script/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "submission/comp_pipeline/script/agent_tools.py",
+      "compact_member": "comp_pipeline/script/agent_tools.py",
+      "sha256": "1026273f417668e2d5fcf3ff4873d0c656f1bacd4786b014e3df80014120a245",
+      "bytes": 8008
+    },
+    {
+      "path": "submission/comp_pipeline/script/api_preflight.py",
+      "compact_member": "comp_pipeline/script/api_preflight.py",
+      "sha256": "dcd92a5bac93981b90f89a61bcc473f55362365ef0c48c2a8275798048f0409f",
+      "bytes": 2235
+    },
+    {
+      "path": "submission/comp_pipeline/script/databank.py",
+      "compact_member": "comp_pipeline/script/databank.py",
+      "sha256": "8db1312042e860cd87ec21ae35c288fdb64958a74c22153f7ec051341e4a40e0",
+      "bytes": 20831
+    },
+    {
+      "path": "submission/comp_pipeline/script/dataroot.py",
+      "compact_member": "comp_pipeline/script/dataroot.py",
+      "sha256": "08a9ee7945eadd132f6776753d1b8b32357fafe48d3b79df0b0dbbabdb930d0d",
+      "bytes": 6170
+    },
+    {
+      "path": "submission/comp_pipeline/script/embedding_index.py",
+      "compact_member": "comp_pipeline/script/embedding_index.py",
+      "sha256": "e9649e044a6c9aedb7a0e3612265fee05f5ee610d8a599f136899a9239315588",
+      "bytes": 6749
+    },
+    {
+      "path": "submission/comp_pipeline/script/openai_api.py",
+      "compact_member": "comp_pipeline/script/openai_api.py",
+      "sha256": "0bdbe8fe2f74f04e5d0b703d000311cb28f748050953c32ebdb228cabce22497",
+      "bytes": 6503
+    },
+    {
+      "path": "submission/data/compact_assets.json",
+      "compact_member": "data/compact_assets.json",
+      "sha256": "25ee5ebae9dc04b89efde7f41fb195fef059b84590f05d425856df5bc02713c0",
+      "bytes": 6818
+    },
+    {
+      "path": "submission/model.py",
+      "compact_member": "model.py",
+      "sha256": "bdf5f53ed47caa09c7974a74dff9a5027f608b0daa4daecb4c4fa767abb49ac3",
+      "bytes": 659
+    },
+    {
+      "path": "submission/models.txt",
+      "compact_member": "models.txt",
+      "sha256": "3d3b863a5f5f449d519a45b53097c2000041799595fb65380340023fb1df1f3e",
+      "bytes": 39
+    },
+    {
+      "path": "submission/prediction_config.json",
+      "compact_member": "prediction_config.json",
+      "sha256": "8fbe7fdc7ff18d3b5f8f32060ae352347223f3d995ca3787f462065ddda05845",
+      "bytes": 24
+    },
+    {
+      "path": "submission/r1api/__init__.py",
+      "compact_member": "r1api/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "submission/r1api/assets.py",
+      "compact_member": "r1api/assets.py",
+      "sha256": "02936534242700f9a37151148a0288d217fc356a530c9f0ef8a263a9d91a0b62",
+      "bytes": 2798
+    },
+    {
+      "path": "submission/r1api/db.py",
+      "compact_member": "r1api/db.py",
+      "sha256": "bb60f18d8f583efe1605ae8b029790df9ab69c38918f4477b95b89be96285af4",
+      "bytes": 19711
+    },
+    {
+      "path": "submission/r1api/excluded_families.json",
+      "compact_member": "r1api/excluded_families.json",
+      "sha256": "e3b47e901d4942ea39c5cd5c73056b7d387821e8d3fd03eeba4407eca95c3811",
+      "bytes": 247
+    },
+    {
+      "path": "submission/r1api/predictor.py",
+      "compact_member": "r1api/predictor.py",
+      "sha256": "a0e0d21bad7fb68b324328feabdaa382685b0ef01a7657229eb1cc60102c0be7",
+      "bytes": 8082
+    },
+    {
+      "path": "submission/r1api/protocol.py",
+      "compact_member": "r1api/protocol.py",
+      "sha256": "61e34b0436dcf59086aebde09624de86058bdebc2adaf2d0d18bde866f28a7cb",
+      "bytes": 3889
+    },
+    {
+      "path": "submission/r1api/question.py",
+      "compact_member": "r1api/question.py",
+      "sha256": "5ac3f09493b189cc877d6d1c4b058c3d66090fb7c20b4101ce2e0a88452f7fe7",
+      "bytes": 3087
+    },
+    {
+      "path": "submission/r1api/responses.py",
+      "compact_member": "r1api/responses.py",
+      "sha256": "876d78a4b8ffdf26d7d8fa75867805d01256d1bf2d3a9eed928537b21962e077",
+      "bytes": 16612
+    },
+    {
+      "path": "submission/r1api/run_budget.py",
+      "compact_member": "r1api/run_budget.py",
+      "sha256": "f210d052bdb5289326d729c2153d81f8d00dd530a9876d6f0afcd441fd64178a",
+      "bytes": 3082
+    },
+    {
+      "path": "submission/r1api/semantic.py",
+      "compact_member": "r1api/semantic.py",
+      "sha256": "6d6740c25f8afbfc8962921e500bfead4f93afe6c6a91757b8f800fe366246f9",
+      "bytes": 1554
+    },
+    {
+      "path": "submission/r1api/transport_note.json",
+      "compact_member": "r1api/transport_note.json",
+      "sha256": "30960d3c6b657bb2d7c3de861ab834ec6a839a534e9c19ed21fea68be5ec8b11",
+      "bytes": 780
+    },
+    {
+      "path": "submission/r1api/util.py",
+      "compact_member": "r1api/util.py",
+      "sha256": "d4e9fc177df0a6ff2d4225dca4cb328372432f9fd8a8b46db4d34b77beb312e4",
+      "bytes": 772
+    },
+    {
+      "path": "submission/requirements.txt",
+      "compact_member": "requirements.txt",
+      "sha256": "1caff899416622ee1cbeb2addbbf116a98569cd0b32ed13c352a6622388a5304",
+      "bytes": 168
+    },
+    {
+      "path": "submission/src/agent/__init__.py",
+      "compact_member": "src/agent/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "submission/src/agent/agent.py",
+      "compact_member": "src/agent/agent.py",
+      "sha256": "5fc37cbfb70c1fe0282c2b4a2fb3bca32665a85fee26acd3de1a3d30d1dd4442",
+      "bytes": 6761
+    },
+    {
+      "path": "submission/src/agent/belief_state.py",
+      "compact_member": "src/agent/belief_state.py",
+      "sha256": "cff1c678c2261d1e95173d59f792d7cc18d84c3e7d9990fb7c21d68e6fe06039",
+      "bytes": 2389
+    },
+    {
+      "path": "submission/src/agent/llm_client.py",
+      "compact_member": "src/agent/llm_client.py",
+      "sha256": "5823a038c79a95cee5589f8692878dc7df979cfd8a0c751a0e4ac1c1c3cf4f64",
+      "bytes": 8547
+    },
+    {
+      "path": "submission/src/agent/prompts.py",
+      "compact_member": "src/agent/prompts.py",
+      "sha256": "653f7e2f1ff91e510b86c8434bfb4a4413b4aa1cd05ba76b8c857823d165b716",
+      "bytes": 4674
+    },
+    {
+      "path": "submission/src/agent/tools.py",
+      "compact_member": "src/agent/tools.py",
+      "sha256": "fc202ee20f91e102ce62f51fbd5f5edbf8543771e5bd1a86a37c9005213c0603",
+      "bytes": 6369
+    },
+    {
+      "path": "submission/src/config/__init__.py",
+      "compact_member": "src/config/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "submission/src/config/config.py",
+      "compact_member": "src/config/config.py",
+      "sha256": "6a5b1354d2d9d3098cc8b6c56cd002c3c27c819710c84dcee2592c695d74a153",
+      "bytes": 1169
+    }
+  ]
+}

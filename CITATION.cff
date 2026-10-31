@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this code release and separately credit the original AIMS Foundations BLE."
+title: "PAIEC R1: Audited Bayesian Linguistic Evaluation with GPT-6 Luna"
+type: software
+authors:
+  - family-names: Ghandour
+    given-names: Karim
+version: 1.0.0
+date-released: 2026-10-30
+license: MIT
+abstract: "Frozen R1 source and offline reproducibility material for a PAIEC 2026 predictor. Historical Codex CLI results are distinct from Responses API and hosted evaluation."

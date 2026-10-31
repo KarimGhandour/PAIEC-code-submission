@@ -1,0 +1,22 @@
+{
+  "released": [
+    "frozen Python R1 source",
+    "schemas and prompts",
+    "aggregate loss cells and reference statistics",
+    "analysis functions, ledger, rank-16 factor functions",
+    "pinned asset metadata and official source file inventory"
+  ],
+  "withheld": [
+    "protected task/acquisition text and labels",
+    "row-level frozen predictions/outcomes",
+    "source-group identity maps",
+    "native/account/session/transport logs",
+    "encrypted API reasoning items",
+    "SQLite/Parquet evidence and embeddings",
+    "model weights",
+    "private submission archives/config/credentials"
+  ],
+  "public_raw_score_or_bootstrap_reproduction": false,
+  "aggregate_point_estimate_reproduction": true,
+  "exact_historical_regeneration": "Requires separately authorized original inputs, eligibility context, records and compatible historical model snapshots. Not reconstructed by this repository."
+}

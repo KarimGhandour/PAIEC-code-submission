@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "unit_tests": {
+    "total": 56,
+    "passed": 52,
+    "skipped_private_record_tests": 4,
+    "failures": 0
+  },
+  "exact_inference_source_files": 34,
+  "paid_inference_calls": 0,
+  "uploads": 0,
+  "github_authenticated": false,
+  "published": false,
+  "clean_environment_dependencies": "Pinned local packages reused offline; no fresh dependency download",
+  "license": "MIT code; external assets excluded",
+  "release_tag_proposed": "v1.0.0-r1",
+  "staged_file_count": 118,
+  "heuristic_secret_scan": "PASS",
+  "known_configured_credential_byte_scan": "PASS",
+  "prohibited_file_scan": "PASS"
+}

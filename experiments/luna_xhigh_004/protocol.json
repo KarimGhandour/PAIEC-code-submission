@@ -1,0 +1,19 @@
+{
+  "scientific_change": "medium -> xhigh only",
+  "model": "gpt-6-luna",
+  "budgets": [
+    0,
+    7
+  ],
+  "actions": 5,
+  "tools": 8,
+  "timeout_same_as_medium": {
+    "CLI_turn": 240,
+    "forecast": 900
+  },
+  "missingness": "No imputation; completed matched units only, failures and complete-question sensitivity reported; no blind retry",
+  "scoring": "Equal-family mean of subject/budget Brier and NLL; paired family/source-group bootstrap2000 draws; no six-budget ALC claim",
+  "sealing": "No evaluation outcome file read until all32 predictions frozen or terminal dispositions",
+  "quota": "Previously authorized removal of85/90 voluntary caps retained; checkpoint at95; stop hard service limits; no reset/credits/APIs",
+  "deployment_changes": false
+}

@@ -1,0 +1,170 @@
+{
+  "status": "DEVELOPMENT_COMPLETE",
+  "scope": "Previously revealed development panel; diagnostic, not prospective confirmation",
+  "planned_questions": 16,
+  "paired_questions": 16,
+  "paired_units": 32,
+  "decomposition": {
+    "R1": {
+      "overall": {
+        "A0_brier": 0.22465000000000002,
+        "initial_brier": 0.22883124999999996,
+        "final_brier": 0.20804375,
+        "prompting_gain": -0.004181249999999942,
+        "within_run_gain": 0.02078749999999996,
+        "total_gain": 0.016606250000000017
+      },
+      "kernelbench": {
+        "A0_brier": 0.30996250000000003,
+        "initial_brier": 0.2917125,
+        "final_brier": 0.28175,
+        "prompting_gain": 0.018250000000000044,
+        "within_run_gain": 0.009962499999999985,
+        "total_gain": 0.02821250000000003
+      },
+      "cellverse": {
+        "A0_brier": 0.1508375,
+        "initial_brier": 0.27111250000000003,
+        "final_brier": 0.22498750000000003,
+        "prompting_gain": -0.12027500000000002,
+        "within_run_gain": 0.046125,
+        "total_gain": -0.07415000000000002
+      },
+      "mmlupro": {
+        "A0_brier": 0.0379125,
+        "initial_brier": 0.10542499999999999,
+        "final_brier": 0.073625,
+        "prompting_gain": -0.06751249999999999,
+        "within_run_gain": 0.031799999999999995,
+        "total_gain": -0.035712499999999994
+      },
+      "statqa": {
+        "A0_brier": 0.2696125,
+        "initial_brier": 0.20651250000000002,
+        "final_brier": 0.193075,
+        "prompting_gain": 0.06309999999999996,
+        "within_run_gain": 0.013437500000000019,
+        "total_gain": 0.07653749999999998
+      },
+      "budget_0": {
+        "A0_brier": 0.27109999999999995,
+        "initial_brier": 0.2706875,
+        "final_brier": 0.2450625,
+        "prompting_gain": 0.0004124999999999268,
+        "within_run_gain": 0.025625000000000037,
+        "total_gain": 0.026037499999999963
+      },
+      "budget_7": {
+        "A0_brier": 0.17820000000000003,
+        "initial_brier": 0.186975,
+        "final_brier": 0.171025,
+        "prompting_gain": -0.008774999999999977,
+        "within_run_gain": 0.015949999999999992,
+        "total_gain": 0.007175000000000015
+      }
+    },
+    "R2": {
+      "overall": {
+        "A0_brier": 0.22465000000000002,
+        "initial_brier": 0.21795833333333334,
+        "final_brier": 0.20968749999999994,
+        "prompting_gain": 0.006691666666666679,
+        "within_run_gain": 0.008270833333333394,
+        "total_gain": 0.014962500000000073
+      },
+      "kernelbench": {
+        "A0_brier": 0.30996250000000003,
+        "initial_brier": 0.299625,
+        "final_brier": 0.27826249999999997,
+        "prompting_gain": 0.010337500000000055,
+        "within_run_gain": 0.021362500000000006,
+        "total_gain": 0.03170000000000006
+      },
+      "cellverse": {
+        "A0_brier": 0.1508375,
+        "initial_brier": 0.216275,
+        "final_brier": 0.216825,
+        "prompting_gain": -0.06543749999999998,
+        "within_run_gain": -0.0005499999999999949,
+        "total_gain": -0.06598749999999998
+      },
+      "mmlupro": {
+        "A0_brier": 0.0379125,
+        "initial_brier": 0.093525,
+        "final_brier": 0.086075,
+        "prompting_gain": -0.055612499999999995,
+        "within_run_gain": 0.007449999999999998,
+        "total_gain": -0.0481625
+      },
+      "statqa": {
+        "A0_brier": 0.2696125,
+        "initial_brier": 0.19934999999999997,
+        "final_brier": 0.19934999999999997,
+        "prompting_gain": 0.0702625,
+        "within_run_gain": 0.0,
+        "total_gain": 0.0702625
+      },
+      "budget_0": {
+        "A0_brier": 0.27109999999999995,
+        "initial_brier": 0.2597958333333333,
+        "final_brier": 0.2597958333333333,
+        "prompting_gain": 0.01130416666666667,
+        "within_run_gain": 0.0,
+        "total_gain": 0.01130416666666667
+      },
+      "budget_7": {
+        "A0_brier": 0.17820000000000003,
+        "initial_brier": 0.17612083333333337,
+        "final_brier": 0.1595791666666667,
+        "prompting_gain": 0.0020791666666666597,
+        "within_run_gain": 0.016541666666666677,
+        "total_gain": 0.018620833333333336
+      }
+    }
+  },
+  "selection_diagnostics": {
+    "R1": {
+      "gain": 0.016606250000000017,
+      "family_gains": {
+        "cellverse": -0.07415000000000002,
+        "kernelbench": 0.02821250000000003,
+        "mmlupro": -0.035712499999999994,
+        "statqa": 0.07653749999999998
+      },
+      "original_strict_gate_passed": false,
+      "severe_harm_family_count": 2,
+      "leave_one_family_out_gain": {
+        "kernelbench": 0.010803124999999997,
+        "cellverse": 0.03475750000000005,
+        "mmlupro": 0.027069999999999983,
+        "statqa": -0.013359375000000007
+      }
+    },
+    "R2": {
+      "gain": 0.014962500000000073,
+      "family_gains": {
+        "cellverse": -0.06598749999999998,
+        "kernelbench": 0.03170000000000006,
+        "mmlupro": -0.0481625,
+        "statqa": 0.0702625
+      },
+      "original_strict_gate_passed": false,
+      "severe_harm_family_count": 2,
+      "leave_one_family_out_gain": {
+        "kernelbench": 0.006593750000000009,
+        "cellverse": 0.031152500000000055,
+        "mmlupro": 0.027587500000000043,
+        "statqa": -0.012687499999999963
+      }
+    }
+  },
+  "scientific_futility": {
+    "stop": false,
+    "both_overall_losses_gt_02_and_at_least3_harmed_families_and_interval_below_zero": false,
+    "both_within_run_revisions_harmful": false,
+    "reason": "Clear consistent harm requires completed paired development and adverse evidence-revision signal; mixed/inconclusive proceeds under R2 authorization."
+  },
+  "chosen": "R1",
+  "confirmation_warranted": true,
+  "only_two_budgets_no_six_budget_ALC": true
+}

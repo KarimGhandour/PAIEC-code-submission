@@ -1,0 +1,8 @@
+{
+  "hash_encoding": "r1api.util.sha: canonical JSON UTF-8; hashes of strings include JSON quoting",
+  "r1_system_canonical_json_sha256": "826da8e7e3a8da86539e1c16914bbd63c29de1542be8ae3e8f97c22704a0c112",
+  "r1_API_instructions_canonical_json_sha256": "74e23c7c08b0176e0ac8a1c05641910e2b99104ed8d2e50e7e409de6d2158825",
+  "tools_canonical_json_sha256": "b79e9a3f751cafddf9b581ae935976d8526d4c1d1ab00774f3d4f71075f03734",
+  "A0_instructions_canonical_json_sha256": "153b1f38087db44356ee001f5dac209274a5519363b21e2e684c80d894a89ef3",
+  "R2_policy_canonical_json_sha256": "c5084a4058dd333a0705e806cc198e2502e58155dab5654cf7a4abb408ee3c46"
+}

@@ -1,0 +1,17 @@
+{
+  "upstream": {
+    "baseline_repo": "https://github.com/aims-foundations/paiec_baseline.git",
+    "baseline_sha": "cc88a959c1e5e7462f31a9215baba066ce6d6e2b",
+    "dataset_repo": "aims-foundations/measurement-db",
+    "dataset_revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+    "selected_files": 304,
+    "selected_benchmarks": 61,
+    "selected_bytes": 24218150963,
+    "file_manifest_sha256": "497886585d14913e3033cf89f6c013f6ce8cf87d1acf5ed3333402d500d1d32a"
+  },
+  "scientific_candidate": "compact R1",
+  "method": "Whitelist source extraction; exact source hashes from approved ZIP; extracted numerical function bodies retain formulas, with portable imports only",
+  "source_license": "MIT, upstream notice preserved",
+  "dataset_and_model_license": "Not covered by code license; none bundled",
+  "no_paper_changes": true
+}

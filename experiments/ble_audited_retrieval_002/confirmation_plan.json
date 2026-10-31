@@ -1,0 +1,22 @@
+{
+  "primary_arms": [
+    "A0",
+    "R1"
+  ],
+  "primary_questions": 32,
+  "primary_sessions": 128,
+  "budgets": [
+    0,
+    7
+  ],
+  "same_frozen_prefix_per_subject": true,
+  "retries": "Same bounded R2 syntax repair and one fresh attempt, no selection by probability",
+  "missingness": "Exclude exhausted target/budget across paired arms; report failure imbalance and bounds, never impute. Hard service deferral does not authorize partial outcome opening.",
+  "metrics": "Original equal(subject,family,budget) macro Brier and NLL; family/source-group paired bootstrap2000; family/budget/subject and initial-final decomposition. No six-budget ALC claim.",
+  "promotion": "Positive primary mean Brier gain, interval lower>0, no family Brier harm>.02. Otherwise no promotion. No post-test tuning.",
+  "secondary_R1": "If selected R2, collect R1 on the SAME32 questions/budgets only if primary forecasts complete and BEFORE unblinding: five-hour usage<=50%, weekly<=70%, no service limit, >=2hours available before competition deadline. Otherwise skip secondary for resources. No further confirmation blocks authorized by this implementation.",
+  "family_novelty_limitation": true,
+  "outcomes_sealed": true,
+  "science_settings": "Original R1/R2 prompts and A0 instructions; typed V3 transport, agents.enabled=false, same medium Luna;5 scientific actions, no paid APIs.",
+  "source_exclusions": "Union of original development families and all confirmation families; unchanged license/eligibility mask. All selected target/acquisition groups and known cross-source aliases excluded."
+}

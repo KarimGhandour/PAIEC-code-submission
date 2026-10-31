@@ -1,0 +1,85 @@
+{
+  "primary": "R1 minus R1_LEDGER Brier at budget7; positive is improvement",
+  "aggregation": "Equal-family; within family equal subject-budget cells; within cell every recorded trial equal. Budget0/7 equal in the secondary combined summary. Not the prior equal-pair headline estimand.",
+  "families": [
+    "bertaqa",
+    "cruxeval",
+    "engdesign",
+    "fgbench",
+    "jetts",
+    "moe_cap",
+    "subjective_qa",
+    "worldcentralbanks"
+  ],
+  "tier": "Tier1 retrieval-family holdout only; prior scientific exposure exists for all8 families. No Tier2 cohort, no pooled cold-family novelty claim.",
+  "selection": "Fixed hash seed; complete public binary runtime inputs and all-success/all-failure availability treated symmetrically. New original groups/items/content checked against62 prior exposure manifests. No target outcome values used for selection.",
+  "cohort": {
+    "questions": 32,
+    "families": 8,
+    "subject_configurations": 16,
+    "named_foundation_identities": 13,
+    "providers": [
+      "Alibaba",
+      "Anthropic",
+      "Google",
+      "Meta",
+      "Mistral",
+      "OpenAI"
+    ],
+    "evaluation_source_groups": 32,
+    "acquisition_source_groups": 56,
+    "acquisition_responses": 112,
+    "target_recorded_trials": 154,
+    "Tier1_questions": 32,
+    "Tier2_questions": 0,
+    "previously_exposed_families": 8,
+    "fresh_source_group_panel_not_pristine_family_confirmation": true,
+    "bertaqa": "Published five-shot runtime messages retained; demonstrations are permitted input, not added hidden solutions.",
+    "outcome_distribution": "Sealed until predictions frozen; no evaluation labels inspected for this preflight."
+  },
+  "budgets": [
+    0,
+    7
+  ],
+  "arms": [
+    "A0",
+    "R1",
+    "R1_LEDGER"
+  ],
+  "B0_alias": "R1_LEDGER exactly reuses R1, no new process",
+  "B7_intervention": "Coordinator factual counts/reference only, appended to question background. Original system prompt/tools/validator and five-action cap unchanged.",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "transport": "Existing ChatGPT-only Codex exec/resume, paiec-blind Seatbelt, native-code host/agents/sleep/browser/MCP/shell disabled; official BLE external dispatch and same local MiniLM backend. Not Responses API parity.",
+  "primary_preference": {
+    "minimum_gain": 0.005,
+    "cluster95_lower_gt": 0,
+    "minimum_families_positive": 5,
+    "maximum_family_harm": 0.02,
+    "minimum_complete_budget7_units": 32,
+    "otherwise": "Retain promoted R1; no label-driven adjustment"
+  },
+  "uncertainty": "2000 fixed-seed family then subject-stratified original-source-group bootstrap; all budgets and repeated trials stay together. Only4 evaluation groups/family, so family estimates remain noisy.",
+  "missingness": "At most one fresh recovery/forecast after fenced failed attempt; at most2 same-session syntax-only repairs/action. No successful or uncertain request duplicated blindly. Exclude exhausted matched target-budget across all arms, no imputation. Any missing primary unit prevents promotion. Quota deferral does not authorize partial unblinding.",
+  "quota": {
+    "five_hour": 85,
+    "weekly": 90,
+    "pre_request_reserve_points": 1
+  },
+  "inference_authorization": "Not yet granted; exact frozen hash required by execute command. Recommend fresh five-hour window. No credits, reset credits, APIs or paid embeddings.",
+  "count_assimilation_audit": "Expose deterministic truth and all initial/final belief rationales. Review explicit count assertions against truth. Absence of a count claim is not evidence of correct assimilation. Record acquisition provenance and payload hashes, real retrievals, relevance, usage and latency.",
+  "excluded_capability_claims": [
+    "No live tool-environment/long-context generalization: Tau2/BABILong and repository-state-dependent tasks not admitted as complete new cases",
+    "No official six-budget Brier ALC",
+    "No pristine never-seen-family claim",
+    "No inference API runtime or hosted throughput validation"
+  ],
+  "no_fits": [
+    "No blend",
+    "No temperature",
+    "No shrinkage",
+    "No routing gate",
+    "No family weights fitted to new labels"
+  ],
+  "target_outcomes_sealed": true
+}

@@ -1,0 +1,305 @@
+{
+  "aggregation": "flat",
+  "methods": [
+    "A0",
+    "R1_initial",
+    "R1"
+  ],
+  "cells": [
+    {
+      "family": "matharena",
+      "subject_stratum": "stratum-1",
+      "budget": 0,
+      "n_trials": 32,
+      "n_items": 8,
+      "loss_sums": {
+        "A0": {
+          "brier": 8.504800000000005,
+          "nll": 23.32237458978441
+        },
+        "R1_initial": {
+          "brier": 8.535200000000001,
+          "nll": 22.95781766778506
+        },
+        "R1": {
+          "brier": 7.451200000000004,
+          "nll": 20.79490534721787
+        }
+      }
+    },
+    {
+      "family": "matharena",
+      "subject_stratum": "stratum-1",
+      "budget": 7,
+      "n_trials": 32,
+      "n_items": 8,
+      "loss_sums": {
+        "A0": {
+          "brier": 10.3812,
+          "nll": 28.024678337088034
+        },
+        "R1_initial": {
+          "brier": 9.209599999999998,
+          "nll": 24.73172977157869
+        },
+        "R1": {
+          "brier": 7.770800000000004,
+          "nll": 21.581110214938644
+        }
+      }
+    },
+    {
+      "family": "lexeval",
+      "subject_stratum": "stratum-7",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 1.6596,
+          "nll": 4.306666874904727
+        },
+        "R1_initial": {
+          "brier": 0.93,
+          "nll": 2.625635309283618
+        },
+        "R1": {
+          "brier": 0.8732999999999999,
+          "nll": 2.5118257391392635
+        }
+      }
+    },
+    {
+      "family": "lexeval",
+      "subject_stratum": "stratum-7",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.13040000000000002,
+          "nll": 0.794398815906664
+        },
+        "R1_initial": {
+          "brier": 0.11209999999999999,
+          "nll": 0.7140077368657303
+        },
+        "R1": {
+          "brier": 0.1276,
+          "nll": 0.7731966082560608
+        }
+      }
+    },
+    {
+      "family": "lexeval",
+      "subject_stratum": "stratum-6",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 1.2556,
+          "nll": 3.307969368062155
+        },
+        "R1_initial": {
+          "brier": 1.1553,
+          "nll": 3.0978978983152983
+        },
+        "R1": {
+          "brier": 1.0865,
+          "nll": 2.964001075392537
+        }
+      }
+    },
+    {
+      "family": "lexeval",
+      "subject_stratum": "stratum-6",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.5688,
+          "nll": 1.8189862982340015
+        },
+        "R1_initial": {
+          "brier": 0.5496000000000001,
+          "nll": 1.7662695160615973
+        },
+        "R1": {
+          "brier": 0.5517000000000001,
+          "nll": 1.736455253351171
+        }
+      }
+    },
+    {
+      "family": "liveaopsbench",
+      "subject_stratum": "stratum-5",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 2.1128,
+          "nll": 5.353644047271174
+        },
+        "R1_initial": {
+          "brier": 1.4277,
+          "nll": 3.6729431148155824
+        },
+        "R1": {
+          "brier": 1.3318,
+          "nll": 3.4497995635013727
+        }
+      }
+    },
+    {
+      "family": "liveaopsbench",
+      "subject_stratum": "stratum-5",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 1.8893,
+          "nll": 5.045922633118035
+        },
+        "R1_initial": {
+          "brier": 0.9494000000000001,
+          "nll": 2.674083651538937
+        },
+        "R1": {
+          "brier": 1.0655999999999999,
+          "nll": 2.9434282900847624
+        }
+      }
+    },
+    {
+      "family": "liveaopsbench",
+      "subject_stratum": "stratum-4",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.2793,
+          "nll": 1.0953752933948342
+        },
+        "R1_initial": {
+          "brier": 0.7056000000000001,
+          "nll": 2.038038595944422
+        },
+        "R1": {
+          "brier": 0.4241,
+          "nll": 1.4608903292473585
+        }
+      }
+    },
+    {
+      "family": "liveaopsbench",
+      "subject_stratum": "stratum-4",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.6097000000000001,
+          "nll": 1.9012243964709739
+        },
+        "R1_initial": {
+          "brier": 0.7418,
+          "nll": 2.161154977576168
+        },
+        "R1": {
+          "brier": 0.5593,
+          "nll": 1.79789022395838
+        }
+      }
+    },
+    {
+      "family": "medagentboard",
+      "subject_stratum": "stratum-3",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.016999999999999998,
+          "nll": 0.2688921931058458
+        },
+        "R1_initial": {
+          "brier": 0.12080000000000002,
+          "nll": 0.7490990566770007
+        },
+        "R1": {
+          "brier": 0.12080000000000002,
+          "nll": 0.7490990566770007
+        }
+      }
+    },
+    {
+      "family": "medagentboard",
+      "subject_stratum": "stratum-3",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.0626,
+          "nll": 0.455940736875379
+        },
+        "R1_initial": {
+          "brier": 0.1624,
+          "nll": 0.8944196570559868
+        },
+        "R1": {
+          "brier": 0.11919999999999997,
+          "nll": 0.7479328820975868
+        }
+      }
+    },
+    {
+      "family": "medagentboard",
+      "subject_stratum": "stratum-2",
+      "budget": 0,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.32100000000000006,
+          "nll": 1.0383143084285207
+        },
+        "R1_initial": {
+          "brier": 0.1584,
+          "nll": 0.8533779064640858
+        },
+        "R1": {
+          "brier": 0.15320000000000006,
+          "nll": 0.8307664600775391
+        }
+      }
+    },
+    {
+      "family": "medagentboard",
+      "subject_stratum": "stratum-2",
+      "budget": 7,
+      "n_trials": 4,
+      "n_items": 4,
+      "loss_sums": {
+        "A0": {
+          "brier": 0.15059999999999996,
+          "nll": 0.7358146268793481
+        },
+        "R1_initial": {
+          "brier": 0.40730000000000005,
+          "nll": 1.418553124979658
+        },
+        "R1": {
+          "brier": 0.2929,
+          "nll": 1.1690922653480749
+        }
+      }
+    }
+  ],
+  "availability": "Only aggregate loss cells; no item outcomes, predictions, prompts, or source/subject identifiers. Rechecks aggregation, not raw forecasting accuracy or bootstrap intervals."
+}

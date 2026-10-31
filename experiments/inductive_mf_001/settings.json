@@ -1,0 +1,41 @@
+{
+  "experiment": "INDUCTIVE-MF-001",
+  "seed": 20261027,
+  "encoder": "google/embeddinggemma-2",
+  "encoder_revision": "21ad7b3a498496f5c3e5de0d9afecd706e172a04",
+  "vision_config": null,
+  "audio_config": null,
+  "encoder_dtype": "float32",
+  "encoder_frozen": true,
+  "embedding_dimension": 768,
+  "normalized": true,
+  "embedding_prompt": "Document: title: none | text: ",
+  "context_tokens": 8192,
+  "long_items": "Non-overlapping <=4096-token text chunks, token-weighted mean then L2 normalization. No text discarded.",
+  "latent_dimension": 16,
+  "optimizer": "Adam",
+  "learning_rate": 0.02,
+  "epochs": 200,
+  "device_training_default": "cpu",
+  "threads": 4,
+  "regularization": {
+    "mean_squared_system_vectors_and_biases": 0.01,
+    "mean_squared_mapping_and_projection_weights": 0.001
+  },
+  "metadata": [
+    "foundation_model",
+    "provider",
+    "harness",
+    "reasoning_effort"
+  ],
+  "question_projection": "Linear 768->16, L2-normalized projected vectors",
+  "acquired_intercept_precision": 1.0,
+  "acquired_vector_precision": 16.0,
+  "calibration": "Center question vectors on exactly seven acquired items; common frozen source-ability intercept prior; fit intercept and strongly regularized vector delta.",
+  "held_items": "Existing grouped five-fold ORACLE-GAP-RECONSTRUCTION-001 split; train shared projection on both families' training folds.",
+  "transfer": "One source family only, restricted to the nine shared foundation identities in training and evaluation; exact ORACLE-GAP-004 acquisition and evaluation groups.",
+  "metrics": "Brier and natural-log NLL, equal-family/direction macro; not acquisition ALC.",
+  "generative_inference_calls": 0,
+  "paid_api_calls": 0,
+  "hyperparameter_sweeps": 0
+}

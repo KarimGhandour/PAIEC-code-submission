@@ -1,0 +1,7 @@
+{
+  "written_before_unblinding": true,
+  "time": 1793397331.000244,
+  "broad_advantage": "Positive overall paired Brier gain, clustered95% lower bound>0, >=6/8 families improve, no family loses>0.02, positive gain at both budgets",
+  "no_new_fits": true,
+  "scorer": "scripts/score_ble_luna_xhigh_004.py"
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paiec-r1-audited-ble"
+version = "1.0.0"
+description = "Frozen GPT-6 Luna R1 Bayesian Linguistic Evaluator: source, offline tests and research analyses"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+authors = [{name = "Karim Ghandour"}]
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["r1api", "agent", "config", "comp_pipeline", "comp_pipeline.script", "analysis", "experiments", "experiments.ble_audited_retrieval_002", "experiments.ble_ledger_003", "experiments.inductive_mf_001", "experiments.luna_xhigh_004"]
+package-dir = {r1api = "submission/r1api", agent = "submission/src/agent", config = "submission/src/config", comp_pipeline = "submission/comp_pipeline", analysis = "analysis", experiments = "experiments"}
+
+[tool.setuptools.package-data]
+r1api = ["*.json"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

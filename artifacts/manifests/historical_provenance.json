@@ -1,0 +1,37 @@
+[
+  {
+    "historical_relative_name": "runs/BLE-AUDITED-RETRIEVAL-002/amendments/TRANSPORT-R2/confirmation/analysis_plan.json",
+    "sha256": "f4bf19806a446a7b27698dcc507f8439b2c4a8335392b564262c86c4241a94d5",
+    "record_contents_released": true
+  },
+  {
+    "historical_relative_name": "runs/BLE-AUDITED-RETRIEVAL-002/amendments/TRANSPORT-R2/confirmation/cohort.json",
+    "sha256": "bff734714286e64568fcfc29e7ddcb8e8c5ec961d66f0c703d7c6fee72d3d1b6",
+    "record_contents_released": false
+  },
+  {
+    "historical_relative_name": "runs/BLE-LEDGER-003/cohort.json",
+    "sha256": "9e678fc0e1d2b6134096fd5aab431c6d27fa208bdbe1a9dca8c0721a057a33a7",
+    "record_contents_released": false
+  },
+  {
+    "historical_relative_name": "runs/BLE-LEDGER-003/analysis_plan.json",
+    "sha256": "60cc3c4bee0d579bb9071fe85da738925e473d47c670cc7f8391299633c0c73d",
+    "record_contents_released": true
+  },
+  {
+    "historical_relative_name": "runs/INDUCTIVE-MF-001/settings.json",
+    "sha256": "a604ba87c41cf5686750231ebb599b2e5ba6df4bd6b235e2c8d45f5ee81198bc",
+    "record_contents_released": true
+  },
+  {
+    "historical_relative_name": "runs/BLE-LUNA-XHIGH-004/PLAN.json",
+    "sha256": "5228331931064fbdedd4d66db56e2a02a853118c61b4473406ade7721f5d5a37",
+    "record_contents_released": true
+  },
+  {
+    "historical_relative_name": "runs/BLE-LUNA-XHIGH-004/prediction_freeze.json",
+    "sha256": "ce13603bf041d9d9f62ff019ea46af62f5b1dcbb86e2c8562a1207a6887b1a0c",
+    "record_contents_released": false
+  }
+]

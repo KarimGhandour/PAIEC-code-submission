@@ -1,0 +1,615 @@
+{
+  "classification": "Exploratory historical matched evaluation, not independent confirmation; no fits/routing/blends",
+  "independent_questions": 16,
+  "families": 8,
+  "forecast_pairs": 31,
+  "scores": {
+    "Medium": {
+      "brier": 0.2547770833333334,
+      "nll": 0.7268199257562366
+    },
+    "Xhigh": {
+      "brier": 0.26293333333333335,
+      "nll": 0.7545839921682733
+    },
+    "Medium_initial": {
+      "brier": 0.25414166666666665,
+      "nll": 0.7164969008256701
+    },
+    "Xhigh_initial": {
+      "brier": 0.23888333333333334,
+      "nll": 0.6868935813586071
+    }
+  },
+  "paired_improvement_medium_minus_xhigh": {
+    "gain": -0.008156249999999976,
+    "family_source_group_95": [
+      -0.03740468750000005,
+      0.021776328125000008
+    ],
+    "draws": 2000
+  },
+  "by_budget": {
+    "0": {
+      "scores": {
+        "Medium": {
+          "brier": 0.292925,
+          "nll": 0.8271690589684733
+        },
+        "Xhigh": {
+          "brier": 0.30380625000000006,
+          "nll": 0.8741850122851265
+        },
+        "Medium_initial": {
+          "brier": 0.2803375,
+          "nll": 0.7846621402727483
+        },
+        "Xhigh_initial": {
+          "brier": 0.28810624999999995,
+          "nll": 0.8145244041033632
+        }
+      },
+      "paired": {
+        "gain": -0.010881250000000064,
+        "family_source_group_95": [
+          -0.03242531250000005,
+          0.009056406250000041
+        ],
+        "draws": 2000
+      }
+    },
+    "7": {
+      "scores": {
+        "Medium": {
+          "brier": 0.21818749999999998,
+          "nll": 0.6297701324559054
+        },
+        "Xhigh": {
+          "brier": 0.22619374999999997,
+          "nll": 0.6435961653380315
+        },
+        "Medium_initial": {
+          "brier": 0.22890625,
+          "nll": 0.6504576875109706
+        },
+        "Xhigh_initial": {
+          "brier": 0.194225,
+          "nll": 0.568845118892856
+        }
+      },
+      "paired": {
+        "gain": -0.008006249999999993,
+        "family_source_group_95": [
+          -0.059386562500000024,
+          0.050858124999999955
+        ],
+        "draws": 2000
+      }
+    }
+  },
+  "by_family": {
+    "bertaqa": {
+      "scores": {
+        "Medium": {
+          "brier": 0.095,
+          "nll": 0.3618052771429198
+        },
+        "Xhigh": {
+          "brier": 0.07449999999999998,
+          "nll": 0.31169586038816716
+        },
+        "Medium_initial": {
+          "brier": 0.08940000000000001,
+          "nll": 0.3476633218627147
+        },
+        "Xhigh_initial": {
+          "brier": 0.08940000000000001,
+          "nll": 0.3476633218627147
+        }
+      },
+      "gain": 0.020500000000000018,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.0964,
+            "nll": 0.3632485801207497
+          },
+          "Xhigh": {
+            "brier": 0.06399999999999999,
+            "nll": 0.2800079339783812
+          },
+          "Medium_initial": {
+            "brier": 0.06739999999999999,
+            "nll": 0.2920567097679115
+          },
+          "Xhigh_initial": {
+            "brier": 0.0884,
+            "nll": 0.33824336983341907
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.09359999999999999,
+            "nll": 0.36036197416508986
+          },
+          "Xhigh": {
+            "brier": 0.08499999999999999,
+            "nll": 0.3433837867979531
+          },
+          "Medium_initial": {
+            "brier": 0.1114,
+            "nll": 0.403269933957518
+          },
+          "Xhigh_initial": {
+            "brier": 0.09039999999999998,
+            "nll": 0.35708327389201033
+          }
+        }
+      }
+    },
+    "cruxeval": {
+      "scores": {
+        "Medium": {
+          "brier": 0.373225,
+          "nll": 1.083102004588841
+        },
+        "Xhigh": {
+          "brier": 0.32717500000000005,
+          "nll": 0.9838706792947731
+        },
+        "Medium_initial": {
+          "brier": 0.365425,
+          "nll": 1.0554297530151882
+        },
+        "Xhigh_initial": {
+          "brier": 0.3228,
+          "nll": 0.9522921099977517
+        }
+      },
+      "gain": 0.046049999999999924,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.40345,
+            "nll": 1.227452293463673
+          },
+          "Xhigh": {
+            "brier": 0.41595000000000004,
+            "nll": 1.317643042692854
+          },
+          "Medium_initial": {
+            "brier": 0.40345,
+            "nll": 1.227452293463673
+          },
+          "Xhigh_initial": {
+            "brier": 0.4071999999999999,
+            "nll": 1.254485904098811
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.34299999999999997,
+            "nll": 0.9387517157140092
+          },
+          "Xhigh": {
+            "brier": 0.23840000000000003,
+            "nll": 0.6500983158966923
+          },
+          "Medium_initial": {
+            "brier": 0.3274,
+            "nll": 0.8834072125667035
+          },
+          "Xhigh_initial": {
+            "brier": 0.23840000000000003,
+            "nll": 0.6500983158966923
+          }
+        }
+      }
+    },
+    "engdesign": {
+      "scores": {
+        "Medium": {
+          "brier": 0.36612500000000003,
+          "nll": 0.9486826892136773
+        },
+        "Xhigh": {
+          "brier": 0.41104999999999997,
+          "nll": 1.0553772666411052
+        },
+        "Medium_initial": {
+          "brier": 0.367075,
+          "nll": 0.9411487178404288
+        },
+        "Xhigh_initial": {
+          "brier": 0.33985000000000004,
+          "nll": 0.8825846064963463
+        }
+      },
+      "gain": -0.04492499999999994,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.39925,
+            "nll": 1.0309973140380577
+          },
+          "Xhigh": {
+            "brier": 0.37685,
+            "nll": 1.003467425446544
+          },
+          "Medium_initial": {
+            "brier": 0.36045,
+            "nll": 0.9354013382842539
+          },
+          "Xhigh_initial": {
+            "brier": 0.3172,
+            "nll": 0.8410043026344679
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.333,
+            "nll": 0.866368064389297
+          },
+          "Xhigh": {
+            "brier": 0.4452499999999999,
+            "nll": 1.107287107835666
+          },
+          "Medium_initial": {
+            "brier": 0.37370000000000003,
+            "nll": 0.9468960973966034
+          },
+          "Xhigh_initial": {
+            "brier": 0.36250000000000004,
+            "nll": 0.9241649103582248
+          }
+        }
+      }
+    },
+    "fgbench": {
+      "scores": {
+        "Medium": {
+          "brier": 0.2054666666666667,
+          "nll": 0.6011370288161767
+        },
+        "Xhigh": {
+          "brier": 0.18386666666666665,
+          "nll": 0.5553360879741649
+        },
+        "Medium_initial": {
+          "brier": 0.1871333333333333,
+          "nll": 0.5638205826375636
+        },
+        "Xhigh_initial": {
+          "brier": 0.17696666666666663,
+          "nll": 0.5398294160958672
+        }
+      },
+      "gain": 0.021600000000000036,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.2304,
+            "nll": 0.6539264674066639
+          },
+          "Xhigh": {
+            "brier": 0.25,
+            "nll": 0.6931471805599453
+          },
+          "Medium_initial": {
+            "brier": 0.20249999999999996,
+            "nll": 0.5978370007556204
+          },
+          "Xhigh_initial": {
+            "brier": 0.25,
+            "nll": 0.6931471805599453
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.193,
+            "nll": 0.5747423095209331
+          },
+          "Xhigh": {
+            "brier": 0.1508,
+            "nll": 0.4864305416812747
+          },
+          "Medium_initial": {
+            "brier": 0.17945,
+            "nll": 0.5468123735785353
+          },
+          "Xhigh_initial": {
+            "brier": 0.14045,
+            "nll": 0.4631705338638282
+          }
+        }
+      }
+    },
+    "jetts": {
+      "scores": {
+        "Medium": {
+          "brier": 0.20605,
+          "nll": 0.5952771534417637
+        },
+        "Xhigh": {
+          "brier": 0.2042,
+          "nll": 0.5924381887207191
+        },
+        "Medium_initial": {
+          "brier": 0.21707500000000002,
+          "nll": 0.6194277862181523
+        },
+        "Xhigh_initial": {
+          "brier": 0.20590000000000003,
+          "nll": 0.5987778371937702
+        }
+      },
+      "gain": 0.0018500000000000183,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.19165,
+            "nll": 0.5583285203498775
+          },
+          "Xhigh": {
+            "brier": 0.2234,
+            "nll": 0.635104514454087
+          },
+          "Medium_initial": {
+            "brier": 0.19870000000000004,
+            "nll": 0.57354937285086
+          },
+          "Xhigh_initial": {
+            "brier": 0.2234,
+            "nll": 0.635104514454087
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.22045,
+            "nll": 0.6322257865336499
+          },
+          "Xhigh": {
+            "brier": 0.185,
+            "nll": 0.5497718629873511
+          },
+          "Medium_initial": {
+            "brier": 0.23545000000000002,
+            "nll": 0.6653061995854447
+          },
+          "Xhigh_initial": {
+            "brier": 0.1884,
+            "nll": 0.5624511599334535
+          }
+        }
+      }
+    },
+    "moe_cap": {
+      "scores": {
+        "Medium": {
+          "brier": 0.44405,
+          "nll": 1.172878173952539
+        },
+        "Xhigh": {
+          "brier": 0.5267000000000001,
+          "nll": 1.4186530243391056
+        },
+        "Medium_initial": {
+          "brier": 0.392125,
+          "nll": 1.002353837859199
+        },
+        "Xhigh_initial": {
+          "brier": 0.41339999999999993,
+          "nll": 1.0766667187261816
+        }
+      },
+      "gain": -0.08265000000000006,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.63765,
+            "nll": 1.656593252169721
+          },
+          "Xhigh": {
+            "brier": 0.7092,
+            "nll": 1.9083564128119108
+          },
+          "Medium_initial": {
+            "brier": 0.5337999999999999,
+            "nll": 1.3155445799830408
+          },
+          "Xhigh_initial": {
+            "brier": 0.5977999999999999,
+            "nll": 1.518277134037123
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.25045,
+            "nll": 0.689163095735357
+          },
+          "Xhigh": {
+            "brier": 0.34420000000000006,
+            "nll": 0.9289496358663001
+          },
+          "Medium_initial": {
+            "brier": 0.25045,
+            "nll": 0.689163095735357
+          },
+          "Xhigh_initial": {
+            "brier": 0.229,
+            "nll": 0.6350563034152406
+          }
+        }
+      }
+    },
+    "subjective_qa": {
+      "scores": {
+        "Medium": {
+          "brier": 0.2997,
+          "nll": 0.8124863819864445
+        },
+        "Xhigh": {
+          "brier": 0.32915000000000005,
+          "nll": 0.8790187605029561
+        },
+        "Medium_initial": {
+          "brier": 0.35429999999999995,
+          "nll": 0.9251327678336029
+        },
+        "Xhigh_initial": {
+          "brier": 0.304425,
+          "nll": 0.82453928894898
+        }
+      },
+      "gain": -0.02945000000000003,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.3554,
+            "nll": 0.9498951067208802
+          },
+          "Xhigh": {
+            "brier": 0.35865,
+            "nll": 0.9573026496134505
+          },
+          "Medium_initial": {
+            "brier": 0.4394,
+            "nll": 1.124048453854988
+          },
+          "Xhigh_initial": {
+            "brier": 0.36545,
+            "nll": 0.9724553243611149
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.24400000000000002,
+            "nll": 0.6750776572520087
+          },
+          "Xhigh": {
+            "brier": 0.29965,
+            "nll": 0.8007348713924618
+          },
+          "Medium_initial": {
+            "brier": 0.26919999999999994,
+            "nll": 0.7262170818122178
+          },
+          "Xhigh_initial": {
+            "brier": 0.2434,
+            "nll": 0.676623253536845
+          }
+        }
+      }
+    },
+    "worldcentralbanks": {
+      "scores": {
+        "Medium": {
+          "brier": 0.048600000000000004,
+          "nll": 0.2391906969075306
+        },
+        "Xhigh": {
+          "brier": 0.046825000000000006,
+          "nll": 0.24028206948519565
+        },
+        "Medium_initial": {
+          "brier": 0.06060000000000001,
+          "nll": 0.2769984393385115
+        },
+        "Xhigh_initial": {
+          "brier": 0.058325,
+          "nll": 0.2727953515472451
+        }
+      },
+      "gain": 0.0017749999999999988,
+      "by_budget": {
+        "0": {
+          "Medium": {
+            "brier": 0.029199999999999993,
+            "nll": 0.17691093747816294
+          },
+          "Xhigh": {
+            "brier": 0.03240000000000002,
+            "nll": 0.19845093872383832
+          },
+          "Medium_initial": {
+            "brier": 0.037000000000000005,
+            "nll": 0.21140737322163872
+          },
+          "Xhigh_initial": {
+            "brier": 0.05540000000000002,
+            "nll": 0.2634775028479372
+          }
+        },
+        "7": {
+          "Medium": {
+            "brier": 0.068,
+            "nll": 0.3014704563368982
+          },
+          "Xhigh": {
+            "brier": 0.06125,
+            "nll": 0.28211320024655295
+          },
+          "Medium_initial": {
+            "brier": 0.08420000000000002,
+            "nll": 0.34258950545538425
+          },
+          "Xhigh_initial": {
+            "brier": 0.06125,
+            "nll": 0.28211320024655295
+          }
+        }
+      }
+    }
+  },
+  "family_regressions": [
+    "engdesign",
+    "moe_cap",
+    "subjective_qa"
+  ],
+  "broad_advantage": false,
+  "paid_API_usd": 0,
+  "sessions": 32,
+  "accepted_sessions": 31,
+  "CLI_requests": 127,
+  "latency_total_seconds": 1830.2,
+  "latency_median_seconds": 58.9,
+  "reasoning_tokens": 30949,
+  "inference_failures": 1,
+  "schema_repairs": 0,
+  "six_budget_ALC": false,
+  "model_snapshot_exposed": false,
+  "failed_CLI_requests": 2,
+  "CLI_requests_all_attempts": 129,
+  "failed_CLI_elapsed_seconds": 248.51960591698298,
+  "reasoning_token_scope": "Completed accepted forecasts only; incomplete-request reasoning usage is not exposed.",
+  "complete_question_sensitivity": {
+    "questions": 15,
+    "paired_units": 30,
+    "scores": {
+      "Medium": {
+        "brier": 0.26039375,
+        "nll": 0.7384212748096435
+      },
+      "Xhigh": {
+        "brier": 0.26880000000000004,
+        "nll": 0.7670003136704879
+      },
+      "Medium_initial": {
+        "brier": 0.25903125,
+        "nll": 0.7267058393281975
+      },
+      "Xhigh_initial": {
+        "brier": 0.24504375,
+        "nll": 0.7001014156788465
+      }
+    },
+    "paired": {
+      "gain": -0.00840625000000006,
+      "family_source_group_95": [
+        -0.037589062500000055,
+        0.021267343749999872
+      ],
+      "draws": 2000
+    }
+  }
+}

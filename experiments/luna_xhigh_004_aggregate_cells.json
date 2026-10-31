@@ -1,0 +1,687 @@
+{
+  "aggregation": "equal_family",
+  "methods": [
+    "Medium",
+    "Xhigh",
+    "Medium_initial",
+    "Xhigh_initial"
+  ],
+  "cells": [
+    {
+      "family": "moe_cap",
+      "subject_stratum": "stratum-11",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        },
+        "Xhigh": {
+          "brier": 0.0484,
+          "nll": 0.2484613592984996
+        },
+        "Medium_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        },
+        "Xhigh_initial": {
+          "brier": 0.0484,
+          "nll": 0.2484613592984996
+        }
+      }
+    },
+    {
+      "family": "cruxeval",
+      "subject_stratum": "stratum-14",
+      "budget": 0,
+      "n_trials": 40,
+      "n_items": 2,
+      "loss_sums": {
+        "Medium": {
+          "brier": 16.13800000000002,
+          "nll": 49.0980917385469
+        },
+        "Xhigh": {
+          "brier": 16.638000000000037,
+          "nll": 52.7057217077142
+        },
+        "Medium_initial": {
+          "brier": 16.13800000000002,
+          "nll": 49.0980917385469
+        },
+        "Xhigh_initial": {
+          "brier": 16.288000000000025,
+          "nll": 50.1794361639525
+        }
+      }
+    },
+    {
+      "family": "bertaqa",
+      "subject_stratum": "stratum-8",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.1296,
+          "nll": 0.4462871026284195
+        },
+        "Xhigh": {
+          "brier": 0.10239999999999996,
+          "nll": 0.3856624808119846
+        },
+        "Medium_initial": {
+          "brier": 0.1444,
+          "nll": 0.4780358009429998
+        },
+        "Xhigh_initial": {
+          "brier": 0.10239999999999996,
+          "nll": 0.3856624808119846
+        }
+      }
+    },
+    {
+      "family": "jetts",
+      "subject_stratum": "stratum-4",
+      "budget": 7,
+      "n_trials": 10,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 2.8840000000000003,
+          "nll": 7.717647361342232
+        },
+        "Xhigh": {
+          "brier": 2.656,
+          "nll": 7.245157293430751
+        },
+        "Medium_initial": {
+          "brier": 3.1840000000000006,
+          "nll": 8.379255622378128
+        },
+        "Xhigh_initial": {
+          "brier": 2.544,
+          "nll": 7.019520920107857
+        }
+      }
+    },
+    {
+      "family": "jetts",
+      "subject_stratum": "stratum-12",
+      "budget": 7,
+      "n_trials": 10,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 1.5250000000000001,
+          "nll": 4.926868369330766
+        },
+        "Xhigh": {
+          "brier": 1.044,
+          "nll": 3.7502799663162727
+        },
+        "Medium_initial": {
+          "brier": 1.5250000000000001,
+          "nll": 4.926868369330766
+        },
+        "Xhigh_initial": {
+          "brier": 1.2240000000000002,
+          "nll": 4.229502278561212
+        }
+      }
+    },
+    {
+      "family": "subjective_qa",
+      "subject_stratum": "stratum-3",
+      "budget": 0,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.7108,
+          "nll": 1.8997902134417604
+        },
+        "Xhigh": {
+          "brier": 0.7173,
+          "nll": 1.914605299226901
+        },
+        "Medium_initial": {
+          "brier": 0.8788,
+          "nll": 2.248096907709976
+        },
+        "Xhigh_initial": {
+          "brier": 0.7309,
+          "nll": 1.9449106487222299
+        }
+      }
+    },
+    {
+      "family": "fgbench",
+      "subject_stratum": "stratum-10",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.27040000000000003,
+          "nll": 0.7339691750802004
+        },
+        "Xhigh": {
+          "brier": 0.21159999999999995,
+          "nll": 0.616186139423817
+        },
+        "Medium_initial": {
+          "brier": 0.25,
+          "nll": 0.6931471805599453
+        },
+        "Xhigh_initial": {
+          "brier": 0.20249999999999996,
+          "nll": 0.5978370007556204
+        }
+      }
+    },
+    {
+      "family": "subjective_qa",
+      "subject_stratum": "stratum-3",
+      "budget": 7,
+      "n_trials": 2,
+      "n_items": 2,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.48800000000000004,
+          "nll": 1.3501553145040175
+        },
+        "Xhigh": {
+          "brier": 0.5993,
+          "nll": 1.6014697427849236
+        },
+        "Medium_initial": {
+          "brier": 0.5383999999999999,
+          "nll": 1.4524341636244356
+        },
+        "Xhigh_initial": {
+          "brier": 0.4868,
+          "nll": 1.35324650707369
+        }
+      }
+    },
+    {
+      "family": "bertaqa",
+      "subject_stratum": "stratum-8",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.1444,
+          "nll": 0.4780358009429998
+        },
+        "Xhigh": {
+          "brier": 0.10239999999999996,
+          "nll": 0.3856624808119846
+        },
+        "Medium_initial": {
+          "brier": 0.10239999999999996,
+          "nll": 0.3856624808119846
+        },
+        "Xhigh_initial": {
+          "brier": 0.1444,
+          "nll": 0.4780358009429998
+        }
+      }
+    },
+    {
+      "family": "fgbench",
+      "subject_stratum": "stratum-10",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.2304,
+          "nll": 0.6539264674066639
+        },
+        "Xhigh": {
+          "brier": 0.25,
+          "nll": 0.6931471805599453
+        },
+        "Medium_initial": {
+          "brier": 0.20249999999999996,
+          "nll": 0.5978370007556204
+        },
+        "Xhigh_initial": {
+          "brier": 0.25,
+          "nll": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "family": "engdesign",
+      "subject_stratum": "stratum-1",
+      "budget": 7,
+      "n_trials": 3,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.6912,
+          "nll": 1.961779402219992
+        },
+        "Xhigh": {
+          "brier": 1.5552,
+          "nll": 3.8188970274386618
+        },
+        "Medium_initial": {
+          "brier": 1.2675,
+          "nll": 3.1494663734960335
+        },
+        "Xhigh_initial": {
+          "brier": 1.2675,
+          "nll": 3.1494663734960335
+        }
+      }
+    },
+    {
+      "family": "engdesign",
+      "subject_stratum": "stratum-9",
+      "budget": 0,
+      "n_trials": 3,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 1.7328000000000001,
+          "nll": 4.281349066920438
+        },
+        "Xhigh": {
+          "brier": 1.8723000000000003,
+          "nll": 4.681943244794006
+        },
+        "Medium_initial": {
+          "brier": 1.5552,
+          "nll": 3.8188970274386618
+        },
+        "Xhigh_initial": {
+          "brier": 1.4699999999999998,
+          "nll": 3.6119184129778077
+        }
+      }
+    },
+    {
+      "family": "worldcentralbanks",
+      "subject_stratum": "stratum-2",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        },
+        "Xhigh": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        },
+        "Medium_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        },
+        "Xhigh_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        }
+      }
+    },
+    {
+      "family": "cruxeval",
+      "subject_stratum": "stratum-14",
+      "budget": 7,
+      "n_trials": 40,
+      "n_items": 2,
+      "loss_sums": {
+        "Medium": {
+          "brier": 13.720000000000004,
+          "nll": 37.55006862856039
+        },
+        "Xhigh": {
+          "brier": 9.536000000000016,
+          "nll": 26.00393263586767
+        },
+        "Medium_initial": {
+          "brier": 13.095999999999998,
+          "nll": 35.33628850266816
+        },
+        "Xhigh_initial": {
+          "brier": 9.536000000000016,
+          "nll": 26.00393263586767
+        }
+      }
+    },
+    {
+      "family": "engdesign",
+      "subject_stratum": "stratum-9",
+      "budget": 7,
+      "n_trials": 3,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 1.3068000000000002,
+          "nll": 3.23642898411579
+        },
+        "Xhigh": {
+          "brier": 1.1162999999999998,
+          "nll": 2.8248256195753347
+        },
+        "Medium_initial": {
+          "brier": 0.9746999999999999,
+          "nll": 2.5319102108835865
+        },
+        "Xhigh_initial": {
+          "brier": 0.9075000000000002,
+          "nll": 2.395523088653315
+        }
+      }
+    },
+    {
+      "family": "moe_cap",
+      "subject_stratum": "stratum-11",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.5184,
+          "nll": 1.2729656758128873
+        },
+        "Xhigh": {
+          "brier": 0.6084,
+          "nll": 1.5141277326297757
+        },
+        "Medium_initial": {
+          "brier": 0.48999999999999994,
+          "nll": 1.203972804325936
+        },
+        "Xhigh_initial": {
+          "brier": 0.48999999999999994,
+          "nll": 1.203972804325936
+        }
+      }
+    },
+    {
+      "family": "moe_cap",
+      "subject_stratum": "stratum-6",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.7569,
+          "nll": 2.0402208285265546
+        },
+        "Xhigh": {
+          "brier": 0.81,
+          "nll": 2.302585092994046
+        },
+        "Medium_initial": {
+          "brier": 0.5776,
+          "nll": 1.4271163556401458
+        },
+        "Xhigh_initial": {
+          "brier": 0.7055999999999999,
+          "nll": 1.83258146374831
+        }
+      }
+    },
+    {
+      "family": "worldcentralbanks",
+      "subject_stratum": "stratum-2",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.009999999999999995,
+          "nll": 0.10536051565782628
+        },
+        "Xhigh": {
+          "brier": 0.03240000000000002,
+          "nll": 0.19845093872383832
+        },
+        "Medium_initial": {
+          "brier": 0.02560000000000001,
+          "nll": 0.1743533871447778
+        },
+        "Xhigh_initial": {
+          "brier": 0.03240000000000002,
+          "nll": 0.19845093872383832
+        }
+      }
+    },
+    {
+      "family": "worldcentralbanks",
+      "subject_stratum": "stratum-5",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.04839999999999999,
+          "nll": 0.2484613592984996
+        },
+        "Xhigh": {
+          "brier": 0.03240000000000002,
+          "nll": 0.19845093872383832
+        },
+        "Medium_initial": {
+          "brier": 0.04839999999999999,
+          "nll": 0.2484613592984996
+        },
+        "Xhigh_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        }
+      }
+    },
+    {
+      "family": "moe_cap",
+      "subject_stratum": "stratum-6",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.42250000000000004,
+          "nll": 1.0498221244986778
+        },
+        "Xhigh": {
+          "brier": 0.6400000000000001,
+          "nll": 1.6094379124341005
+        },
+        "Medium_initial": {
+          "brier": 0.42250000000000004,
+          "nll": 1.0498221244986778
+        },
+        "Xhigh_initial": {
+          "brier": 0.4096,
+          "nll": 1.0216512475319814
+        }
+      }
+    },
+    {
+      "family": "engdesign",
+      "subject_stratum": "stratum-1",
+      "budget": 0,
+      "n_trials": 3,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.6627,
+          "nll": 1.9046348173079086
+        },
+        "Xhigh": {
+          "brier": 0.3888,
+          "nll": 1.3388613078852585
+        },
+        "Medium_initial": {
+          "brier": 0.6074999999999999,
+          "nll": 1.7935110022668612
+        },
+        "Xhigh_initial": {
+          "brier": 0.43320000000000003,
+          "nll": 1.4341074028289995
+        }
+      }
+    },
+    {
+      "family": "jetts",
+      "subject_stratum": "stratum-4",
+      "budget": 0,
+      "n_trials": 10,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 2.8840000000000003,
+          "nll": 7.717647361342232
+        },
+        "Xhigh": {
+          "brier": 3.423999999999999,
+          "nll": 8.95181032276547
+        },
+        "Medium_initial": {
+          "brier": 3.025,
+          "nll": 8.022064411361884
+        },
+        "Xhigh_initial": {
+          "brier": 3.423999999999999,
+          "nll": 8.95181032276547
+        }
+      }
+    },
+    {
+      "family": "worldcentralbanks",
+      "subject_stratum": "stratum-5",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.0576,
+          "nll": 0.2744368457017603
+        },
+        "Xhigh": {
+          "brier": 0.044099999999999986,
+          "nll": 0.23572233352106983
+        },
+        "Medium_initial": {
+          "brier": 0.09000000000000002,
+          "nll": 0.35667494393873245
+        },
+        "Xhigh_initial": {
+          "brier": 0.044099999999999986,
+          "nll": 0.23572233352106983
+        }
+      }
+    },
+    {
+      "family": "fgbench",
+      "subject_stratum": "stratum-13",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.11559999999999998,
+          "nll": 0.4155154439616658
+        },
+        "Xhigh": {
+          "brier": 0.09000000000000002,
+          "nll": 0.35667494393873245
+        },
+        "Medium_initial": {
+          "brier": 0.10889999999999997,
+          "nll": 0.40047756659712525
+        },
+        "Xhigh_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        }
+      }
+    },
+    {
+      "family": "bertaqa",
+      "subject_stratum": "stratum-7",
+      "budget": 0,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.04839999999999999,
+          "nll": 0.2484613592984996
+        },
+        "Xhigh": {
+          "brier": 0.02560000000000001,
+          "nll": 0.1743533871447778
+        },
+        "Medium_initial": {
+          "brier": 0.03240000000000002,
+          "nll": 0.19845093872383832
+        },
+        "Xhigh_initial": {
+          "brier": 0.03240000000000002,
+          "nll": 0.19845093872383832
+        }
+      }
+    },
+    {
+      "family": "bertaqa",
+      "subject_stratum": "stratum-7",
+      "budget": 7,
+      "n_trials": 1,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.0576,
+          "nll": 0.2744368457017603
+        },
+        "Xhigh": {
+          "brier": 0.06760000000000001,
+          "nll": 0.3011050927839216
+        },
+        "Medium_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        },
+        "Xhigh_initial": {
+          "brier": 0.07840000000000001,
+          "nll": 0.3285040669720361
+        }
+      }
+    },
+    {
+      "family": "jetts",
+      "subject_stratum": "stratum-12",
+      "budget": 0,
+      "n_trials": 10,
+      "n_items": 1,
+      "loss_sums": {
+        "Medium": {
+          "brier": 0.9490000000000002,
+          "nll": 3.4489230456553166
+        },
+        "Xhigh": {
+          "brier": 1.044,
+          "nll": 3.7502799663162727
+        },
+        "Medium_initial": {
+          "brier": 0.9490000000000002,
+          "nll": 3.4489230456553166
+        },
+        "Xhigh_initial": {
+          "brier": 1.044,
+          "nll": 3.7502799663162727
+        }
+      }
+    }
+  ],
+  "availability": "Only aggregate loss cells; no item outcomes, predictions, prompts, or source/subject identifiers. Rechecks aggregation, not raw forecasting accuracy or bootstrap intervals."
+}

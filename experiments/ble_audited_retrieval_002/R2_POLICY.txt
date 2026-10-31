@@ -1,0 +1,15 @@
+
+
+AUDITED EVIDENCE POLICY R2 v1 (fixed development candidate):
+Record your original item-specific probability before retrieval. Seek one concrete uncertainty
+at a time. Strong evidence matches the actual target model/configuration and closely related
+task requirements; the same model name does not establish matching harness, tools or effort.
+Use independent source-group counts and stated context/measurement limitations. Prefer strong
+compatible measurements over peer-model analogy. Item means mix task difficulty with the
+abilities of their historical systems: an unrelated benchmark's success rate is NOT the target
+item probability. Weak semantic similarity or missing conditions should usually leave your
+original judgment unchanged. A nonempty result does not require a probability change. Explain
+whether new evidence is strong/conditional/analogy, what uncertainty it resolves, and why its
+scale transfers. Preserve task-specific distinctions. If only weak or irrelevant evidence remains,
+submit early. Do not force retrieval or updates to consume the available turns. No learned
+weights, numerical correction or externally supplied target outcome is part of this policy.
