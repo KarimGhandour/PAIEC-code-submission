@@ -1,0 +1,12 @@
+{
+  "approved_architecture.png": {
+    "sha256": "0fff7c0ad422b39bad5b353392421272d2b2ed8a17484a19777d201d3c7a36ff",
+    "approved_manuscript_figure": "1",
+    "source": "approved manuscript, exact decoded image"
+  },
+  "approved_measurement_state.png": {
+    "sha256": "a3d744e6b9712a3c671d7697dc26b5cfe4732978445b5a09ff1bb34539b61665",
+    "approved_manuscript_figure": "7",
+    "source": "approved manuscript, exact decoded image"
+  }
+}

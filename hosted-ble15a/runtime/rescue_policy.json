@@ -1,0 +1,17 @@
+{
+  "policy_id": "BLE_R1_COMPLETION_001_PREPARED_ONLY",
+  "status": "OFFLINE_CANDIDATE_NOT_AUTHORIZED_FOR_EXECUTION",
+  "maximum_valid_actions": 3,
+  "inference_deadline_seconds": 31,
+  "finalization_margin_seconds": 1,
+  "maximum_HTTP_call_seconds": 20,
+  "third_call_minimum_remaining_seconds": 12,
+  "maximum_schema_repairs_total": 1,
+  "maximum_Responses_requests_per_forecast": 4,
+  "system_prompt_and_action_schema": "Original at-most-five-action R1 prefix, Medium effort, no forced earlier submit schema or extra prompt",
+  "return_rule": "Prefer genuine native submit. Otherwise return latest validated updated belief, explicitly labeled intermediate. Execute earlier retrievals unchanged; do not execute a last unused retrieval after action three.",
+  "emergency_rule": "No valid model belief -> Beta(4,4) over matching acquired labels. Otherwise retain the most recent valid BLE belief. Never call either a full native submit.",
+  "spending_policy": "Prepared private per-shared-scope cap at most USD50; no spending or provider change authorized by preparation",
+  "selection_basis": "Fixed first-two/first-three historical results and existing latency evidence; no fitted threshold, benchmark-specific routing or protected outcomes. Deadline/admission constants are engineering budgets, not tuned against outcomes.",
+  "deployment_gate": "Exact ZIP validation, evidence equivalence, deadline/error tests, six budgets, concurrent initialization and explicit fresh user approval. No automatic submission."
+}

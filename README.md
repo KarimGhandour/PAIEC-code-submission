@@ -1,152 +1,68 @@
-# PAIEC R1: Audited Bayesian Linguistic Evaluation
+# PAIEC | BLE 1.5-A, from belief to forecast
 
-**Frozen GPT-6 Luna Standard/Medium R1 source, offline tests, and scientific analysis material.**
-Developed by **Karim Ghandour** for the NeurIPS 2026 Predictive AI Evaluation Competition.
+**Codabench #1032237 · formative Brier ALC 0.1590607804 · nine subject–benchmark groups · 489 distinct pairs · six budgets**
 
-Canonical repository: [KarimGhandour/PAIEC-code-submission](https://github.com/KarimGhandour/PAIEC-code-submission).
-Code release: [v1.0.0-r1](https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1).
+Proposed release tag `v1.5.0-rc.1`. See the [release notes](RELEASE_NOTES.md),
+[release review](RELEASE_REVIEW.md) and [citation metadata](CITATION.cff).
 
-This project studies forecasting an AI system's success on a particular task. It
-adapts the organizer-provided Bayesian Linguistic Evaluator (BLE), credited to
-[Stanford AIMS Foundations](https://github.com/aims-foundations/paiec_baseline), with
-audited historical evidence, structured beliefs and a trusted retrieval coordinator.
-BLE is upstream work. This release does not claim invention of BLE or a causal
-improvement attributable solely to retrieval.
+Predict whether a specified AI system will answer an item correctly without
+running that system. Stanford AIMS Foundations supplied the Bayesian Linguistic
+Evaluator (BLE) baseline. This project audited the evidence boundary, measured
+initial and revised beliefs on a controlled public panel, and delivered a bounded
+Responses API implementation for the competition.
 
-The competition candidate is **R1 Medium**. The acquisition ledger, factor model
-and xhigh experiments are retained as research results, not deployed alternatives.
-No private submission ZIP, API credential, database, task outcomes, model weights
-or personal Codex sessions are included.
+**Start with [BLE 1.5-A Explained](notebooks/01_BLE_1_5A_Explained.ipynb).** It
+works through scoring, the frozen coordinator, filtered SQLite retrieval, the
+public confirmation and the anonymized hosted results. Its synthetic walkthrough
+calls the actual controller and request parser with a mock transport. It needs
+no inference credentials, model weights or private data.
 
-## Architecture
+## Three distinct artifacts
 
-```mermaid
-flowchart LR
-    I[Subject + task + acquired labels] --> P[Frozen R1 prompt / initial belief]
-    P --> L[GPT-6 Luna Standard / Medium]
-    L --> A[Typed JSON action + revised belief]
-    A --> V[Trusted schema and eligibility checks]
-    V --> R[Eight local retrieval tools]
-    R --> E[Permitted historical evidence]
-    E --> L
-    V --> S[Validated submit probability]
-```
-
-Each forecast has fresh conversational state. A forecast permits five scientific
-actions including submission; the fifth action is submit-only. The Python
-coordinator executes retrieval, enforces source exclusions and validates probabilities.
-Luna's belief preceding a retrieval reflects evidence already seen; the next action
-may revise it. Retrieval text is evidence, never authority to change the protocol.
-
-The transport uses the official Responses endpoint, typed JSON actions (not native
-function calling), and exact opaque reasoning-item continuation. An explicit,
-logged Beta(4,4) emergency fallback handles forecast failures. **Fallback is not a
-successful R1 forecast and is not offered as a separate competition candidate.**
-
-## Quick start — no inference or downloads
-
-Python 3.12 is the tested version. From a clean checkout:
-
-```sh
-git clone https://github.com/KarimGhandour/PAIEC-code-submission.git
-cd PAIEC-code-submission
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-dev.txt
-python -m pip install --no-deps --no-build-isolation -e .
-python scripts/check_source.py
-python scripts/offline_smoke.py
-python -m unittest discover -s tests -v
-python scripts/verify_results.py
-python scripts/prepare_data.py --family algotune
-python scripts/scan_release.py
-```
-
-Dependency installation requires internet access; **the tests and result checks
-require neither an API key nor model weights, and make no paid calls**. Smoke
-tests use explicitly invented fixtures and a mocked Responses transport. They
-exercise all six budgets and all eight tools but do not measure predictive accuracy.
-Four inherited tests are explicitly skipped because their private records are not
-redistributed. Test outcomes and limitations are in [the release report](RELEASE_REVIEW.md).
-
-Requirements are the frozen local research versions, not a claim that arbitrary
-future dependency versions preserve numerical or model behavior. Full semantic
-retrieval requires the separately obtained pinned MiniLM encoder.
-
-## Actual source and data readiness
-
-`submission/` contains **34 byte-identical whitelisted members** of the selected
-compact candidate. Its source/hash manifest is [here](artifacts/manifests/selected_source.json).
-There is no replacement prompt or newly designed agent.
-
-The actual entry point is `submission/model.py`:
-
-```python
-predict(input: list[dict], labeled: list = None) -> float
-```
-
-Real R1 forecasting requires a separately authorized **exact derived asset bundle**
-and private configuration. Directly importing the root model before installing that
-bundle fails closed at asset hydration. The offline smoke test explicitly injects
-synthetic assets/transport; it does not conceal this dependency.
-
-The pinned-data preparation command above only prints an inventory. Downloading
-official source files requires explicit flags, source-term acknowledgment and a
-byte limit. The source-file inventory alone cannot regenerate the withheld frozen
-protected-input manifest. See [data provenance](docs/data_provenance.md) and
-[reproduction instructions](docs/reproducibility.md) before enabling any inference.
-
-## Frozen findings
-
-| Experiment | Result | Interpretation |
+| Label | Role | Location |
 |---|---|---|
-| Audited BLE confirmation | A0 0.203883; R1 initial 0.172116; R1 final **0.153728** Brier | 32 fresh source questions, four previously used families, budgets 0/7; historical **Codex CLI**, not hosted API |
-| Ledger extension | Budget-seven gain +0.014907; clustered interval includes zero and family-regression gate fails | **RETAIN R1** |
-| Rank-16 factor transfer | AlgoTune→EDIT: baseline 0.272994, factor 0.340420; reverse: 0.216085, 0.283372 | No strict cross-family improvement |
-| Luna xhigh historical pilot | Medium 0.254777; xhigh 0.262933 | No broad advantage; 31 completed matched units, one missing |
+| hosted-ble15a | Scored Standard/Medium runtime, credential-sanitized | [Frozen source and asset manifest](hosted-ble15a/README_OPENREVIEW.md) |
+| research-r1 | Earlier outcome-sealed research and historical release | [Research README](docs/research_r1_readme.md), [historical source](submission/), [v1.0.0-r1](https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1) |
+| experimental-a2-fast | Separate Fast candidate #1033843, failed with an unclassified error | [Decision ledger](results/decision_ledger.csv) |
 
-These are different panels and estimands. The original confirmation uses an equal
-subject/family/budget-cell macro; ledger/xhigh use equal-family means of those cells.
-They are not all one pooled score, nor official six-budget Brier ALC. Raw A0 versus
-final R1 improvement combines initial-prompt differences (+0.031767) and subsequent
-revision (+0.018388); it does not isolate retrieval causally. One confirmation family
-regressed. Development proceeded under a documented amended rule after the original
-strict development gates failed. See [results and limitations](docs/experimental_results.md).
+The public R1 Brier result **0.153728** and hosted A's **0.1590607804 Brier
+ALC** use different samples and estimands. The hosted score does not expose
+counted runtime, per-forecast API traffic or coverage of native final submits.
 
-`verify_results.py` numerically reproduces released **aggregate point estimates**.
-It cannot independently recreate item-level losses or cluster intervals without
-the withheld records. Generic original scorers/bootstrap functions and a local
-authorized-record scoring command are included.
+## Run the notebook offline
 
-## Layout
+Use Python 3.12 with SQLite FTS5. Install the pinned notebook tools once, then
+run from the repository root with networking disabled.
 
-- `submission/`: exact frozen inference source, schemas, blank configuration template.
-- `experiments/`: protocols, reference results, aggregate cells, ledger and factor methods.
-- `analysis/`: original scoring/cluster-bootstrap functions and separately labeled ALC.
-- `tests/`: inherited regressions and invented public fixtures.
-- `scripts/`: offline smoke, source/result checks, pinned source download, private asset checks and release scan.
-- `artifacts/manifests/`: revision/hash provenance and explicit data availability.
-- `docs/`: methodology, API migration, data, reproduction and publication instructions.
+~~~sh
+python3.12 -m venv .venv-notebook
+. .venv-notebook/bin/activate
+python -m pip install -r requirements-notebook.txt
+python scripts/verify_notebook.py
+python scripts/verify_results.py
+~~~
 
-## Competition deployment
+The notebook check executes in a fresh Jupyter kernel and writes an executed
+copy and self-contained HTML preview under the ignored `outputs/` directory.
+The result checker verifies historical R1 aggregate arithmetic. See
+[Reproduction](docs/reproduction.md) for offline execution and the separate
+opt-in production setup.
 
-The selected compact ZIP SHA-256 is
-`414cc74f858235eb27614b6388adb767d1a54d24a5c150e4afc93730ef30df51`.
-The public repository is **not that private ZIP** and cannot be uploaded unchanged
-as a self-contained evidence-enabled submission. The private deployment includes
-licensed retrieval assets, a private key and spend controls. Source equivalence does
-not establish hosted completion, a hidden-test score, or API reproduction of 0.153728.
-[API migration](docs/api_migration.md) explains the distinction.
+## Inspect or reconstruct scored A
 
-## Attribution and license
+The frozen source under hosted-ble15a/runtime/ comes from the verified
+supplement. Its configuration has an empty key map and paid inference off.
+Exact reconstruction needs the public pinned MiniLM weight and **six
+authorized derived data and firewall files**. The supplement alone fails
+closed on the missing corpus. No independent byte-matching data regeneration
+or public distribution route has been verified. If you have authorized exact
+copies, follow the [reconstruction commands](hosted-ble15a/README_OPENREVIEW.md).
 
-MIT for this code, retaining the original PAIEC Predictor Baselines contributors'
-notice. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-This license does not relicense Measurement DB, benchmark sources, model weights,
-provider services or research records. All dependencies remain under their own terms.
-No institutional affiliation, contact address or endorsement is asserted.
+- [Architecture](docs/architecture.md) and [deployment reliability](docs/deployment_reliability.md)
+- [Data and licenses](docs/hosted_data_provenance.md) and [source equivalence](docs/release_manifest.md)
+- [Scientific claims ledger](docs/scientific_claims.md) and [experiment decisions](results/decision_ledger.csv)
+- [Paper and citation](paper/README.md) and [notebook design rationale](docs/notebook_design.md)
 
-`CITATION.cff` identifies this repository and the `v1.0.0-r1` code release. Prefer
-the exact published commit and treat the release tag as immutable when citing it.
-No DOI is claimed. Historical experimental scores remain distinct from API and
-hosted evaluation results regardless of publication status.
+This is a local release candidate. The public remote and scored artifacts were
+preserved. The supplied technical report and supplementary artifact remain
+subject to scientific/editorial and organizer review as applicable.

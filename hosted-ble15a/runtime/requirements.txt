@@ -1,0 +1,2 @@
+# Uses the evaluator pre-installed numpy, torch and transformers stack.
+# Optional Arrow, pandas, scipy and sentence-transformers packages are not needed.

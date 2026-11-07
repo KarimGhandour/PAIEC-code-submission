@@ -1,0 +1,1832 @@
+{
+  "repo": "aims-foundations/measurement-db",
+  "revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+  "total_bytes": 24218150963,
+  "note": "Raw research input provenance. These files are not the exact derived runtime assets.",
+  "files": [
+    {
+      "path": "abstract_reason/formatted_tables/benchmarks.parquet",
+      "size": 17092,
+      "sha256": "8e2c91805dc91ad86b6710aabf71085156e438a43ed7846b9fcb47d0643c0824",
+      "blob_id": "29884d63657d72d1504b9829ea7f01b26813f444"
+    },
+    {
+      "path": "abstract_reason/formatted_tables/items.parquet",
+      "size": 10549040,
+      "sha256": "bf97f9bff6a6a44a48bba688fd402705888dac81b313135f262262fba44a35d7",
+      "blob_id": "776ad69d09f51b11a30aa9a54147875be6c5f21e"
+    },
+    {
+      "path": "abstract_reason/formatted_tables/responses.parquet",
+      "size": 346118,
+      "sha256": "59893c65449b1223ab6a71ba139e63149786d7660ad64c3f3a34dcacaedddfcc",
+      "blob_id": "1565bc02af2de4a97e0825d50524f1adb38f8cfc"
+    },
+    {
+      "path": "abstract_reason/formatted_tables/subjects.parquet",
+      "size": 6495,
+      "sha256": "040593fa9128e3108866d269b440d11d4565569e196c7686782dfa34a35f7d17",
+      "blob_id": "dd0559831ba0cd813a1ac3bd158f2ffaad9b6d9d"
+    },
+    {
+      "path": "abstract_reason/formatted_tables/traces.parquet",
+      "size": 860491,
+      "sha256": "7a294166b5825b1e972661d28e83480e0d9bf087c95d4da11b552b3749fb5a1b",
+      "blob_id": "f9ad167f76d3120e55b6d173313a90c814f25bab"
+    },
+    {
+      "path": "adaptivestep/formatted_tables/benchmarks.parquet",
+      "size": 17623,
+      "sha256": "0fb51bc5fb75ea72935f35a00ab98da56b3ed847678e60ad9178738ee884f07e",
+      "blob_id": "4bd2c76adbefec3cd2b9ac8108288dc178564d33"
+    },
+    {
+      "path": "adaptivestep/formatted_tables/items.parquet",
+      "size": 1576068,
+      "sha256": "eee9a48a089fd94d5e6b6af33eb4b704f5413e073b400852bb1dff885924fcfe",
+      "blob_id": "57f8ea9e28dc8ff7481238cc5c00deaf877622a4"
+    },
+    {
+      "path": "adaptivestep/formatted_tables/responses.parquet",
+      "size": 18906610,
+      "sha256": "fcc7a28f9e30327cf2af9804b453c87a02ed225cc121f21de8f39bf1ef9dd90f",
+      "blob_id": "bc55ff133adad26f4f092eb8e6adcc51984e7fe5"
+    },
+    {
+      "path": "adaptivestep/formatted_tables/subjects.parquet",
+      "size": 6565,
+      "sha256": "32d6e7b49e34b05c83d9bb5cb0c175cf4e717a42f1a40809465d89e175b19065",
+      "blob_id": "7d5ecf5ad06120e40dabdc08796f1c983ed17e37"
+    },
+    {
+      "path": "adaptivestep/formatted_tables/traces.parquet",
+      "size": 473916054,
+      "sha256": "fc2c3781b97a3772055b459bb91c5362b2825aff9cd58572917382a79bce4db4",
+      "blob_id": "28e71f3d72fd19e20a58987e21c7b0267f10beb8"
+    },
+    {
+      "path": "advprompter/formatted_tables/benchmarks.parquet",
+      "size": 17275,
+      "sha256": "a0d1a827722261553fd74d0ba11aad7edff82b43aa3b6948664253061993eb75",
+      "blob_id": "7c87ac809a126472fbb79074d68ef1bab6d1e815"
+    },
+    {
+      "path": "advprompter/formatted_tables/items.parquet",
+      "size": 29301,
+      "sha256": "48d6bc3ea9d5ab52608a508833103680e9cd01a2517f7f84941bed9e90656528",
+      "blob_id": "bb2d34dc07ad94967c63077073689cfd0c0b2af5"
+    },
+    {
+      "path": "advprompter/formatted_tables/responses.parquet",
+      "size": 8478,
+      "sha256": "0211545a16febe197ed45877be2d68f4c07626ef88e627f2dc538fe9c273cfa6",
+      "blob_id": "9ce8cad2cd749399f0a255d473d1592848bb732e"
+    },
+    {
+      "path": "advprompter/formatted_tables/subjects.parquet",
+      "size": 6622,
+      "sha256": "0394b0c10f9d573383fc4f4d7df2a919f671941788a1356a9bac75bacd837051",
+      "blob_id": "deaf73a9777fd6574a7cddf7a7d9ae5db36efdfd"
+    },
+    {
+      "path": "advprompter/formatted_tables/traces.parquet",
+      "size": 82794,
+      "sha256": "9b6731eedab65cf084e0d5eabadeaa31ee7f0f6e0f564865bb9863115c358398",
+      "blob_id": "e045674aeb1e39f58c1fbf3f5a1b55119e663692"
+    },
+    {
+      "path": "aegis/formatted_tables/benchmarks.parquet",
+      "size": 18113,
+      "sha256": "1451963030814e81990d1a6dcefde6cf27a91a63006aa0d1e405cec9fcad6b54",
+      "blob_id": "11ca331805428f9d1a05a0e47639f16f74a12cb1"
+    },
+    {
+      "path": "aegis/formatted_tables/items.parquet",
+      "size": 1381796,
+      "sha256": "a84bf5bfeac873848f908dfaa3568db5853c5dcfe7d19143f9c710dc781c04f9",
+      "blob_id": "370100140f1f64e47b18034fa15dd8fd7dd06873"
+    },
+    {
+      "path": "aegis/formatted_tables/responses.parquet",
+      "size": 439109,
+      "sha256": "924bb0387b0a90b7d2a09248230e5b75326fc939bc925030f87b23874db4da23",
+      "blob_id": "5caf50b9ac03a505dd737ae03392e18a63ff362c"
+    },
+    {
+      "path": "aegis/formatted_tables/subjects.parquet",
+      "size": 7636,
+      "sha256": "7be08182aab9a9922e2a125e5b00343a9e14a100c7cec564da65957e941b2348",
+      "blob_id": "6828f50cce361c8f2bd3dfe9941ece4740f5f151"
+    },
+    {
+      "path": "aegis/formatted_tables/traces.parquet",
+      "size": 5828335,
+      "sha256": "5e805f108c9091866bb3f97fe1ef915983f213893b8ab2371ce65a67e954dae6",
+      "blob_id": "599da6e91c994e5c2e34331c16a8897c47694e26"
+    },
+    {
+      "path": "afrieval/formatted_tables/benchmarks.parquet",
+      "size": 17608,
+      "sha256": "d4bbb04d1bad19b5d938700ee66849c0f7b0d64e451e3a050fa7064b20264cc6",
+      "blob_id": "7da82858d3131e8c2c5ef714fccbbb64e3c94a14"
+    },
+    {
+      "path": "afrieval/formatted_tables/items.parquet",
+      "size": 7142460,
+      "sha256": "ffb1e4847221e003de23a539687e75da0d438cbc3b9c481b3131384646c0c618",
+      "blob_id": "fbf3c6e8507884bf14be8538e4887da37f7a99cb"
+    },
+    {
+      "path": "afrieval/formatted_tables/responses.parquet",
+      "size": 32763498,
+      "sha256": "9ef4f721f4fe2d105eaa68c5d895a11e98bff849b20ff8409ac7d103e53482c5",
+      "blob_id": "cf24309cc83764e47936ae47f491215dde0bddbc"
+    },
+    {
+      "path": "afrieval/formatted_tables/subjects.parquet",
+      "size": 43949,
+      "sha256": "82d0098f307c00012ddda7b14f9848224475f1eccf2758c0338799c90345e818",
+      "blob_id": "49db84721ab2128143e49ea3896c289286a2294f"
+    },
+    {
+      "path": "afrieval/formatted_tables/traces.parquet",
+      "size": 266517278,
+      "sha256": "b222cb09710b0f1a674130c9ce004300847abead02e2c9e89c425792ff70013d",
+      "blob_id": "5b0e49da9b042ac4143fe2375101dd1cd10dd0f6"
+    },
+    {
+      "path": "afrimedqa/formatted_tables/benchmarks.parquet",
+      "size": 16603,
+      "sha256": "94ee26a8e60e1ca707193962a2723b0dd36fbb577857ebb4ceb521044d41a40f",
+      "blob_id": "3ccefe32120919c9138ae0f56f1c9db926274b2e"
+    },
+    {
+      "path": "afrimedqa/formatted_tables/items.parquet",
+      "size": 19710846,
+      "sha256": "487d3b61c4a001a901583c0ecd9c144cf13a430bb01ff1f34ecfc9fcd418d99e",
+      "blob_id": "9f2f5a63affb15aeb4bff362cb961ff82937b963"
+    },
+    {
+      "path": "afrimedqa/formatted_tables/responses.parquet",
+      "size": 10809179,
+      "sha256": "c8e24b3c79de1a7160a2b43fa77bc61f953db6aeaa1d91b32280d5f65e1c3c64",
+      "blob_id": "686b6cb75b026bdd7f78ae7051b265af1813fdbe"
+    },
+    {
+      "path": "afrimedqa/formatted_tables/subjects.parquet",
+      "size": 8931,
+      "sha256": "09b8bd0426537c59192cdeaac1a5f597f0711661a907ced9bc9c882b488d237c",
+      "blob_id": "be3a714e38c6e8f49f64670b60981981f166f336"
+    },
+    {
+      "path": "afrimedqa/formatted_tables/traces.parquet",
+      "size": 257905227,
+      "sha256": "07f6a9c010e6b814ef4dacca16bb09e37b568e79dabaefba921b87ebf4e9050e",
+      "blob_id": "a20e9b78a15cb25088d795de8f3f2e482f395085"
+    },
+    {
+      "path": "agentic_review_perturbation/formatted_tables/benchmarks.parquet",
+      "size": 17334,
+      "sha256": "282ccb7ff0a6aafc0efb8774bd9ff2a9dc842f1318ac274bcab8e2b81bd52bf0",
+      "blob_id": "4113c26c8ddc85c9281579c7501d93faaac38b4f"
+    },
+    {
+      "path": "agentic_review_perturbation/formatted_tables/items.parquet",
+      "size": 407068,
+      "sha256": "1ec9fc3b6a75e84ac70b5fedc88c2b26cfc9c6c4e3daaa1fc9dcc5dd1f7c7362",
+      "blob_id": "62f5ed57c6448eb94e254965bea4af6c5017a1b7"
+    },
+    {
+      "path": "agentic_review_perturbation/formatted_tables/responses.parquet",
+      "size": 13673,
+      "sha256": "e4ff1e47348981f9e32c2d919d0e85a87aa1a28e55a0b2d3aaed61d3c58295de",
+      "blob_id": "6b72abbbced95edf75dadafcae0fbaee80a55173"
+    },
+    {
+      "path": "agentic_review_perturbation/formatted_tables/subjects.parquet",
+      "size": 6849,
+      "sha256": "12254c0aea7d5ae93af6648a1b08107bb63486fb6093f2dc9b40d8cfc6c5eb93",
+      "blob_id": "5206c4251976d7c8783b6b8e8623cd9ee2cdfa23"
+    },
+    {
+      "path": "agi_elo/formatted_tables/benchmarks.parquet",
+      "size": 16625,
+      "sha256": "c7859745ee6d7eaed727afbbc39f97f7fa10afd90b6fe4a68deec0d7a8f66949",
+      "blob_id": "68fe1cd043839bbb466b6c9b411776ea587b737f"
+    },
+    {
+      "path": "agi_elo/formatted_tables/items.parquet",
+      "size": 4329974,
+      "sha256": "edc7856fab159be49e6f609f1bed5c88a55c79406b2aee421b975ea19d3d3d74",
+      "blob_id": "3346cc244f99e3ea39dafdcbd5966ebdd7b2a235"
+    },
+    {
+      "path": "agi_elo/formatted_tables/responses.parquet",
+      "size": 10391446,
+      "sha256": "e10fdd1ce2c39483dc5c878394e3b9f3561cecd2f2480e773b6a0996b867a0f7",
+      "blob_id": "08a0a47b435550e1f2bb2fb3fffba97e4b053f55"
+    },
+    {
+      "path": "agi_elo/formatted_tables/subjects.parquet",
+      "size": 7996,
+      "sha256": "33a7ee8739d9d05acf1de17069c3791ab92b828edaccc3973fd04d80fcfbb3f5",
+      "blob_id": "f70d38632dbbdda386d86cde3f61451975e87c83"
+    },
+    {
+      "path": "agi_elo/formatted_tables/traces.parquet",
+      "size": 25421657,
+      "sha256": "793cc4ec249f002db1f36817e3e710b3523e6c83f89227f4e22b7517e7fa1c00",
+      "blob_id": "11c9c192b6754dc72c9709a314e55c496eb4d55d"
+    },
+    {
+      "path": "ai2d_test/formatted_tables/benchmarks.parquet",
+      "size": 17367,
+      "sha256": "3701e5ef546cfd7cb54f1f185bb81b27a24de49322b87e81d6066d27a0be80f9",
+      "blob_id": "38db91dff37dcc7f19ca40031d439d1438ee55c7"
+    },
+    {
+      "path": "ai2d_test/formatted_tables/items.parquet",
+      "size": 572124,
+      "sha256": "d76abbef5670284060151add2958d355d3e597efe79ca43a99c303be3d4aff93",
+      "blob_id": "59958da45a3a317894b2a2938023750a81471d03"
+    },
+    {
+      "path": "ai2d_test/formatted_tables/responses.parquet",
+      "size": 19856672,
+      "sha256": "dc0853abdefe687251f6118c2c17f5cb4b982fe315e34b0709477205ff08234f",
+      "blob_id": "00307d14e296a6cc30f3fa82891fc4563ddcd90f"
+    },
+    {
+      "path": "ai2d_test/formatted_tables/subjects.parquet",
+      "size": 21544,
+      "sha256": "1e6d74a9d3de04a7f796be107de1421541186d4e22d008c07a1c33af51a27b88",
+      "blob_id": "cb07b77d6fd7ec295fa48220526408b6e9d16574"
+    },
+    {
+      "path": "ai2d_test/formatted_tables/traces.parquet",
+      "size": 129884768,
+      "sha256": "e6bba7a3c6245cc026bc262f33fbe5692e9e3411d721d7981c4c6c7e76ea4204",
+      "blob_id": "0668e65231c21520706080761da8d57c3d246f06"
+    },
+    {
+      "path": "aider/formatted_tables/benchmarks.parquet",
+      "size": 18138,
+      "sha256": "1d61fae1e56920ebb7509ae3f6f657f2dacb83d31db7cad0b4bc44f96e4d5474",
+      "blob_id": "b0194fdb52411bea7a54399654b42b0f9f9f7076"
+    },
+    {
+      "path": "aider/formatted_tables/items.parquet",
+      "size": 143161,
+      "sha256": "fc547256d7b7ca7d4fc7e4ebe690c586ebf71f82da822c2a847544559ff7fc01",
+      "blob_id": "f932b3eea840555c47eef402725ef605e12c520d"
+    },
+    {
+      "path": "aider/formatted_tables/responses.parquet",
+      "size": 106716,
+      "sha256": "9e3e6e231242d33053373d635919d6c3aaaa74694d988ecf1ade333ae2369100",
+      "blob_id": "ec8f6121fceabda4bcea46409f4284eaca34804c"
+    },
+    {
+      "path": "aider/formatted_tables/subjects.parquet",
+      "size": 9756,
+      "sha256": "1b8a0fa1836de42102779358e156c54999e8f936d4aec6339819265120e5f77d",
+      "blob_id": "8464516c43f8e1629dde28f0bfddef5f71dc86c1"
+    },
+    {
+      "path": "aider/formatted_tables/traces.parquet",
+      "size": 141009127,
+      "sha256": "185d0b0ddc0ef915c568dd8c58bd73e7fe290d20b8ea94192c66d4128891b812",
+      "blob_id": "c8bd3ed282ad9dc8cc892895ac1c6edca188f700"
+    },
+    {
+      "path": "algotune/formatted_tables/benchmarks.parquet",
+      "size": 17522,
+      "sha256": "b037f4938d32844f5df1c3f86cca701e167da568d3605e8e3c4e3c9e2ff0a83b",
+      "blob_id": "2b2a3a4724bde2bcc533c0ef431d72ca8e145dff"
+    },
+    {
+      "path": "algotune/formatted_tables/items.parquet",
+      "size": 508732,
+      "sha256": "b089d8f29fef971f02f45885ecb0a23cb9e9e1dcf249099e1b619f3799611a4c",
+      "blob_id": "acde79973b057b95249feba46df471edfe91afbd"
+    },
+    {
+      "path": "algotune/formatted_tables/responses.parquet",
+      "size": 60286,
+      "sha256": "66454f671fb545f99d012d212dcd82156c2943fced9c5be82318fc674142097f",
+      "blob_id": "9e4e9511e2450f74addbcebe8aaeefbf07bfb971"
+    },
+    {
+      "path": "algotune/formatted_tables/subjects.parquet",
+      "size": 7988,
+      "sha256": "7e8fd95d157c3d49d0ab4956a570a4d6a234c8ec7f49104af472a22d08286cf4",
+      "blob_id": "3bc7598a6df0e992e6c660b9af8a0f379578fc11"
+    },
+    {
+      "path": "algotune/formatted_tables/traces.parquet",
+      "size": 143044080,
+      "sha256": "77d5ff01b606baa29b51fbe2305e05c5f311a002af07f2ab33d7546619b156e4",
+      "blob_id": "7623c9c4427ebd8b105fc9f787c938fa548bdbe9"
+    },
+    {
+      "path": "alignment_faking/formatted_tables/benchmarks.parquet",
+      "size": 17775,
+      "sha256": "35ea703afc682a9400758cf6042c92213aec4fcc315f39c38a9fa618bd38cb5b",
+      "blob_id": "314140845c6ceaae2b0ade79155fb55206bdccca"
+    },
+    {
+      "path": "alignment_faking/formatted_tables/items.parquet",
+      "size": 2821008,
+      "sha256": "07422da21d2cb296b9ba1d8737a5e1ac8c76d51f5beff9602221f06aa5786204",
+      "blob_id": "2e7e436b681a54c92928c7c862fafc44d753feec"
+    },
+    {
+      "path": "alignment_faking/formatted_tables/responses.parquet",
+      "size": 42954219,
+      "sha256": "944469057d9c5499e5d24ee00804b3652a217d7cf5fbffa8d20f747e3cb1769b",
+      "blob_id": "26379102c957ecbe3ff51147376683d44e283fbc"
+    },
+    {
+      "path": "alignment_faking/formatted_tables/subjects.parquet",
+      "size": 148183,
+      "sha256": "777921d21feb3301cd5b295b0f2b408f6515c0c8d447b5b938367998dfae5c7c",
+      "blob_id": "c5d52432913a4537308b506396af51d3caf2058f"
+    },
+    {
+      "path": "alignment_faking/formatted_tables/traces.parquet",
+      "size": 18505107601,
+      "sha256": "66b9e074263b5a700d3b0e9bed04d6b7621469ab96636377265fd8cdb5adeccd",
+      "blob_id": "bdcced7face71c1786e5b6728da08350e18b4d10"
+    },
+    {
+      "path": "alpha_sql/formatted_tables/benchmarks.parquet",
+      "size": 17205,
+      "sha256": "1908074ff2a68572c6fd9b3f0dffe4e35d4a5bc8a9b62709938d7866ecc1de13",
+      "blob_id": "a8b21adc77c31cdad1c70938f595ff9c472db4ff"
+    },
+    {
+      "path": "alpha_sql/formatted_tables/items.parquet",
+      "size": 927621,
+      "sha256": "df83ad39d0b91054ba9f70de59b4393afec9e8b1b5ec989af54b5571be86d3a9",
+      "blob_id": "df2ce2be6c6cd9a7b2e7a9ef69c40671907ffa83"
+    },
+    {
+      "path": "alpha_sql/formatted_tables/responses.parquet",
+      "size": 62474,
+      "sha256": "772a7fd827e50a4d89504c4605a2b5e2b917dc30ff1d8385d7072ff691cce609",
+      "blob_id": "9a33b296ce9d3487c0abe163f3aeb7df10cad991"
+    },
+    {
+      "path": "alpha_sql/formatted_tables/subjects.parquet",
+      "size": 7458,
+      "sha256": "17c199cf2b0b3c356812965d0f7b7545579aa728bd23634b4eaf05ea88ac9ba5",
+      "blob_id": "05cf7fee4a07f9f4cc81188245c8d8be7e287689"
+    },
+    {
+      "path": "alpha_sql/formatted_tables/traces.parquet",
+      "size": 469425,
+      "sha256": "aa61f29dfad95c6d6cf83609717474d388e3b0551828ff311d2600408059c74b",
+      "blob_id": "edb839f77b5e25fbf9dbed1b0974ae147a91e3b2"
+    },
+    {
+      "path": "appworld/formatted_tables/benchmarks.parquet",
+      "size": 17262,
+      "sha256": "d0aa40dd5d3e1652d99e58645475620ad4c564005bdc6ff454b11cdd08ad5145",
+      "blob_id": "27bce59f1b426627769bacea24d410f749880c58"
+    },
+    {
+      "path": "appworld/formatted_tables/items.parquet",
+      "size": 253157,
+      "sha256": "016ed101f006d6ce8d2dc43dd82f1ceacc53c0a5b28a8e63752a7049588f6729",
+      "blob_id": "a4076e3caa397ee55c26c7a9186de21594731b81"
+    },
+    {
+      "path": "appworld/formatted_tables/responses.parquet",
+      "size": 229064,
+      "sha256": "a15f0c5f85d435d9fa90ee17b9e2cf303e9439dd2b85e0f151534173e21f1f14",
+      "blob_id": "713fef0f241e452848e07a0165b77d96804bf17e"
+    },
+    {
+      "path": "appworld/formatted_tables/subjects.parquet",
+      "size": 7506,
+      "sha256": "39700cd3eca5efea9ca4e29dacb9a30372a99b35fc22a45157b7853e84dc730d",
+      "blob_id": "4547184939bf443660a6ff2dc87f684c7599f296"
+    },
+    {
+      "path": "appworld/formatted_tables/traces.parquet",
+      "size": 246232578,
+      "sha256": "7698302401cf04e3208f42f735e2a5362ba360ebe0f84421c796cf21b0573ddf",
+      "blob_id": "2d0e35104560a126d9cfb640d7da4b2644100ef8"
+    },
+    {
+      "path": "auditing_sabotage_bench/formatted_tables/benchmarks.parquet",
+      "size": 17268,
+      "sha256": "286e5634304815b9373c65eba0e322a69587002b27296d896b4513f0d9958e32",
+      "blob_id": "d19f93a8d294d70485f79fd2bfd2f55bc11b6a5d"
+    },
+    {
+      "path": "auditing_sabotage_bench/formatted_tables/items.parquet",
+      "size": 1128733,
+      "sha256": "cc6fea1982af20ec867388d56ff96bf92271217c968a591894f92d02ea165850",
+      "blob_id": "74f19fc50bc2ad956a32da71ca7432004bfe444d"
+    },
+    {
+      "path": "auditing_sabotage_bench/formatted_tables/responses.parquet",
+      "size": 42946,
+      "sha256": "5c4ba281202a468c4b930eaa67a0640defe269ab14a8f97d8fb58c6fbac1de88",
+      "blob_id": "3ae211ac52ef073352355c1a438824561afce796"
+    },
+    {
+      "path": "auditing_sabotage_bench/formatted_tables/subjects.parquet",
+      "size": 8905,
+      "sha256": "55836cf422f6ac0fc6c07fd6e644702f526a751c88f7339b26ad3612e7a92053",
+      "blob_id": "e00b81d6b55a883fc6391f692344508645d93b49"
+    },
+    {
+      "path": "auditing_sabotage_bench/formatted_tables/traces.parquet",
+      "size": 3232489,
+      "sha256": "cd1f6366259f5a4bc474a4886403f9df3685d496383ce55e436565f08d98af39",
+      "blob_id": "09baa199b931c73e59ac6d7793116bf3662a2b40"
+    },
+    {
+      "path": "averimatec/formatted_tables/benchmarks.parquet",
+      "size": 17410,
+      "sha256": "6117952f9cba359b8e78ababf96d52bd5ff51ddad6e19807fe02e6ae3f90957e",
+      "blob_id": "6dea53495e9fe070442ebcce7048d2ecc6248761"
+    },
+    {
+      "path": "averimatec/formatted_tables/items.parquet",
+      "size": 57957,
+      "sha256": "67f63eadd557caf439bcd2a1be7311d40ed164de998539ca421205c3132c5e24",
+      "blob_id": "508c36657b92b2bb07234ae4959b1c01607b518c"
+    },
+    {
+      "path": "averimatec/formatted_tables/responses.parquet",
+      "size": 11136,
+      "sha256": "af1d2805e3505d9a489357c1a875f761c85585c7b58c6df880f86f6852bc226c",
+      "blob_id": "5c390b6d1ec0b283103bc4b440566259f9f1b840"
+    },
+    {
+      "path": "averimatec/formatted_tables/subjects.parquet",
+      "size": 7456,
+      "sha256": "d6da6a09cdd230081b872b7086b201c582f3aa00cdb19103dd302bb77b30962b",
+      "blob_id": "a74ad54201fccd00c6b68d787f36fccd02fa754d"
+    },
+    {
+      "path": "averimatec/formatted_tables/traces.parquet",
+      "size": 10878875,
+      "sha256": "c0763821cc15654700802996740141a0caa91fdca8d075d4ee5a0c384aaa069f",
+      "blob_id": "3514765d6dbd90e5197784e2348bfa8c4294e4e9"
+    },
+    {
+      "path": "babilong/formatted_tables/benchmarks.parquet",
+      "size": 17101,
+      "sha256": "2ec32907221928244079fb0087e7061f11810b6b435b8e4d581e5d120be8b74a",
+      "blob_id": "f29a0dce45620295ab6f194873bc7a7e1b49831d"
+    },
+    {
+      "path": "babilong/formatted_tables/items.parquet",
+      "size": 45079999,
+      "sha256": "6cffcbd3d0ef436103c416d909251103d632c8d81a85a5eeaa9297f884489c9b",
+      "blob_id": "56de3a2893e60045075b4d20bde39af8edbf4839"
+    },
+    {
+      "path": "babilong/formatted_tables/responses.parquet",
+      "size": 75589828,
+      "sha256": "4239cdb64fbd26be2b7bfd4ba4b7c1f806658b9080126c797913b36bdfaf6efd",
+      "blob_id": "2813eeb476d4ff0cdcf736aa94913d2f60f5dd93"
+    },
+    {
+      "path": "babilong/formatted_tables/subjects.parquet",
+      "size": 14429,
+      "sha256": "7057ebdae4d4d646975820e22f70a0750260b11a25c984038ddf35682b348928",
+      "blob_id": "00cc67368b6ae5ba0e4415665769d5c1c68fc230"
+    },
+    {
+      "path": "babilong/formatted_tables/traces.parquet",
+      "size": 360359591,
+      "sha256": "bfcf18c2df933ed09aed1d8f8d661ae1e876c4e822f4f86e9096c6d82c2996e6",
+      "blob_id": "34d3e92a9000a728d4cb7724ae87d929aa2b6f5f"
+    },
+    {
+      "path": "bbq/formatted_tables/benchmarks.parquet",
+      "size": 16461,
+      "sha256": "b3cedc9a7b1a469df95631cb8386d5186742d2e9e4055d765f496da5f3041e6f",
+      "blob_id": "6234bbe9cac243ca00460c2acfd32fe469657893"
+    },
+    {
+      "path": "bbq/formatted_tables/items.parquet",
+      "size": 28377321,
+      "sha256": "0d2c57557872899c7e31e5e974bca0d0667f4ff42a904889a236104e8e2d0248",
+      "blob_id": "9ba02e206e5b366b7b4e009581c8b482bdce21e8"
+    },
+    {
+      "path": "bbq/formatted_tables/responses.parquet",
+      "size": 14243974,
+      "sha256": "4b1ad142c0652475e807369f87d94f1d19d07a2e1d1b5b3c357f270faa3256d0",
+      "blob_id": "3c5ec801060cc8d0fc9400eae5c4d193d9e33ec5"
+    },
+    {
+      "path": "bbq/formatted_tables/subjects.parquet",
+      "size": 7161,
+      "sha256": "63c7fa4d4e0de201f7d6277f178aaf97aab2f610e0aeed74197cc475a29c0905",
+      "blob_id": "e6df2a285e7e83b426650230b0ec1ac6d62332f1"
+    },
+    {
+      "path": "bbq/formatted_tables/traces.parquet",
+      "size": 121446662,
+      "sha256": "f51fd945f34b3c0d22a581944fb84fe26a0df91556aed96d56069bc7239af8bd",
+      "blob_id": "80850df577bb9cf174d08a2bd0a8ab2579a77aa8"
+    },
+    {
+      "path": "beavertails/formatted_tables/benchmarks.parquet",
+      "size": 16896,
+      "sha256": "be264ef70fffb88b150cbc25f0066668bc3091cfccde9e429cd7a4493ebac64d",
+      "blob_id": "a8f3245474952e74d5c35f4910635fc54f66b215"
+    },
+    {
+      "path": "beavertails/formatted_tables/items.parquet",
+      "size": 37975,
+      "sha256": "68130bd4335f2b1ac3a825a0ff4c001dc75694e77043772c425c9dce77847805",
+      "blob_id": "784fea1508fde7bbf63689cb9eb2beccccc4bf46"
+    },
+    {
+      "path": "beavertails/formatted_tables/responses.parquet",
+      "size": 45008,
+      "sha256": "7367901e99aadfde4e9c6ad444413fbb97cabdb097bfb8454793817dad67c158",
+      "blob_id": "7e62422e08b2c9b3a0218d466a9b6bd37ba34b86"
+    },
+    {
+      "path": "beavertails/formatted_tables/subjects.parquet",
+      "size": 6977,
+      "sha256": "2fa69259ea06562298346133c9a0ee65a6b2c3082e09142b232233ce1ade53c7",
+      "blob_id": "ac4a24c9158d30e43ad5ee1a3559490bebbc2adc"
+    },
+    {
+      "path": "beavertails/formatted_tables/traces.parquet",
+      "size": 654706,
+      "sha256": "4b5c515d4cbb675fccf72a176222515e5ae4f9f2fc4f2531904499ad41d56f22",
+      "blob_id": "3df7f1dfe17ef276da41c9c5e62ef6ecde80394a"
+    },
+    {
+      "path": "benger/formatted_tables/benchmarks.parquet",
+      "size": 17338,
+      "sha256": "42f33c2e4e6c4d75e9b5a75a32f4bfb07da58a5583bd9473f89d0faca8c07941",
+      "blob_id": "6a05f0891198b01e2a31a7cb9edc1e0e413a6da6"
+    },
+    {
+      "path": "benger/formatted_tables/items.parquet",
+      "size": 4376647,
+      "sha256": "b3633d6de0d12c53d448b5cb7e256f6d1e581a2e221ec642d60a58ccd02bfd1f",
+      "blob_id": "0d1a67d405f639e1e7d491e4a8a5efefd1d05fbf"
+    },
+    {
+      "path": "benger/formatted_tables/responses.parquet",
+      "size": 208497,
+      "sha256": "ef3e19ea78134dfe20d1a86bf3559531ae33292a2611c52a79414b7dec7f41b4",
+      "blob_id": "b80614bbd9ddca9a20b8037a0e3578ce4148cca7"
+    },
+    {
+      "path": "benger/formatted_tables/subjects.parquet",
+      "size": 9088,
+      "sha256": "eed8ff929c05f66a464262dae1eadf279313a8770605ba346414a1a2f2581745",
+      "blob_id": "5828322feed9cdd7f078ce30c4ca88188b018286"
+    },
+    {
+      "path": "benger/formatted_tables/traces.parquet",
+      "size": 663305633,
+      "sha256": "ae016130302718261e1dcef174b79481b2f3fcd0776a376944fefffd47d3df84",
+      "blob_id": "cd36851a21d9430300ad8c7c829070cb7dc8b6b8"
+    },
+    {
+      "path": "bertaqa/formatted_tables/benchmarks.parquet",
+      "size": 16888,
+      "sha256": "f7a577a4ba050be0a4150d33dc903bdfe677b8c682831c550a9a6fd9a85a8a45",
+      "blob_id": "49e410c4bf20b9eab978aa5386c3ea5088660588"
+    },
+    {
+      "path": "bertaqa/formatted_tables/items.parquet",
+      "size": 25596401,
+      "sha256": "5bab19ecdfd45fe4fcb3bc937edd39768f219004a685739b278d51422198da36",
+      "blob_id": "cea4b1f1d6ff4245518d2a7d6194407b9bdee9c5"
+    },
+    {
+      "path": "bertaqa/formatted_tables/responses.parquet",
+      "size": 2143408,
+      "sha256": "bdd7c044e384ea1db7c9a234076ae024db39f3f7691fb52caabd5761b910c80e",
+      "blob_id": "1b11b1c1c0b9fb65c9bfd9aefd7dcf01cae5fd8e"
+    },
+    {
+      "path": "bertaqa/formatted_tables/subjects.parquet",
+      "size": 7282,
+      "sha256": "0ded33a6193ca7c496e188630d163ed62f2c89dd49a85e5ceb55eb88789bac07",
+      "blob_id": "59878cd131b7aed0e2f3d24c6ff511b3989c72a9"
+    },
+    {
+      "path": "bertaqa/formatted_tables/traces.parquet",
+      "size": 37666204,
+      "sha256": "423252b3c6da87cd10af7a4ec6ef53c5124f386df4f82ee8e6321a1c7ef47506",
+      "blob_id": "665d6748ac93de2c7aa51e7a2e7029e673a70b13"
+    },
+    {
+      "path": "bird_sql/formatted_tables/benchmarks.parquet",
+      "size": 17107,
+      "sha256": "099a9b3c37f70fd2d67288ad8627d5c574cdc1744d7d8ad68e380a495c320505",
+      "blob_id": "143200b1e8dbcc9b0942967360341ca17d517cfe"
+    },
+    {
+      "path": "bird_sql/formatted_tables/items.parquet",
+      "size": 318389,
+      "sha256": "d4ff41c32631b47583127e0df84a78d9dc90bb16fb430284d9beb6e7a8898f7c",
+      "blob_id": "ab6e12cb66dc63e373e04aa01eb3bc3d5ff4af45"
+    },
+    {
+      "path": "bird_sql/formatted_tables/responses.parquet",
+      "size": 857770,
+      "sha256": "a6d47ab7cb8b5f654b9ffcf8653890c8272cf2094696b7917ed97e9ed2e73493",
+      "blob_id": "3acf598652f267a00c440900f27494f734c9c5af"
+    },
+    {
+      "path": "bird_sql/formatted_tables/subjects.parquet",
+      "size": 13394,
+      "sha256": "5344027c99a304c6de848191ea82d481635d425454661886013a2656d3be0a65",
+      "blob_id": "68964ee6ecf989a66d25c8e14bf4fd45c93a2bef"
+    },
+    {
+      "path": "bird_sql/formatted_tables/traces.parquet",
+      "size": 38125856,
+      "sha256": "b4ac91c8e3fd57a3b47b36a160cf075919309a7ad65d0f5fdbf9d5d7a61aae85",
+      "blob_id": "57a3a0975667491aa93794b302333ff426296704"
+    },
+    {
+      "path": "brace/formatted_tables/benchmarks.parquet",
+      "size": 17693,
+      "sha256": "6d8bc0fd3b6d5b2477d05a3545da036cf903ecc9ba9d80ac63347a39fc185972",
+      "blob_id": "97fd964fb1230d29eee0da9d87d73f0f1f2945e2"
+    },
+    {
+      "path": "brace/formatted_tables/items.parquet",
+      "size": 1771588,
+      "sha256": "6d35500bec530cbc6e7b007306210e6e0afbaf2a0b1e28403904f236ce0cd41c",
+      "blob_id": "78e91a5dfbe19e3be6922f0b97a529fce5169e21"
+    },
+    {
+      "path": "brace/formatted_tables/responses.parquet",
+      "size": 5785374,
+      "sha256": "f87ba5941185ef220f3c08b127382dff114fb03eba0bb9a0b83a157765c28620",
+      "blob_id": "074c2e824a9255319bdb835bd9f113753cd6a925"
+    },
+    {
+      "path": "brace/formatted_tables/subjects.parquet",
+      "size": 7527,
+      "sha256": "a6f226083f72cb3035ad4404cae7afbfbb325fda415fcd402349b569d7f79837",
+      "blob_id": "75c7b47e06154f8daa7f3bfab3ff2177021492ae"
+    },
+    {
+      "path": "brace/formatted_tables/traces.parquet",
+      "size": 69033763,
+      "sha256": "6acf13888f4aabed22092e595d16a223c23ba4f96a7a1eab9d19750dc1a4b7d1",
+      "blob_id": "d45d3456590f413fda3eea6a1812ee42959a3c86"
+    },
+    {
+      "path": "braveguard/formatted_tables/benchmarks.parquet",
+      "size": 16968,
+      "sha256": "c5a246335adbcc31b038b5e2f73853dc4eaa57046ee3499db6ea1948504ff5c4",
+      "blob_id": "b76b05a902585eb1a4dcb49c6555c1391394acc9"
+    },
+    {
+      "path": "braveguard/formatted_tables/items.parquet",
+      "size": 2454942,
+      "sha256": "989bb7524e922b6c6d4b44282c49966baa7705a9f30aa429382b4be4a2adda1c",
+      "blob_id": "fffec25906042543b93c07dc745a94e95d3c2955"
+    },
+    {
+      "path": "braveguard/formatted_tables/responses.parquet",
+      "size": 25755,
+      "sha256": "2080ecfc8c8152d5e1fb6383b0a0ff916e15b2cb9cff55568a73acc1a35e823c",
+      "blob_id": "4966241d395cb61ccb31446d4d8eda703ffa827d"
+    },
+    {
+      "path": "braveguard/formatted_tables/subjects.parquet",
+      "size": 11066,
+      "sha256": "c243045788bc088eecd4e0e9cb5e83778cd543464fb67a7783a8993edf1ec9ba",
+      "blob_id": "4a8e7b1316d00b007107c790ecc4e47969e66d37"
+    },
+    {
+      "path": "braveguard/formatted_tables/traces.parquet",
+      "size": 4349544,
+      "sha256": "c2d86a05d015e2e0bd8604f391f350ebcdb87455c0585667935dd878fcb36a8e",
+      "blob_id": "3dee3aa98613695a41e82e205091fc21679e0b2b"
+    },
+    {
+      "path": "bridging_gap/formatted_tables/benchmarks.parquet",
+      "size": 18023,
+      "sha256": "3b2e1b1f84a53d26a6d0837d67c42b96578092cd5aec01c78a805fbae994ff4a",
+      "blob_id": "6007335bece6e011a5090039f1f74f326d95dbdc"
+    },
+    {
+      "path": "bridging_gap/formatted_tables/items.parquet",
+      "size": 39912899,
+      "sha256": "b17b683bc1685c46d5d63a0f8075108e30ff6ed5a321253d5a63e46c30f6885f",
+      "blob_id": "9585b98943792f32329c51518346cadd89d40183"
+    },
+    {
+      "path": "bridging_gap/formatted_tables/responses.parquet",
+      "size": 165534304,
+      "sha256": "552362a9d2f2d02ad95e19e942580bad2861f76be152837e4b985ef10c1dffd4",
+      "blob_id": "038d0144fae209438636d8c1f5d9a97fb86fbb9c"
+    },
+    {
+      "path": "bridging_gap/formatted_tables/subjects.parquet",
+      "size": 30341,
+      "sha256": "2d1c9bc7043a70e7264fb45ad7330de2c144f9eceefac3b3fc4763c18ac3204c",
+      "blob_id": "3a8c2052e717bbca238e03622fd8fc9bcacd5242"
+    },
+    {
+      "path": "bridging_gap/formatted_tables/traces.parquet",
+      "size": 527460082,
+      "sha256": "13e7ea5ddc970a594b4c72059b61b9f2a73629b548684c55e0f15d4128140366",
+      "blob_id": "5b7bf0de467416820693142badb67ac609c46fd5"
+    },
+    {
+      "path": "causal_axioms/formatted_tables/benchmarks.parquet",
+      "size": 17319,
+      "sha256": "f519d6071af070255f0823e4add40d2f3d76f7d1f21e04e9f419de035c240bb4",
+      "blob_id": "2d9c6c6e335a07ce6a0b49df1412730e105c2922"
+    },
+    {
+      "path": "causal_axioms/formatted_tables/items.parquet",
+      "size": 391141,
+      "sha256": "3a2f09b6de15a40b2d28c80183bceba582d7b42417216af6674eee7ea9c79d96",
+      "blob_id": "4b590315e90817a5328af6a63af09e027797a44b"
+    },
+    {
+      "path": "causal_axioms/formatted_tables/responses.parquet",
+      "size": 265395,
+      "sha256": "743ff26e695e7e297723a0ae90d9ef26b188e0bb104d3f7deee98daafe4980b7",
+      "blob_id": "9533edc3f5a36fb7dcdbbb3ea5c640ccd7499168"
+    },
+    {
+      "path": "causal_axioms/formatted_tables/subjects.parquet",
+      "size": 6747,
+      "sha256": "20c3d793a848a80c824702a8b8b1075a763854c1091fa634157fc24e84cbd386",
+      "blob_id": "e2775d533d1f6bc5faed92de3e3a93cad1bc6e22"
+    },
+    {
+      "path": "causal_axioms/formatted_tables/traces.parquet",
+      "size": 266697,
+      "sha256": "72fad8424270de1ce11b191a0e6527f06846512caaa30468d137b0495ed25c81",
+      "blob_id": "bd5e3745635e67bed2a7f142bbb11955a4dc1852"
+    },
+    {
+      "path": "cellverse/formatted_tables/benchmarks.parquet",
+      "size": 16547,
+      "sha256": "97443ed363c9e12511aec20ca6a0bf9686ced36e71cf98ad875834c56b6db1ea",
+      "blob_id": "b8ecad45fddd707bed978c7353a397dd06bd4673"
+    },
+    {
+      "path": "cellverse/formatted_tables/items.parquet",
+      "size": 924840,
+      "sha256": "ccc9382ccaf846ad4a6ea3a8ec3c69c6a4bb31733e7307758817efebef030653",
+      "blob_id": "f251bdb2b751230fd02549c9eada52e3fb0561ae"
+    },
+    {
+      "path": "cellverse/formatted_tables/responses.parquet",
+      "size": 33360,
+      "sha256": "b3876e4bf8949da97607b37df8df063358d611b749d285e3227f31e5bb389d23",
+      "blob_id": "924338282e94d69d3ab6369d38a4e9d01ee9870f"
+    },
+    {
+      "path": "cellverse/formatted_tables/subjects.parquet",
+      "size": 6536,
+      "sha256": "8f44dc8c4573a3c6034c030f9cec7e3362820eb5c4f2abfcbaacbb1641b6b6ae",
+      "blob_id": "c2b9465eec000d3a50f27bd40a374890ac9f28de"
+    },
+    {
+      "path": "cellverse/formatted_tables/traces.parquet",
+      "size": 250169,
+      "sha256": "77f78dab5b23e3c1c8c26b962e27e074dae858776a00e30c026982bef133af1c",
+      "blob_id": "174527198f4ad99adf5dec23005a2d9ca5d52f54"
+    },
+    {
+      "path": "ceval/formatted_tables/benchmarks.parquet",
+      "size": 17331,
+      "sha256": "9549a56280fab9aeaf4bda4cff05d5d1cb41c80799ba963e93225fe9d5607b05",
+      "blob_id": "2c3f8b83a309d06504f861033d7e063ee6379f95"
+    },
+    {
+      "path": "ceval/formatted_tables/items.parquet",
+      "size": 2844461,
+      "sha256": "ef2e9ae4d8602732883393f2cd2e63912dfe0cf363d3efc8dede2913a9908b50",
+      "blob_id": "56ef572002d892182c79c8866f5356f07ac0677d"
+    },
+    {
+      "path": "ceval/formatted_tables/responses.parquet",
+      "size": 351210,
+      "sha256": "306c1a7b5b16b5286ea0d5f4d7ce53909936f1bf06d81b856ba8d4cbd37c3c28",
+      "blob_id": "c9dc1520ca5494dbffefc2c6cf585bdf8958611a"
+    },
+    {
+      "path": "ceval/formatted_tables/subjects.parquet",
+      "size": 7290,
+      "sha256": "57f1e1c2ffd32b44ddb5b31f277a5b56b16309f42fc3e43e7188eb636da5f001",
+      "blob_id": "6c32a2a2b46e7e82bddd159e98c5e2bec90a3458"
+    },
+    {
+      "path": "ceval/formatted_tables/traces.parquet",
+      "size": 4452699,
+      "sha256": "8f12a7f72542baeb535d8f315146bb348e520825396b78e0393f09ba221cc457",
+      "blob_id": "98a20505947e44755be4b32357029063ea9e1c5d"
+    },
+    {
+      "path": "chartmuseum/formatted_tables/benchmarks.parquet",
+      "size": 17023,
+      "sha256": "c9281342bc27c923b59f43ad3f5f22e5c6a40dd742d7443685ba82ad0e0c38d6",
+      "blob_id": "221ab31f8e976334e75bef80732890c1c28c7c40"
+    },
+    {
+      "path": "chartmuseum/formatted_tables/items.parquet",
+      "size": 78772,
+      "sha256": "6821b69c99cce7b456a989022a4ce92cf4ac57aab6c529a9b48ad4f01aa8b092",
+      "blob_id": "4c7d21a11c11768d93bd3b590a48a29f173988df"
+    },
+    {
+      "path": "chartmuseum/formatted_tables/responses.parquet",
+      "size": 11489,
+      "sha256": "3b8378afd4a93809d2c4539fe1b229be0677dc67072597904fa82aeccf49ec85",
+      "blob_id": "95eb367490fcc807814b2e7c6fe4417489f4f165"
+    },
+    {
+      "path": "chartmuseum/formatted_tables/subjects.parquet",
+      "size": 6706,
+      "sha256": "35ae33016ee275604fd833664527e0482ca840fa1fc16592f1d937ea0e5a205f",
+      "blob_id": "66e11cb2fc35c07af399e30a37fe84b1909f4a9b"
+    },
+    {
+      "path": "chartmuseum/formatted_tables/traces.parquet",
+      "size": 166848,
+      "sha256": "2417ab8f42cd67c134470def09b444c1862c5ea409d88f7ad410d35051cd9d52",
+      "blob_id": "f7e11d79a2a486763bc9e0a06956614f0f158308"
+    },
+    {
+      "path": "chi_bench/formatted_tables/benchmarks.parquet",
+      "size": 16656,
+      "sha256": "9b33fd1eb63a82772332aa547b568797c2326948e94791e66294ad5d2d764fca",
+      "blob_id": "a50192b2db944cbc6476abcf7e384e153aa00db5"
+    },
+    {
+      "path": "chi_bench/formatted_tables/items.parquet",
+      "size": 138236,
+      "sha256": "f5fb3e40b978fef937b5583de3ed87b25f73ffe9df2a55603c63b302aae7b99d",
+      "blob_id": "dfbd81000dca796c493e3182be2507a80274708c"
+    },
+    {
+      "path": "chi_bench/formatted_tables/responses.parquet",
+      "size": 176015,
+      "sha256": "eec0c23474da86e5a1c5272235c9f1240716e18b0ee5c9ff53b300c2e6513ac9",
+      "blob_id": "651579c36fcd1b7973138c8fe4f85f8302c32bd6"
+    },
+    {
+      "path": "chi_bench/formatted_tables/subjects.parquet",
+      "size": 15053,
+      "sha256": "33e9c443ca7df64687771c9f3e0224b9e98cd31b2a322057003f15e2649be4cf",
+      "blob_id": "b7bc086dc3b8be7afb1a488a5fd3dd0a0a118075"
+    },
+    {
+      "path": "chi_bench/formatted_tables/traces.parquet",
+      "size": 565200251,
+      "sha256": "fe8421443924cd3795f136f0639b0973630c69a20fbf8decc079abdb19bb5ffe",
+      "blob_id": "25f2382a9f36157aa8502895859c07da08520206"
+    },
+    {
+      "path": "clasheval/formatted_tables/benchmarks.parquet",
+      "size": 16919,
+      "sha256": "8662dfe73488de294c81d46eaa63de47637308c660b4dac24e9798706be32688",
+      "blob_id": "f7e5bcf2a8b0f2ec354f24e9a41f7eb775ca1f6d"
+    },
+    {
+      "path": "clasheval/formatted_tables/items.parquet",
+      "size": 16245691,
+      "sha256": "e8f76477ac36d0a6e01dc824c54ae8c9bc658f7da9a8b1cd5765ff15583bdaab",
+      "blob_id": "5862acbeddc8de39e192573d51fa375adb6ab7eb"
+    },
+    {
+      "path": "clasheval/formatted_tables/responses.parquet",
+      "size": 2701083,
+      "sha256": "968ec1c89c5b3ebb2ae082bd000848baaf36bd9428b5a42ca19f239daddd21d3",
+      "blob_id": "b902d9665d5326c237a9207ebc732484913788c4"
+    },
+    {
+      "path": "clasheval/formatted_tables/subjects.parquet",
+      "size": 6867,
+      "sha256": "72803e2a70db2c8ddff9162383991d7773d4cda6fde15b5e0c78e5e420f5d1ad",
+      "blob_id": "92fb94c3d09cd5356852ee0d687077349c40b88f"
+    },
+    {
+      "path": "clasheval/formatted_tables/traces.parquet",
+      "size": 4789803,
+      "sha256": "84d43a425477e6bf2c4d830181011ae55f63f71e6e4999ba509393fd7a955447",
+      "blob_id": "cf26642c62f3de0ced1bab85056f34bb88a5c5c3"
+    },
+    {
+      "path": "cmmlu/formatted_tables/benchmarks.parquet",
+      "size": 17735,
+      "sha256": "d315214ca30ccf7a9345ec56252876c483e13745e6f61095c5f96038fba17753",
+      "blob_id": "d15798ec20f98d1bdb508e2c99b986ac078eafea"
+    },
+    {
+      "path": "cmmlu/formatted_tables/items.parquet",
+      "size": 4483659,
+      "sha256": "5137af93b3b45e04334abc559233fe3a08a962928c38cfc35cfc564cb4605e25",
+      "blob_id": "5cef4235aa972a90051b78ecb56d7c7361ed833f"
+    },
+    {
+      "path": "cmmlu/formatted_tables/responses.parquet",
+      "size": 5633594,
+      "sha256": "b42a1cfbb7a6973c483d42ac455fc6840d77e1ab0620b16c7195b5fc791d65d6",
+      "blob_id": "ce91f1d1601e6e0c60f5f1a07fcee5425be80a26"
+    },
+    {
+      "path": "cmmlu/formatted_tables/subjects.parquet",
+      "size": 8344,
+      "sha256": "51c514405ab377e8ba4fb29dfb7b62a44273062505f9f1b0c04eaeda1e87d311",
+      "blob_id": "c2b56b54af5b65eff30769d0fe9918dde4e1354f"
+    },
+    {
+      "path": "cmmlu/formatted_tables/traces.parquet",
+      "size": 143291825,
+      "sha256": "73f6918997485c49276ea76b653ca614dfc50936057c8bb47c17670d23e052eb",
+      "blob_id": "a59d99a3f2c3c1345cc2cd781e6002adfca6bae5"
+    },
+    {
+      "path": "confagents/formatted_tables/benchmarks.parquet",
+      "size": 17090,
+      "sha256": "2cff83d0a2280f1f884d66e80698a348f8e460b0f896299ceebd3403617a36e8",
+      "blob_id": "6084f95022a8a9718b5b52c8ab49d504bfd3fe09"
+    },
+    {
+      "path": "confagents/formatted_tables/items.parquet",
+      "size": 20722,
+      "sha256": "3741ff58939ff871310f11fca9ae551288fea23b3bd3ef1ded12cf0bbbd72572",
+      "blob_id": "b92830b61bca818336cf6e5f4723a3136a1eb1d5"
+    },
+    {
+      "path": "confagents/formatted_tables/responses.parquet",
+      "size": 7018,
+      "sha256": "8c470b8deebcdae873597494fe2dbde44da4d2a8b330bdfeb249d8a125a4cc0c",
+      "blob_id": "6bfe50d96cea4bb0d06fdd9ca87f237bc1e126fd"
+    },
+    {
+      "path": "confagents/formatted_tables/subjects.parquet",
+      "size": 6568,
+      "sha256": "0cfdecaf8f3b274637b06bd0c1e5c14d0c675751232c55ca724c8854f96b3f6e",
+      "blob_id": "7481dbae054d44d0bbfb5f682e380b3981934995"
+    },
+    {
+      "path": "confagents/formatted_tables/traces.parquet",
+      "size": 36507,
+      "sha256": "9ac224cc3fdd375cb5144af6dc0e49714d2451db7386e419007f9078f5f720a2",
+      "blob_id": "b15887d6465e1175c7d38a39bec2282702263951"
+    },
+    {
+      "path": "critic_discernment_game/formatted_tables/benchmarks.parquet",
+      "size": 16849,
+      "sha256": "e87272019e8f6e7652f9e5800b4b75933d461bd5ee443a40dc27e2808af0d654",
+      "blob_id": "982d87d9e04617fc69fa60d8da302b3721188921"
+    },
+    {
+      "path": "critic_discernment_game/formatted_tables/items.parquet",
+      "size": 782128,
+      "sha256": "fce47cc9d0796c053fc4afded25bb495ffa2b16508a7d8fe2495d62c7fc89cce",
+      "blob_id": "ab3960a7e8b483818d66f1061abb3b50542ea37c"
+    },
+    {
+      "path": "critic_discernment_game/formatted_tables/responses.parquet",
+      "size": 182548,
+      "sha256": "0f2ee09b83d840730145cf10a98dcedaeaf655245551549fd7ecc2faac25e676",
+      "blob_id": "9e2a3a84f857cc053aee831454b75c63231936fb"
+    },
+    {
+      "path": "critic_discernment_game/formatted_tables/subjects.parquet",
+      "size": 7628,
+      "sha256": "376d495dca55855b281306a65f0f886bf97260d71144d1aa4a887bb7504c5689",
+      "blob_id": "a778f25ce7db43b0f54372abea14c69c27df87ea"
+    },
+    {
+      "path": "critic_discernment_game/formatted_tables/traces.parquet",
+      "size": 71830380,
+      "sha256": "6e34ccab9d11fb714ea1718c7c0f56bd027284a341d7362301915c1924710b7a",
+      "blob_id": "78a80b0e91c34ad044bc3d43e658cf714f0f2d79"
+    },
+    {
+      "path": "crow/formatted_tables/benchmarks.parquet",
+      "size": 16333,
+      "sha256": "abb60bd8a857488aa5851af0e5a3c100abe635eaa5ae793fc21d5ef0b8d6bf5e",
+      "blob_id": "96280928f40359af2e123b5811aaa992d0c2d317"
+    },
+    {
+      "path": "crow/formatted_tables/items.parquet",
+      "size": 404832,
+      "sha256": "b6a800a97db0914d5486214f61033e89a0e3cb8b08e33004db96c33b9602ea10",
+      "blob_id": "a4be34348e329b5cbfa07e189c38c3ec1dd053c0"
+    },
+    {
+      "path": "crow/formatted_tables/responses.parquet",
+      "size": 163547,
+      "sha256": "5e8e07b74ce40bd731d0a37bcb5b7aa381bc9719538d508676401c1288d4b6ed",
+      "blob_id": "538b7c0d13aa980520b716048a00c3fab39dd9cd"
+    },
+    {
+      "path": "crow/formatted_tables/subjects.parquet",
+      "size": 11068,
+      "sha256": "e66c66a5e481380108f7b0a4d19983e30cd9e63612dea0abcb13f08ab9d266ee",
+      "blob_id": "e73613b9f125fe5e0bff2691ec8bdf63c05c1b77"
+    },
+    {
+      "path": "crow/formatted_tables/traces.parquet",
+      "size": 2037327,
+      "sha256": "f1010d03ebcffecc257548d6f7ca136ff05f4534c21f56328187f6b969f0f382",
+      "blob_id": "e8e19d9e31fc898fc99528941a8248131bdb6e05"
+    },
+    {
+      "path": "cruxeval/formatted_tables/benchmarks.parquet",
+      "size": 16528,
+      "sha256": "a7fc2360f43593f6bca435554c40920da0c5a41070e3e89fe07237238bfc0d0f",
+      "blob_id": "8a57b7dc795189d59544a68f92842eedce7c6c3b"
+    },
+    {
+      "path": "cruxeval/formatted_tables/items.parquet",
+      "size": 964730,
+      "sha256": "b06e3093a6beb8c56a48ee4bcef5cd54914e138880d7f6ce6fec7b19686b2f0e",
+      "blob_id": "c241f1185489e471c2df4bf10f93cebc1ed55335"
+    },
+    {
+      "path": "cruxeval/formatted_tables/responses.parquet",
+      "size": 20809388,
+      "sha256": "f777c5280cc1cc8963a76a13b8bada16b2a68f207d03fb77e4f03ea3b459aa6c",
+      "blob_id": "de6de21ae89db5853e7ed91d38eca848d88f8fd3"
+    },
+    {
+      "path": "cruxeval/formatted_tables/subjects.parquet",
+      "size": 8658,
+      "sha256": "7dbe35df7cde9123f35a00f1e5f0790142657c660ddc87302be3ddbddc2def83",
+      "blob_id": "e4925a4416eab656334e555abd7d9cc86b32f144"
+    },
+    {
+      "path": "cruxeval/formatted_tables/traces.parquet",
+      "size": 53776861,
+      "sha256": "a4ddefa74ccf36a8becdf6e060f15627f57cb223e8749fe497b8db1661ae54cf",
+      "blob_id": "ee5681cd5f90434339b566f06a082483932da419"
+    },
+    {
+      "path": "dave/formatted_tables/benchmarks.parquet",
+      "size": 17672,
+      "sha256": "6a6b2c92c3124e2012eab2924e403b45ab4be8c49350be8ee53f4ac3f8fc3e5a",
+      "blob_id": "ab3af02277464c48b80d0f2438e42c01600013f1"
+    },
+    {
+      "path": "dave/formatted_tables/items.parquet",
+      "size": 785003,
+      "sha256": "54cc772ed45f6d41506c27f13fc1fc35f0c68e592edefeb0c68c50cc358993a6",
+      "blob_id": "315bdcc7bf7bfbb17984cc934779033552a088d3"
+    },
+    {
+      "path": "dave/formatted_tables/responses.parquet",
+      "size": 458974,
+      "sha256": "e674d6d5e555c130b51d87905d77c02d23847e250c4703fc62c9225911f721ec",
+      "blob_id": "022ed762d3fa4a27ea44442d9eab0a0b5d6a8760"
+    },
+    {
+      "path": "dave/formatted_tables/subjects.parquet",
+      "size": 7126,
+      "sha256": "449ba6631cea24863649baaec9c20869d808c6616449f94a535f8fe55941d56d",
+      "blob_id": "ababff1ac359a312ad5fae6ed78eaed91ef0b3ee"
+    },
+    {
+      "path": "dave/formatted_tables/traces.parquet",
+      "size": 566205,
+      "sha256": "164b29abd56d8a6e918b3b32fb1264cb127ef466e9ddd5db902995b2d6fa1bad",
+      "blob_id": "54a3fb46d4599a6820905b2a777131e8e619f3fc"
+    },
+    {
+      "path": "dbpa/formatted_tables/benchmarks.parquet",
+      "size": 17337,
+      "sha256": "5a810e5ad53beb078cf6010fbf0ce1167e816fbf35217a0964871849ce1b519d",
+      "blob_id": "adfe501656edb946ef0b7ef0caeeee6c5a56a3a7"
+    },
+    {
+      "path": "dbpa/formatted_tables/items.parquet",
+      "size": 19340,
+      "sha256": "3958d664938b90677a0e666bc61de4b49a5dd4bea8cd1f1f566782412c94b5d8",
+      "blob_id": "5f984f8df08abc1fc5c1eb6024cedec808747373"
+    },
+    {
+      "path": "dbpa/formatted_tables/responses.parquet",
+      "size": 15192,
+      "sha256": "b617d2ed40b82a55a3d0ea68fd035f6fd8a7b02943abd967dda261954981aef3",
+      "blob_id": "f5963a551ae3549f891a62c8ceebcfe4d9a78601"
+    },
+    {
+      "path": "dbpa/formatted_tables/subjects.parquet",
+      "size": 8024,
+      "sha256": "030c8f5eac9c7c808427c6fe2010ed8a70ed8015c1063872632fe82d5a7258ea",
+      "blob_id": "47add7428352548efc822d7a929a7534a6c3c0f4"
+    },
+    {
+      "path": "dbpa/formatted_tables/traces.parquet",
+      "size": 16203855,
+      "sha256": "d80e81f8ec171b0a4769a7176efae51455850e882e2be927f1d43f7cceed5f65",
+      "blob_id": "e8b073b4e77d4d8b32807778842babaaf71e9c2a"
+    },
+    {
+      "path": "devbench/formatted_tables/benchmarks.parquet",
+      "size": 18212,
+      "sha256": "52fcf1e7c4f2eefb0d6d3fead86864c79ef1ec39c30f88da3273a5ea500c4f74",
+      "blob_id": "d2793bf2291ec5447436ac2986676e40301c5c48"
+    },
+    {
+      "path": "devbench/formatted_tables/items.parquet",
+      "size": 113778,
+      "sha256": "74f78cd2de8db38ed2d07865697647c3dee7daaa01790313fb9b17a44f6dc407",
+      "blob_id": "e41cd69727bb1971cc570b2440f5a1588706a35d"
+    },
+    {
+      "path": "devbench/formatted_tables/responses.parquet",
+      "size": 108551,
+      "sha256": "10c7a198606929c5863b8b9ae1d81c93e639a082eb89df42bc14c0328d00c4eb",
+      "blob_id": "e5bbfd03a4ac562cfdc230c388d23eb6239969b1"
+    },
+    {
+      "path": "devbench/formatted_tables/subjects.parquet",
+      "size": 7608,
+      "sha256": "ceb38afb741d0ff421ea63a91ac8641598150e33f190008d905ab9f10065eb04",
+      "blob_id": "1ba9fa25b3169d165897b2921a108173f65997cd"
+    },
+    {
+      "path": "devbench/formatted_tables/traces.parquet",
+      "size": 531107,
+      "sha256": "105418495bd1fe3c0dc387302fe350d8472e3e75ca0007fcffefb59e8f0e5ab5",
+      "blob_id": "f8daae809f7170b947c0332f81b0afddb02a4dad"
+    },
+    {
+      "path": "disco/formatted_tables/benchmarks.parquet",
+      "size": 17480,
+      "sha256": "caf40e3a1124238c58e9fdf7fc337f4b98695d14d34e3b59377cc0e5d31cd289",
+      "blob_id": "2a43ea29d92487694c480e93bbcc84cf42d55878"
+    },
+    {
+      "path": "disco/formatted_tables/items.parquet",
+      "size": 6228981,
+      "sha256": "1fb6cb920fac31be39cd17837743f4dfba46387f29f656345e2f479282d2b2a0",
+      "blob_id": "6e081b34515773148eb2dae63a056570515df862"
+    },
+    {
+      "path": "disco/formatted_tables/responses.parquet",
+      "size": 3009568,
+      "sha256": "fab86f87ca3b506642f64fe71f88818000c690c810edd7f832c23d844d9263c7",
+      "blob_id": "5d7104211e93b8e03def1dcc2dd435fe618496ae"
+    },
+    {
+      "path": "disco/formatted_tables/subjects.parquet",
+      "size": 7947,
+      "sha256": "cb253aa39eafc703236628e9adc9fd9dae3b4c690c953eea51fd17a1cc761da0",
+      "blob_id": "0b5de23ad0520771c3894410eb55f9472a2abb59"
+    },
+    {
+      "path": "disco/formatted_tables/traces.parquet",
+      "size": 7124357,
+      "sha256": "e2f77c6679e59225b51eb99755c7529ae70b4031211e5037584b123364723b1a",
+      "blob_id": "681c2bdc0fdb134bd19bd12d9cb5251b3297a500"
+    },
+    {
+      "path": "editbench/formatted_tables/benchmarks.parquet",
+      "size": 17666,
+      "sha256": "835a23344276f43582c930cba439492bd5bb15f5c45f1b883436ba537b1bdded",
+      "blob_id": "138d91c994a5b8a4861b8376c2dcc42291f24bf2"
+    },
+    {
+      "path": "editbench/formatted_tables/items.parquet",
+      "size": 6347667,
+      "sha256": "cd23e864e60c01c5b8a2d99c4d0602596d6c8a4ea98b47a06052f0ca16230333",
+      "blob_id": "31dc46e8207bfe48b93e5388e8d382942cd4b0ad"
+    },
+    {
+      "path": "editbench/formatted_tables/responses.parquet",
+      "size": 477995,
+      "sha256": "10e60a511a5d3276a5eb83598c61a6a9340c49db0ee8b15ca8e2dd95db02a250",
+      "blob_id": "84e4846eb6d9fb3409a935befba84743d7b0e25d"
+    },
+    {
+      "path": "editbench/formatted_tables/subjects.parquet",
+      "size": 9394,
+      "sha256": "455dbf129e6becc190935a7fd763f3c55b2f2905174fe2765f19be4125f1e953",
+      "blob_id": "dc52f85b5781411f2225bcc0225f1987c8138fc0"
+    },
+    {
+      "path": "editbench/formatted_tables/traces.parquet",
+      "size": 1368638,
+      "sha256": "488a900cb860989c4c943287a3e6a94813b0c87b3a455f94bdb8246e0bcb87d4",
+      "blob_id": "b7e5ad1695d3c566396407c41dc0a35b4ec030b5"
+    },
+    {
+      "path": "edu_circuit_hw/formatted_tables/benchmarks.parquet",
+      "size": 17833,
+      "sha256": "5c848e8700d262f523132457279327b9d7180f4574947be0c205fc71bde1bb72",
+      "blob_id": "c97a5d003a6530f03c125b7ef3b20fce3ccd0802"
+    },
+    {
+      "path": "edu_circuit_hw/formatted_tables/items.parquet",
+      "size": 298119,
+      "sha256": "c0d6795a744baa698f30aca23ce1780cf84cddee9b7da7c1f83233e795962fae",
+      "blob_id": "98357247abe4f5181fdb1e8690e88ce62706a731"
+    },
+    {
+      "path": "edu_circuit_hw/formatted_tables/responses.parquet",
+      "size": 74414,
+      "sha256": "8f8b58b100e4a26e00fe661b494f4c488d88926ec3257169cd38a5d20bedd4b8",
+      "blob_id": "63552af90e5527020d98666f70accc6c9c8e1347"
+    },
+    {
+      "path": "edu_circuit_hw/formatted_tables/subjects.parquet",
+      "size": 8051,
+      "sha256": "c2f3a4bfe6d99e23e51552c17437c555a446174c9d397a0f7a1a1f701f95dd99",
+      "blob_id": "bb66ac2a341f4a86bf272085d72b8733ea4fac74"
+    },
+    {
+      "path": "edu_circuit_hw/formatted_tables/traces.parquet",
+      "size": 2942573,
+      "sha256": "9e59ac85af84a178d53430fb3cfb103b5f313b0eb64f435086b72cc81ce1c67f",
+      "blob_id": "95d8a551e4b47b90d66739140cf521c4e9296423"
+    },
+    {
+      "path": "egoschema/formatted_tables/benchmarks.parquet",
+      "size": 17745,
+      "sha256": "1d51e1a8fac5bff8576bc2fef9eca0d2868403e0a3900e2ff3b75832c3eddaf7",
+      "blob_id": "7e814a037035ed08efd2b514ecb02d9786457e77"
+    },
+    {
+      "path": "egoschema/formatted_tables/items.parquet",
+      "size": 16308632,
+      "sha256": "4d85eced53d1dd077c14868de86234de28a383b94d1113197f5126126f052213",
+      "blob_id": "7ecda8345050742e04bbb62780ee5f3385c94e92"
+    },
+    {
+      "path": "egoschema/formatted_tables/responses.parquet",
+      "size": 193441,
+      "sha256": "9f54c18b4582f91d6e9d1e98c715224216c9f7f4aa2e616ae2a28f1c72375d89",
+      "blob_id": "e05f25511df6d63a9a93172b93cb6ac7948b1a39"
+    },
+    {
+      "path": "egoschema/formatted_tables/subjects.parquet",
+      "size": 9035,
+      "sha256": "fbf5394185f2899f14a92a61739b6ef2558ecc6864c619be77812d06620513ad",
+      "blob_id": "bdb8523722c6f740466b6e508e9788443bfd0e30"
+    },
+    {
+      "path": "egoschema/formatted_tables/traces.parquet",
+      "size": 12264520,
+      "sha256": "2a93bbc699cd73abe9c26d4cdafa6ed1cd19b3b24d67a999cfcb11ea838d4e11",
+      "blob_id": "8da680872f39d220b02561dd89d7877a850f9af6"
+    },
+    {
+      "path": "ehrflowbench/formatted_tables/benchmarks.parquet",
+      "size": 17984,
+      "sha256": "ea66cb57961e6cad458c807b513113c81bb6e80e6fb5613edb37a1221b65de8e",
+      "blob_id": "9f6749296cc0c56926e223bcd72fb5234e87f78a"
+    },
+    {
+      "path": "ehrflowbench/formatted_tables/items.parquet",
+      "size": 179411,
+      "sha256": "0fdcb88e18d9e35be508a844bc0ba108da40d493b38ea2a42c24eb5a878c656d",
+      "blob_id": "092163153ef92c0a86f5163b8690a2d7a39e71e7"
+    },
+    {
+      "path": "ehrflowbench/formatted_tables/responses.parquet",
+      "size": 9078,
+      "sha256": "d601ee7de8e8876093cc50898ddb0873762733bad02490d25a3cb860234bdabe",
+      "blob_id": "167d2ad125671cf9859e033da7a7d577daf65429"
+    },
+    {
+      "path": "ehrflowbench/formatted_tables/subjects.parquet",
+      "size": 7796,
+      "sha256": "bbcb17b519a65cb76422b46875383e4e30b746f13adeac5fe6dd09ec7a03aa31",
+      "blob_id": "a973cd766f48bb4a1f509e2c66dc558d9c76c994"
+    },
+    {
+      "path": "ehrflowbench/formatted_tables/traces.parquet",
+      "size": 484151,
+      "sha256": "6be2857094ad2ededfa03a569e9ba1798f7e9911ce738748e866772abc7b766e",
+      "blob_id": "0c0de457fea13a96fe594b3d936ff77e54937bf2"
+    },
+    {
+      "path": "elicitation_game/formatted_tables/benchmarks.parquet",
+      "size": 17399,
+      "sha256": "112ad8d8abaced649732c0bbd32fe112b4fb2ff80eb1dfb00a44ae5a03aac9eb",
+      "blob_id": "f777512fe39e6a908206ba1c939de1efaec5ba2d"
+    },
+    {
+      "path": "elicitation_game/formatted_tables/items.parquet",
+      "size": 192607,
+      "sha256": "7dab9c3a16ab21fbc590324b59e04613d445edfa7a87a3e669cb121fa11bb642",
+      "blob_id": "85e70b35d8e80ec04c893ba56092e5ca5fb80d73"
+    },
+    {
+      "path": "elicitation_game/formatted_tables/responses.parquet",
+      "size": 359332,
+      "sha256": "5d40a39fd9ac88a9fe36deba1842f8753fc141436e8413dfe3c0e1d4fb717199",
+      "blob_id": "3d00c137cacdc95ee23f58b798263619cb4223f3"
+    },
+    {
+      "path": "elicitation_game/formatted_tables/subjects.parquet",
+      "size": 7819,
+      "sha256": "a08c09715513137aa3f1618ffe2485479eaf77604a825cf930183a2a551f55b0",
+      "blob_id": "a8528a083426950cd99ed49726e7a6515aca357c"
+    },
+    {
+      "path": "elicitation_game/formatted_tables/traces.parquet",
+      "size": 1070484,
+      "sha256": "6c6768fd9f623798230d8898075560cbfc5d812f94bfc2850f70cdad1df23f7e",
+      "blob_id": "f4eff9438aff8cc12cb2120dfaae369c10d64427"
+    },
+    {
+      "path": "emoji_attack/formatted_tables/benchmarks.parquet",
+      "size": 17887,
+      "sha256": "2bfc2e27ded4e28d21962d0a21f7af6fafa98f75b70b570ca89027dd72490f3a",
+      "blob_id": "684e169233c75df11349c2c8c9ab8e3f5964aabb"
+    },
+    {
+      "path": "emoji_attack/formatted_tables/items.parquet",
+      "size": 11779653,
+      "sha256": "c07276b4bb790253b57bd17becb4f41b3ee720ad27b829206b899444ac262bfd",
+      "blob_id": "1039f2e5133054ee7da112402d07a02221363639"
+    },
+    {
+      "path": "emoji_attack/formatted_tables/responses.parquet",
+      "size": 1561567,
+      "sha256": "1ec13073970586996d5b60a406322c57cd98f78668789d2b22b88dd97b65beb7",
+      "blob_id": "f88ed7ff9316622319ff459a59ae66454ba02134"
+    },
+    {
+      "path": "emoji_attack/formatted_tables/subjects.parquet",
+      "size": 7412,
+      "sha256": "e2de920a0eef05b3cb38f9ec2c270ee713f82516a0ba44d953d122d81de59cf8",
+      "blob_id": "8fcdf64e4f33b60e8ed01beb5c49ab11c07d5068"
+    },
+    {
+      "path": "emoji_attack/formatted_tables/traces.parquet",
+      "size": 40398575,
+      "sha256": "43a77820a2379171da6d276f3ba2fd1cd96eb451fa068213774c056909bc6716",
+      "blob_id": "eeccaeefe9fde824e3b0395aa7fc39f8122d94b4"
+    },
+    {
+      "path": "engdesign/formatted_tables/benchmarks.parquet",
+      "size": 16783,
+      "sha256": "5380263e49f5b5626101d23a9d0fcca655fe82c0228f1646e3caf1e27e1c74c7",
+      "blob_id": "c0d26efae8285eaf8edebcb6107b774311925eb9"
+    },
+    {
+      "path": "engdesign/formatted_tables/items.parquet",
+      "size": 407975,
+      "sha256": "768b6622ec26d8194b28a01262134551a0576bcffbdc74339373613e773d7a2c",
+      "blob_id": "47a0de28f3dea273929c0cfe3a426b62a2bda344"
+    },
+    {
+      "path": "engdesign/formatted_tables/responses.parquet",
+      "size": 110006,
+      "sha256": "64c2da202f93afee5e36971cd2cd5bf199d84500e097d385c3d819f5b373b22e",
+      "blob_id": "f3d127ff3630d34d11c588c16c0af312d9711f9d"
+    },
+    {
+      "path": "engdesign/formatted_tables/subjects.parquet",
+      "size": 7482,
+      "sha256": "dcdbd9dbbb8aadfe0bbefb0ce41c9c7401cfa62e3a180e5d5c80fc486ff34c14",
+      "blob_id": "f3db9524f452e61611da51b48c717004a4364f14"
+    },
+    {
+      "path": "engdesign/formatted_tables/traces.parquet",
+      "size": 5986318,
+      "sha256": "4b55b72f1b4cdae2c0ad89a99e1f0746ddeff0af95ab539ec7e0c00ee40ac742",
+      "blob_id": "1a819b8092650f273e3916c343896fa63cb6e368"
+    },
+    {
+      "path": "enginemt_qa/formatted_tables/benchmarks.parquet",
+      "size": 16931,
+      "sha256": "dac0241add6b073c8b564ebd3b97159213a0528adc3f36bb49b75095bceb6668",
+      "blob_id": "895a94a0080705bc5a0f9cb9963b9c2b931dcd66"
+    },
+    {
+      "path": "enginemt_qa/formatted_tables/items.parquet",
+      "size": 95476,
+      "sha256": "2c08add9c99a655809d32fda9f1c108d8e38477fa74436d677e8ca561f072fe4",
+      "blob_id": "be83b4934323a84e433cf1af682155a91af6eaaf"
+    },
+    {
+      "path": "enginemt_qa/formatted_tables/responses.parquet",
+      "size": 30930,
+      "sha256": "713f043fd52959f9960bf83e032aeb282afdb91a462547e9e7e4c837496a1690",
+      "blob_id": "a8136c44cad1eef5c42bc2ed714d3478f0969697"
+    },
+    {
+      "path": "enginemt_qa/formatted_tables/subjects.parquet",
+      "size": 7238,
+      "sha256": "f23f828e1caefe6304fc706bfe5965fc295b9bff667788b8f5ba32ee086b6be2",
+      "blob_id": "354802b3b9024c38e39e0658b86f2288f25fe13b"
+    },
+    {
+      "path": "enginemt_qa/formatted_tables/traces.parquet",
+      "size": 40853,
+      "sha256": "438ae63a560a1930f9d87253f2b9822184b39bbd37dce5b5092ce9045642dfd8",
+      "blob_id": "c5f050a820e85a3d26114883f1ccdb2d22fa8878"
+    },
+    {
+      "path": "erbench/formatted_tables/benchmarks.parquet",
+      "size": 17167,
+      "sha256": "ede9961b8218947d7d900e0c4a92d5347e42dfecd9d1dfdd183fec6c3d5ee5fe",
+      "blob_id": "97ad78cc541bd379ccee45cd7f89d72de9dce3da"
+    },
+    {
+      "path": "erbench/formatted_tables/items.parquet",
+      "size": 2099744,
+      "sha256": "0f8a66afdf4b0e99dd0c4d5c0d88016415c8f21c54c9cb19b949ad8de468a3ca",
+      "blob_id": "48ac5bac337568555a8c5d09a3ec23a1ef20a7bb"
+    },
+    {
+      "path": "erbench/formatted_tables/responses.parquet",
+      "size": 7991324,
+      "sha256": "bd056ba26743f1b898f220b92442e27afd30fef506d537f79ff29021eb266533",
+      "blob_id": "20a93336f299c320905515827c07df00cb0b2d8a"
+    },
+    {
+      "path": "erbench/formatted_tables/subjects.parquet",
+      "size": 6753,
+      "sha256": "9646f275559c214fa08d451c22d87b4deae46e71b1fdc5f16673823c717e3a28",
+      "blob_id": "f293d8ce67621f2dbbade6a04fc3e263cc1c83cf"
+    },
+    {
+      "path": "erbench/formatted_tables/traces.parquet",
+      "size": 52751460,
+      "sha256": "d00cc1a6b0a4f3be2a433e3d8a6c7d7a43c4abd9d5063be1e83aa487b235941b",
+      "blob_id": "e4ab121681ef40f2e1acb30649bdd346177fcc6d"
+    },
+    {
+      "path": "evouna/formatted_tables/benchmarks.parquet",
+      "size": 17185,
+      "sha256": "f5bb9fbbb8af883641b1e63311bd0a4ac1c6258707621bf90770b62259aee334",
+      "blob_id": "d739b3171d93bb8c088dd038b46bd54afbdde5b4"
+    },
+    {
+      "path": "evouna/formatted_tables/items.parquet",
+      "size": 801505,
+      "sha256": "f069964c69fc10a87851ee83a9bad21a507b417a73ffdd78d6195aac016864b4",
+      "blob_id": "255a947a2e70a5b04cf337dca723a22095c9e830"
+    },
+    {
+      "path": "evouna/formatted_tables/responses.parquet",
+      "size": 850921,
+      "sha256": "84f25faf0c32fc2234d5c78f648842909d57c3643cf2e485634a0b41275c5768",
+      "blob_id": "37f620155777cd2d0f0f36400ab2360da4242b58"
+    },
+    {
+      "path": "evouna/formatted_tables/subjects.parquet",
+      "size": 6788,
+      "sha256": "e9e85658e70bcbef579820833472c0d676255c82814dc7a91199b4ac168ae5ab",
+      "blob_id": "b142b0e54d938cb020ea54d38a05d27ab9ee2c33"
+    },
+    {
+      "path": "evouna/formatted_tables/traces.parquet",
+      "size": 3147700,
+      "sha256": "0a6f41103d74ab98c8fde79ac9c7960cab8f0994406acbba0813ba19eb6d34b4",
+      "blob_id": "680503445f1f9884a3be9fcc5a1dde62381e91b7"
+    },
+    {
+      "path": "exploitgym/formatted_tables/benchmarks.parquet",
+      "size": 18359,
+      "sha256": "2446c8fc8a23b170836bd6ce143d9b78022e289833820cc6e8bb2308a45591ed",
+      "blob_id": "db4c89d452bb0ed7acce37b8b20873ac516be577"
+    },
+    {
+      "path": "exploitgym/formatted_tables/items.parquet",
+      "size": 2996559,
+      "sha256": "863f4c084b5b7ed4bb8752e06122bc5794388e130a78f4a4d99a54fcb09e7a0a",
+      "blob_id": "8d34df8bd8153829f1c1ff92f46bf7d6e875a9ea"
+    },
+    {
+      "path": "exploitgym/formatted_tables/responses.parquet",
+      "size": 161460,
+      "sha256": "5fa390ac69db3749ddd866732d045bc43a241ad622b9a8c1db4696c15598dd24",
+      "blob_id": "c2a207a15a67bc11f5b55b3081f62225375b60a6"
+    },
+    {
+      "path": "exploitgym/formatted_tables/subjects.parquet",
+      "size": 7397,
+      "sha256": "210e0183f1b715fcd15ca166efd2bf7af44b715119c6143e582b98e4311b4cf5",
+      "blob_id": "2b624fc0311e0a46286475e4d51d512c90e21d2c"
+    },
+    {
+      "path": "exploitgym/formatted_tables/traces.parquet",
+      "size": 994318,
+      "sha256": "f15e97eb17f9909f23cecbd4994291726d0949d3a2dcd5564c585eceaa222b12",
+      "blob_id": "dece608fb5399d13dd765ac208b7973653902f7b"
+    },
+    {
+      "path": "faithcot/formatted_tables/benchmarks.parquet",
+      "size": 17619,
+      "sha256": "a9a4bcafe10d8a20fa9a5042559fea7f417096b7e5afe83a3aa3ac433f495c63",
+      "blob_id": "452f15b114ea11134d9b4b00d2e473a0b1f29dba"
+    },
+    {
+      "path": "faithcot/formatted_tables/items.parquet",
+      "size": 146385,
+      "sha256": "31314cb162c3ac4cd417e3ea69f174a334f5ef0bc067df9208bef49cf694a387",
+      "blob_id": "0043a13dac294632a116f3c4fa48de6635213f0f"
+    },
+    {
+      "path": "faithcot/formatted_tables/responses.parquet",
+      "size": 69907,
+      "sha256": "21b6fcf9a49f6d8995b8db797e8f581325204c1dad0b26390b7c2cc1ce7689ed",
+      "blob_id": "0839bcc50f1ed987ce06fd6fef01831f2df7389e"
+    },
+    {
+      "path": "faithcot/formatted_tables/subjects.parquet",
+      "size": 7155,
+      "sha256": "b642644cec1a6435c418c96422029e106edb9170a703a9875ce1f5348c04a99f",
+      "blob_id": "886b788a093abd2a172f633bca50ab59ee1b2469"
+    },
+    {
+      "path": "faithcot/formatted_tables/traces.parquet",
+      "size": 5115417,
+      "sha256": "0baf1aa205f2c9c4a16ab96145cb2af3f9cab053c5ca4ab5d526b875f4666067",
+      "blob_id": "23271eeafbaf5b083d551ab5e52b2a54fb24f34e"
+    },
+    {
+      "path": "felm/formatted_tables/benchmarks.parquet",
+      "size": 17280,
+      "sha256": "7348b698be0a71751eba1be4a53f59b83f0eed4b05233e182495a6348b279c3c",
+      "blob_id": "d01c3de04e118913d3f583840b5485dcf31df803"
+    },
+    {
+      "path": "felm/formatted_tables/items.parquet",
+      "size": 201456,
+      "sha256": "13ec8d1ba82121efb9e0a58acc96b068c7e0516947ec4cef86e0297e78f7afeb",
+      "blob_id": "d86263525a232abcbca7a641af032fa76315110b"
+    },
+    {
+      "path": "felm/formatted_tables/responses.parquet",
+      "size": 169982,
+      "sha256": "f2550fa7f57da53729dd5fd7c22504e57dcefc4f4829595564a6a58088c1d9b5",
+      "blob_id": "657cdda47b36a6e00351e7ab1e88fdfc25b4db45"
+    },
+    {
+      "path": "felm/formatted_tables/subjects.parquet",
+      "size": 6969,
+      "sha256": "b3011b707d1310b72202bf6159456c5c55d9118619bf4624a933c1e18d83bab9",
+      "blob_id": "7d10a1a2620bbd6233104d024630be49f5f37763"
+    },
+    {
+      "path": "felm/formatted_tables/traces.parquet",
+      "size": 2229739,
+      "sha256": "a352fe7f49592e6c21f19d0db36b4abd5e3c1919423915dafb473449b1766401",
+      "blob_id": "6cc0f500a14110118ba4fb143f46589e149813b2"
+    },
+    {
+      "path": "fewshot_ttt_bbh/formatted_tables/benchmarks.parquet",
+      "size": 17170,
+      "sha256": "712991a976b78d5c84a9b90c9164b9af02fdf6af0d51d42b607bb146aebd26a3",
+      "blob_id": "b4add9a76aa64d56c61a593cdb8202b6511f4557"
+    },
+    {
+      "path": "fewshot_ttt_bbh/formatted_tables/items.parquet",
+      "size": 238642,
+      "sha256": "bd64ceff79edb58d23a1c7fcfed6d8607a708281129b1c59c8c3be6bc0c1c3ea",
+      "blob_id": "e56accdd726338c014c215e7df6b157c902cb06f"
+    },
+    {
+      "path": "fewshot_ttt_bbh/formatted_tables/responses.parquet",
+      "size": 176995,
+      "sha256": "2a4700833ff4e94941cf415c90e3885ee13906c41a29c9525a4f50f7c0eceb27",
+      "blob_id": "ff5467351aacb47ac3009ac20242d570b63f7e7b"
+    },
+    {
+      "path": "fewshot_ttt_bbh/formatted_tables/subjects.parquet",
+      "size": 7659,
+      "sha256": "9fc0a8e1914cff8aeed6ee2e51400a10ef5828ba16b740452cd0e779e5d2d676",
+      "blob_id": "199e5eb5789481ce2ed72117c2f6ed84f72372fa"
+    },
+    {
+      "path": "fewshot_ttt_bbh/formatted_tables/traces.parquet",
+      "size": 190570,
+      "sha256": "bf962540f0b57c4a3d3750a8dd20c4be6401aeb1ec6e21fc67299e87dc4e718d",
+      "blob_id": "41b14ecd46cd52f1ec783bdcecf0e91917a78566"
+    },
+    {
+      "path": "financebench/formatted_tables/benchmarks.parquet",
+      "size": 18178,
+      "sha256": "a127d4ffbc51e48989b49ef375ca5354dc4bfb88fa117e2e5fad12dc14c4d5c9",
+      "blob_id": "69f1a41ee7bac7fe2f1d58447a0569180b1c79b4"
+    },
+    {
+      "path": "financebench/formatted_tables/items.parquet",
+      "size": 43586,
+      "sha256": "b86240e2c5ad2c985bd7cb571618e66f5d99f6aedad035ab08f4c8f3a810cba5",
+      "blob_id": "7bdb14c14ae040a6f328192e78498f818f27f4da"
+    },
+    {
+      "path": "financebench/formatted_tables/responses.parquet",
+      "size": 53892,
+      "sha256": "1b7c8eb6d6498c45b1a27cd6ade8b968842399c20b10077dd6f7847ebd912a16",
+      "blob_id": "93895abd22e0b3636ca8c101c1aaabc3cedff87f"
+    },
+    {
+      "path": "financebench/formatted_tables/subjects.parquet",
+      "size": 8210,
+      "sha256": "60043d9fcc3b17908defaa203db95c2ca09330e83f9a39709212e83c20264b31",
+      "blob_id": "eaf2dd4b441202d3cc30a8eb930e3e8e9981c65a"
+    },
+    {
+      "path": "financebench/formatted_tables/traces.parquet",
+      "size": 876557,
+      "sha256": "768594a35551a2225b80679a99f503389c7a21d45aa3078f69ec0ab6362462b3",
+      "blob_id": "bda2bd54fd31667cf96478f20c1aec2632b1989d"
+    },
+    {
+      "path": "finegrain_t2i/formatted_tables/benchmarks.parquet",
+      "size": 17461,
+      "sha256": "1456031ae5e80a0cdc64bf52077fbd4cd2e4edad6aed499bdc9946af2b678458",
+      "blob_id": "31dc74733c94d84aca27a0af37186ac187a8a25a"
+    },
+    {
+      "path": "finegrain_t2i/formatted_tables/items.parquet",
+      "size": 98175,
+      "sha256": "e692ef1f35f0493c04efe6743a98c6d4461c08df78ca02224baf68f72dbc9eb0",
+      "blob_id": "4956536b1bbe335220ed0389f48e6a176a856c0d"
+    },
+    {
+      "path": "finegrain_t2i/formatted_tables/responses.parquet",
+      "size": 283869,
+      "sha256": "a7137836a2db3f901eac277af7451424ee21c82b277363a01550b40289092f53",
+      "blob_id": "fa865ed89ce6b77d15884d867f2a6960166694df"
+    },
+    {
+      "path": "finegrain_t2i/formatted_tables/subjects.parquet",
+      "size": 8735,
+      "sha256": "eb80739a6969639e841073f065cad2b463d38fbfa4553d4e19a553750a663573",
+      "blob_id": "e68b89efe4e531503ecb1b3ee51285a2a7892cc0"
+    },
+    {
+      "path": "finegrain_t2i/formatted_tables/traces.parquet",
+      "size": 3293551,
+      "sha256": "6d5826885d31bdb700f9f81d6db4c62a5654ed2fefc1edbda3031ee76f4f462a",
+      "blob_id": "f6eecb9b5252ae0435488552ff6fc4424346ac4a"
+    },
+    {
+      "path": "haiid/formatted_tables/benchmarks.parquet",
+      "size": 17356,
+      "sha256": "895f251455fdd8e5150583835c969c7516aecb22494e75a7f80062dbdb4f9657",
+      "blob_id": "1ad19d4b35dd489e06dc6c9508bd452872bcd26d"
+    },
+    {
+      "path": "haiid/formatted_tables/items.parquet",
+      "size": 37956,
+      "sha256": "6ceca26301c575e0ee9fd3079864a4faea9c7d9868d42b32b334a90b2e9a2af4",
+      "blob_id": "aa93c45f92be2c755344e2f2756469874ef140bd"
+    },
+    {
+      "path": "haiid/formatted_tables/responses.parquet",
+      "size": 2347899,
+      "sha256": "7146c9514de7a71cb05e7582675fc64d82b7a5bc6cee53cac4de007fdba20b3d",
+      "blob_id": "c27e00752834e3d21351204ca46539ecdeed77aa"
+    },
+    {
+      "path": "haiid/formatted_tables/subjects.parquet",
+      "size": 131671,
+      "sha256": "cf61dfde246a2051f4393c6f3b639dce7ec83b09ea95bbe81c0aae2968500459",
+      "blob_id": "0f46d8543af81b0082a644a50055be836393c4e8"
+    },
+    {
+      "path": "haiid/formatted_tables/traces.parquet",
+      "size": 9337503,
+      "sha256": "edecedd836dc8ab65a2a4205b0a3170254c3084095a917a1dc41b07f8556d438",
+      "blob_id": "e1eeeeaccdc12b3edffffb86b221c28bee2d0421"
+    },
+    {
+      "path": "hallusionbench/formatted_tables/benchmarks.parquet",
+      "size": 17508,
+      "sha256": "b95bb7c8105def1e36a5c736922e4211885098ea497ca65357c9cde6391d48f6",
+      "blob_id": "6b8436c3f75ed48838fd61d71fa48aafc3e9e768"
+    },
+    {
+      "path": "hallusionbench/formatted_tables/items.parquet",
+      "size": 126047,
+      "sha256": "5eb07f0e6fdedbecae69fc1d2fe618c587925b216673eba30eb86ffe6eb59f21",
+      "blob_id": "ecf5811a3be0fa029cd082d8ef44278acbeef506"
+    },
+    {
+      "path": "hallusionbench/formatted_tables/responses.parquet",
+      "size": 5272228,
+      "sha256": "c8c4280ac954a05e4f629d5cfb0d56fa80594906666443b98fbfd24e4cf78d10",
+      "blob_id": "cb15205b270f356e5e0e1825ba44e20f759ace4f"
+    },
+    {
+      "path": "hallusionbench/formatted_tables/subjects.parquet",
+      "size": 24893,
+      "sha256": "04a05bab45d628214d43c1c140882e029ce0bdff8ca7952ce19d56af5504b5be",
+      "blob_id": "d556809a5fdd12d6a793d0c6e2b3b18bf8239fc5"
+    },
+    {
+      "path": "hallusionbench/formatted_tables/traces.parquet",
+      "size": 38564720,
+      "sha256": "4267b7b7773b4e09a09b72b8388da17fc7e75c8848a85bdedd8e98b0800b1b93",
+      "blob_id": "06f1b2afa3378fca3bb55221cc3027b6461e3843"
+    },
+    {
+      "path": "harmbench/formatted_tables/benchmarks.parquet",
+      "size": 17474,
+      "sha256": "ac34f3f9a963623e76525af5cf57f53f935932dd4024bb085cc47e674d1825bb",
+      "blob_id": "e0d51986b8b470a1e2f39cc9beeeb4daa1e57759"
+    },
+    {
+      "path": "harmbench/formatted_tables/items.parquet",
+      "size": 22025185,
+      "sha256": "83179e4cd4d679cb98d63f297fd7510532b5b4d0007025d9db6527e69911b49c",
+      "blob_id": "3c4ad63929f74ac652bf8c76e97b841b07499e1f"
+    },
+    {
+      "path": "harmbench/formatted_tables/responses.parquet",
+      "size": 3210981,
+      "sha256": "d52a1b761cbebddc1800977c8bfbb18d9842a46e63483288286341ba36031ffc",
+      "blob_id": "0d215d9802dba82951fff042c738fbfbea94d689"
+    },
+    {
+      "path": "harmbench/formatted_tables/subjects.parquet",
+      "size": 9413,
+      "sha256": "9720ecc81bf53ad35bffdf3fc8203d46de769eb3891d323f1533981a8818c9e2",
+      "blob_id": "4b50481b5f0dca92f5eb39102468927875cb6e34"
+    },
+    {
+      "path": "harmbench/formatted_tables/traces.parquet",
+      "size": 100831913,
+      "sha256": "cf4119a27b93ccfaa692f8c5a674c9c926779f1c5e0d2fde3251305c3e9aeaf7",
+      "blob_id": "191c9d6e8555e095e533cadcdda180bafd982d56"
+    },
+    {
+      "path": "healthadminbench/formatted_tables/benchmarks.parquet",
+      "size": 16931,
+      "sha256": "bdbc50d38d2ddeea38b5ebbf4fe1ea4149a04da7a374b30ebf37de2669cc1b66",
+      "blob_id": "1df55bae5bb20893e988469fdffe0b13e11e9dde"
+    },
+    {
+      "path": "healthadminbench/formatted_tables/items.parquet",
+      "size": 308412,
+      "sha256": "cfd65f829c75382a2b0b14bd64bc613fea051905d64337d8354c2b21af76cbf1",
+      "blob_id": "82039cc966160becd05c98345f4edaa5f76e7817"
+    },
+    {
+      "path": "healthadminbench/formatted_tables/responses.parquet",
+      "size": 155946,
+      "sha256": "4165643d92f54ae14ca9a62d84bf9b9ba238041f19948d91eab82a9f4d12e432",
+      "blob_id": "ba3193d9a1f29d8bb8d53145836ebdabe34c1b33"
+    },
+    {
+      "path": "healthadminbench/formatted_tables/subjects.parquet",
+      "size": 8407,
+      "sha256": "449ab0222acab63cbc43db30bbb25968dda748533311d7336022aea9ef5924ac",
+      "blob_id": "e2ce6e2664667627fc41c61ed4d5531a1b05c150"
+    },
+    {
+      "path": "healthadminbench/formatted_tables/traces.parquet",
+      "size": 28536654,
+      "sha256": "41d943b8eaea58b3ceeff15dc8aea7b776a534d9714005b9066c367ff684175b",
+      "blob_id": "202e85109fd26e02871c66b74590062355440629"
+    },
+    {
+      "path": "helm_afr/formatted_tables/benchmarks.parquet",
+      "size": 16560,
+      "sha256": "f2576dc38fceebbcddb15fbb9d49f61baa64f2da08708a884b9dc4dad7b87be6",
+      "blob_id": "aa20e4c2cc4bc68ca5627a299aebd265dfc4c3e4"
+    },
+    {
+      "path": "helm_afr/formatted_tables/items.parquet",
+      "size": 18227291,
+      "sha256": "746ca65792055395ffbb396243bc3b9ed0137391ff317ef74cbf37a719d22e00",
+      "blob_id": "bdbce4e04961c1fa2c022b863f60e9e23672719e"
+    },
+    {
+      "path": "helm_afr/formatted_tables/responses.parquet",
+      "size": 18477493,
+      "sha256": "b4d83673944f49446548f53f1d17ad507c0cef4c08ae80719eba0eef8425d3b8",
+      "blob_id": "1f884a88561f746a411c68cf69fcb70d83b8fe9e"
+    },
+    {
+      "path": "helm_afr/formatted_tables/subjects.parquet",
+      "size": 10751,
+      "sha256": "a5d1c1072438fcb5ca3163bba203b6fae1cc3beaf22c67a351a9db11bd496323",
+      "blob_id": "62ca1147e786f72530ddc02aaf0aba2cfa46a451"
+    },
+    {
+      "path": "helm_afr/formatted_tables/traces.parquet",
+      "size": 208244396,
+      "sha256": "ae83ddcd82686428934cd3e3ada5070143b305fa9b347ac735ebf5bcaa678f62",
+      "blob_id": "f6209426496538f04374728ad056dc78542c7da9"
+    }
+  ]
+}

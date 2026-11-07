@@ -1,0 +1,248 @@
+{
+  "backend": "audited-MiniLM-local",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+  "dimensions": 384,
+  "normalized": true,
+  "vectors": "semantic_vectors.npy",
+  "items": "semantic_items.json",
+  "vector_sha256": "eca8f8c6566d6d0e3a4e0387bf62db9a3d841377f08d9a8c6aa38c78ed2377c9",
+  "items_sha256": "e00695e97ab98c974753c6f96c194c29e9b360ff50fa1e37f70eeeae77f803ba",
+  "families": [
+    "algotune",
+    "babilong",
+    "bertaqa",
+    "brace",
+    "cellverse",
+    "cruxeval",
+    "dave",
+    "editbench",
+    "engdesign",
+    "fgbench",
+    "finegrain_t2i",
+    "jailbreakbench",
+    "jetts",
+    "kernelbench",
+    "lexeval",
+    "liveaopsbench",
+    "llm_uncertainty_bench",
+    "matharena",
+    "medagentboard",
+    "mmlupro",
+    "mmoral_bench",
+    "moe_cap",
+    "mtbbench",
+    "multi_swebench",
+    "os_harm",
+    "radar",
+    "statqa",
+    "subjective_qa",
+    "swe_rebench",
+    "tau2_bench",
+    "vhelm",
+    "visual_riddles",
+    "worldcentralbanks"
+  ],
+  "item_count": 13799,
+  "coverage": {
+    "algotune": {
+      "embedded": 154,
+      "eligible_items_with_observations": 154,
+      "fraction": 1.0
+    },
+    "babilong": {
+      "embedded": 512,
+      "eligible_items_with_observations": 526202,
+      "fraction": 0.0009730103648408786
+    },
+    "bertaqa": {
+      "embedded": 512,
+      "eligible_items_with_observations": 51760,
+      "fraction": 0.009891808346213293
+    },
+    "brace": {
+      "embedded": 512,
+      "eligible_items_with_observations": 12631,
+      "fraction": 0.040535191196263164
+    },
+    "cellverse": {
+      "embedded": 512,
+      "eligible_items_with_observations": 748,
+      "fraction": 0.6844919786096256
+    },
+    "cruxeval": {
+      "embedded": 512,
+      "eligible_items_with_observations": 4000,
+      "fraction": 0.128
+    },
+    "dave": {
+      "embedded": 512,
+      "eligible_items_with_observations": 3922,
+      "fraction": 0.13054563997960225
+    },
+    "editbench": {
+      "embedded": 454,
+      "eligible_items_with_observations": 540,
+      "fraction": 0.8407407407407408
+    },
+    "engdesign": {
+      "embedded": 101,
+      "eligible_items_with_observations": 101,
+      "fraction": 1.0
+    },
+    "fgbench": {
+      "embedded": 512,
+      "eligible_items_with_observations": 5696,
+      "fraction": 0.0898876404494382
+    },
+    "finegrain_t2i": {
+      "embedded": 512,
+      "eligible_items_with_observations": 750,
+      "fraction": 0.6826666666666666
+    },
+    "jailbreakbench": {
+      "embedded": 100,
+      "eligible_items_with_observations": 2001,
+      "fraction": 0.04997501249375312
+    },
+    "jetts": {
+      "embedded": 512,
+      "eligible_items_with_observations": 5135,
+      "fraction": 0.0997078870496592
+    },
+    "kernelbench": {
+      "embedded": 100,
+      "eligible_items_with_observations": 250,
+      "fraction": 0.4
+    },
+    "lexeval": {
+      "embedded": 512,
+      "eligible_items_with_observations": 34377,
+      "fraction": 0.014893678913226866
+    },
+    "liveaopsbench": {
+      "embedded": 512,
+      "eligible_items_with_observations": 5323,
+      "fraction": 0.096186361074582
+    },
+    "llm_uncertainty_bench": {
+      "embedded": 512,
+      "eligible_items_with_observations": 149793,
+      "fraction": 0.0034180502426682156
+    },
+    "matharena": {
+      "embedded": 435,
+      "eligible_items_with_observations": 1484,
+      "fraction": 0.2931266846361186
+    },
+    "medagentboard": {
+      "embedded": 512,
+      "eligible_items_with_observations": 961,
+      "fraction": 0.5327783558792925
+    },
+    "mmlupro": {
+      "embedded": 512,
+      "eligible_items_with_observations": 14109,
+      "fraction": 0.036288893614005245
+    },
+    "mmoral_bench": {
+      "embedded": 491,
+      "eligible_items_with_observations": 491,
+      "fraction": 1.0
+    },
+    "moe_cap": {
+      "embedded": 512,
+      "eligible_items_with_observations": 9216,
+      "fraction": 0.05555555555555555
+    },
+    "mtbbench": {
+      "embedded": 512,
+      "eligible_items_with_observations": 573,
+      "fraction": 0.893542757417103
+    },
+    "multi_swebench": {
+      "embedded": 512,
+      "eligible_items_with_observations": 2127,
+      "fraction": 0.24071462153267512
+    },
+    "os_harm": {
+      "embedded": 180,
+      "eligible_items_with_observations": 512,
+      "fraction": 0.3515625
+    },
+    "radar": {
+      "embedded": 1,
+      "eligible_items_with_observations": 1,
+      "fraction": 1.0
+    },
+    "statqa": {
+      "embedded": 512,
+      "eligible_items_with_observations": 1158,
+      "fraction": 0.4421416234887737
+    },
+    "subjective_qa": {
+      "embedded": 512,
+      "eligible_items_with_observations": 10920,
+      "fraction": 0.046886446886446886
+    },
+    "swe_rebench": {
+      "embedded": 512,
+      "eligible_items_with_observations": 6306,
+      "fraction": 0.08119251506501744
+    },
+    "tau2_bench": {
+      "embedded": 7,
+      "eligible_items_with_observations": 2388,
+      "fraction": 0.002931323283082077
+    },
+    "vhelm": {
+      "embedded": 512,
+      "eligible_items_with_observations": 83971,
+      "fraction": 0.006097343130366436
+    },
+    "visual_riddles": {
+      "embedded": 512,
+      "eligible_items_with_observations": 793,
+      "fraction": 0.6456494325346784
+    },
+    "worldcentralbanks": {
+      "embedded": 512,
+      "eligible_items_with_observations": 119925,
+      "fraction": 0.004269335001042318
+    }
+  },
+  "selection": "First512 distinct source groups/family in cryptographic content-hash order; globally deduplicated representation hashes; eligible binary-observed records only. Not outcome-ranked.",
+  "representation_policy": "Same preprocessing and pinned local MiniLM for items/queries. Fulltext if<=2400chars, otherwise1700-character head plus600-character tail. BABILong uses task instruction/question/context-length metadata, explicitly an approximation without full long-context text. MiniLM truncates final representation to256 tokens.",
+  "max_tokens_before_truncation": 2265,
+  "source_data_revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+  "old_local_vector_count": 6703,
+  "official_OpenAI_vector_count": 6716,
+  "same_as_official_OpenAI_embeddings": false,
+  "paid_api_calls": 0,
+  "model_weight_downloads": 0,
+  "deployment_removal_families": [
+    "averimatec",
+    "clasheval",
+    "devbench",
+    "erbench",
+    "helm_airbench",
+    "kris_bench",
+    "mergebench",
+    "mj_bench",
+    "mochi",
+    "nyu_ctf_bench",
+    "real_webagents",
+    "researchcodebench",
+    "risebench",
+    "scigym",
+    "swebench_live",
+    "tabarena",
+    "taubench",
+    "tensortrust",
+    "wonderbread",
+    "workarena"
+  ],
+  "pre_removal_manifest_sha256": "91fd2788c8e36d831ae253e2f96d9b951982d2764ea34351a2202607e26537c7",
+  "pre_removal_truncation_fraction": 0.46017572683763125,
+  "pre_removal_over_256_tokens": 6442
+}

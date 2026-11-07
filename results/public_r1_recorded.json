@@ -1,0 +1,14 @@
+{
+  "beta44": {
+    "brier": 0.221448,
+    "nll": 0.634511
+  },
+  "scope": "Recorded manuscript Table 1 baseline. The public loss-cell export supplies A0, R1_initial and R1; Beta and bootstrap intervals are archived summaries.",
+  "questions": 32,
+  "paired_budget_units": 64,
+  "known_families": 4,
+  "budgets": [
+    0,
+    7
+  ]
+}
