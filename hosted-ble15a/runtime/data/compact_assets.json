@@ -1,0 +1,227 @@
+{
+  "format": "r1-compact-assets-v1",
+  "codec": "xz",
+  "packed": "evidence.xz.bin",
+  "packed_sha256": "71c4794b96e2acd0f4f49c64aa5f982d8765f00767c38337461c5790a48e7eba",
+  "database_sha256": "f3a88eb32fe3128ce2d4f21a6493b6553b9fad5ae92646b1bb7587058bc10384",
+  "database_bytes": 6768676864,
+  "original_database_sha256": "38ce614d63c37b6e492d7d059a04783e93ddbcf60786a43125ad22e0f7e45f01",
+  "removed_tables": [
+    "build_state",
+    "group_stats"
+  ],
+  "all_other_SQL_rows_and_FTS_preserved": false,
+  "trace_policy": "Exactly the original tool-visible4000 Unicode characters, original full-text character count and canonical SHA; all response IDs/row order retained.",
+  "permanently_unreachable_numeric_families": [
+    "bertaqa",
+    "cellverse",
+    "cruxeval",
+    "engdesign",
+    "fgbench",
+    "jetts",
+    "kernelbench",
+    "lexeval",
+    "liveaopsbench",
+    "matharena",
+    "medagentboard",
+    "mmlupro",
+    "moe_cap",
+    "statqa",
+    "subjective_qa",
+    "worldcentralbanks"
+  ],
+  "permanently_unreachable_rows_removed": {
+    "pair_stats": 2305284,
+    "subjects": 486,
+    "subject_statistics": 2947,
+    "item_statistics": 265163
+  },
+  "all_runtime_admitted_SQL_rows_and_global_FTS_preserved": true,
+  "compression_seconds": 890.038061416999,
+  "prior_trace_conversion_stages": {
+    "prefix_stage": [
+      {
+        "family": "algotune",
+        "rows": 2759,
+        "prefix_limited_rows": 2752,
+        "old_bytes": 143044080,
+        "bytes": 994250,
+        "sha256": "68f956672e4e2c5299d799419f8d267bbf01a3e8e3400941529829e62f88597b"
+      },
+      {
+        "family": "babilong",
+        "rows": 2020951,
+        "prefix_limited_rows": 0,
+        "old_bytes": 360359591,
+        "bytes": 129848475,
+        "sha256": "925675967c1fb8203c2eaec345ebc03e46a0ef916ff03262c1ece9c84494f0af"
+      },
+      {
+        "family": "brace",
+        "rows": 202096,
+        "prefix_limited_rows": 32,
+        "old_bytes": 69033763,
+        "bytes": 38159330,
+        "sha256": "f1155a277c111869c1fa9d34054d1920356d278e95377b24164d05e3e197d410"
+      },
+      {
+        "family": "chartmuseum",
+        "rows": 162,
+        "prefix_limited_rows": 6,
+        "old_bytes": 166848,
+        "bytes": 96367,
+        "sha256": "26b46b455c2a0b31c74089100d0494e3e7b4c987594534dc81cb51c649852165"
+      },
+      {
+        "family": "dave",
+        "rows": 19248,
+        "prefix_limited_rows": 0,
+        "old_bytes": 566205,
+        "bytes": 391233,
+        "sha256": "b9238ce9595ebc69f5dc98649a01ce97e9473ffb5f7f6de05f60d21816043304"
+      },
+      {
+        "family": "editbench",
+        "rows": 540,
+        "prefix_limited_rows": 217,
+        "old_bytes": 1368638,
+        "bytes": 180656,
+        "sha256": "2941e24b9dfaf9c11a64fa6d55f6b96005d7a9260c05a03905b5d9edd5a07412"
+      },
+      {
+        "family": "finegrain_t2i",
+        "rows": 12861,
+        "prefix_limited_rows": 0,
+        "old_bytes": 3293551,
+        "bytes": 1944317,
+        "sha256": "94d0116c5998a4dbccf954854f84a539a3c4efea96ab3fc23f52b0352330faab"
+      },
+      {
+        "family": "swe_rebench",
+        "rows": 67018,
+        "prefix_limited_rows": 35069,
+        "old_bytes": 235133384,
+        "bytes": 45232754,
+        "sha256": "ef5e095c1c87fd87d99b71cc6ff4dbeb503f93db0a045c245d7258a9ed2f8503"
+      }
+    ],
+    "null_hash_stage": [
+      {
+        "family": "algotune",
+        "bytes": 996473,
+        "sha256": "e24f36231ed05300c6ffcd85bdfb50109b4492ca27103d5e6d361abe1cd424a8"
+      },
+      {
+        "family": "babilong",
+        "bytes": 65170911,
+        "sha256": "8f205b540e330ea843e049616da486d87fd1c8491cd7418430ee3406c4446e19"
+      },
+      {
+        "family": "brace",
+        "bytes": 31503238,
+        "sha256": "a7bfe6e4ea23e368465c20816e26014748a1962b9e26da887cc821721b4eda4f"
+      },
+      {
+        "family": "chartmuseum",
+        "bytes": 91291,
+        "sha256": "ab8eba0377193476a312a68fddd89bba3adb21409e6f23f5c42eeb651b65ef61"
+      },
+      {
+        "family": "dave",
+        "bytes": 280458,
+        "sha256": "cbf38f6199c41754f76fd064e4e40c878820111d4899311b4988152f5b153386"
+      },
+      {
+        "family": "editbench",
+        "bytes": 170383,
+        "sha256": "c86c3d80df03311059545b90fe37a7ecfdb9c77b1224b6e0e273962350c8ec5f"
+      },
+      {
+        "family": "finegrain_t2i",
+        "bytes": 1517489,
+        "sha256": "6608d4cdf14cedf362afc137b0cedaccd17262135316ad7a678a7ef3721cb9a3"
+      },
+      {
+        "family": "swe_rebench",
+        "bytes": 44192723,
+        "sha256": "644d98c0ad4e599d9854e12cf5345ce3da091dede9ca2c90c409da15455ff7ed"
+      }
+    ]
+  },
+  "traces": [
+    {
+      "family": "algotune",
+      "bytes": 996473,
+      "rows": 2759,
+      "sha256": "e24f36231ed05300c6ffcd85bdfb50109b4492ca27103d5e6d361abe1cd424a8"
+    },
+    {
+      "family": "babilong",
+      "bytes": 65170911,
+      "rows": 2020951,
+      "sha256": "8f205b540e330ea843e049616da486d87fd1c8491cd7418430ee3406c4446e19"
+    },
+    {
+      "family": "brace",
+      "bytes": 31503238,
+      "rows": 202096,
+      "sha256": "a7bfe6e4ea23e368465c20816e26014748a1962b9e26da887cc821721b4eda4f"
+    },
+    {
+      "family": "chartmuseum",
+      "bytes": 615,
+      "rows": 0,
+      "sha256": "dfa3e1cbb86f0f6e3d2a80957a91c9e7e6e1c5aaa036ef8bbc61ba45cc164ba3"
+    },
+    {
+      "family": "dave",
+      "bytes": 280458,
+      "rows": 19248,
+      "sha256": "cbf38f6199c41754f76fd064e4e40c878820111d4899311b4988152f5b153386"
+    },
+    {
+      "family": "editbench",
+      "bytes": 170383,
+      "rows": 540,
+      "sha256": "c86c3d80df03311059545b90fe37a7ecfdb9c77b1224b6e0e273962350c8ec5f"
+    },
+    {
+      "family": "finegrain_t2i",
+      "bytes": 335722,
+      "rows": 3750,
+      "sha256": "c81e0b33a506cbb0e99ff165a821d1ee43068596a815e105f34e1a6179a0a970"
+    },
+    {
+      "family": "swe_rebench",
+      "bytes": 4290331,
+      "rows": 6301,
+      "sha256": "40e20611832bde68f1e5a3953597039a77800b254b43de9b3fcaf8ad1aeabfff"
+    }
+  ],
+  "unreachable_trace_pruning": [
+    {
+      "family": "chartmuseum",
+      "before_rows": 162,
+      "retained_rows": 0,
+      "removed_rows": 162,
+      "bytes": 615,
+      "reason": "Removed IDs absent from every retained pair_stats.example_response; get_trace cannot request them."
+    },
+    {
+      "family": "finegrain_t2i",
+      "before_rows": 12861,
+      "retained_rows": 3750,
+      "removed_rows": 9111,
+      "bytes": 335722,
+      "reason": "Removed IDs absent from every retained pair_stats.example_response; get_trace cannot request them."
+    },
+    {
+      "family": "swe_rebench",
+      "before_rows": 67018,
+      "retained_rows": 6301,
+      "removed_rows": 60717,
+      "bytes": 4290331,
+      "reason": "Removed IDs absent from every retained pair_stats.example_response; get_trace cannot request them."
+    }
+  ]
+}

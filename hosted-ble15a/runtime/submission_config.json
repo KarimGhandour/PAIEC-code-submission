@@ -1,0 +1,12 @@
+{
+  "enable_paid_inference": false,
+  "max_forecast_usd": 1,
+  "api_keys": {},
+  "max_output_tokens": 8192,
+  "max_run_usd": 50,
+  "run_budget_id": "full_r1_prod_002_dependency_repair",
+  "run_budget_root": "/tmp/paiec-ble15-a-private",
+  "spending_policy_id": "PREPARED_COMPLETION_50_SHARED_V1",
+  "spend_warning_usd": 40,
+  "proposed_total_ceiling_usd": 50
+}

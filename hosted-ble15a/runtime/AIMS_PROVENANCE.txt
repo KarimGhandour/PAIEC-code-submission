@@ -1,0 +1,4 @@
+Unmodified aims_openai_api.py from aims-foundations/paiec_baseline
+Commit cc88a959c1e5e7462f31a9215baba066ce6d6e2b
+Source https://github.com/aims-foundations/paiec_baseline/blob/cc88a959c1e5e7462f31a9215baba066ce6d6e2b/ble/comp_pipeline/script/openai_api.py
+Runtime adapter retains8 CONNECT-only recovery attempts, changes ordinary attempt limit to1, uses verified proxy-aware opener and no redirects. No paid embeddings. MIT license in AIMS_LICENSE.txt.

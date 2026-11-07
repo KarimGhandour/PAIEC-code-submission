@@ -1,0 +1,15 @@
+{
+  "scope": "A.2 local mocked engineering campaign, not a hosted estimate",
+  "forecasts": 3000,
+  "requests": 9020,
+  "injected_faults": 200,
+  "native_finalizations": 2820,
+  "earlier_belief_readouts": 180,
+  "emergency_readouts": 0,
+  "hosted_a2": {
+    "id": 1033843,
+    "status": "Failed",
+    "diagnostic": "PAIEC-UNKNOWN-001",
+    "cause": "unknown"
+  }
+}

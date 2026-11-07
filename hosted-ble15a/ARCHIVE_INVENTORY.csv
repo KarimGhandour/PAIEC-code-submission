@@ -1,0 +1,73 @@
+member,uncompressed_bytes,zip_compressed_bytes,classification
+data/evidence.xz.bin,382120380,382236040,XZ-compressed admitted evidence SQLite database
+data/traces_chunked.sqlite,311312384,209589373,Chunked SQLite retrieval traces
+models/minilm/model.safetensors,90868376,83544953,only pretrained weight format
+data/semantic_vectors.npy,21195392,17740093,"Generated MiniLM semantic index, exact ranking asset"
+data/semantic_items.json,4914337,1616403,Derived semantic index metadata and item representations
+data/protected_inputs.json,547490,113686,Protected research input records used for exclusions
+models/minilm/tokenizer.json,466247,216390,"non-secret configuration, model metadata, CA bundle, or notices"
+cacert.pem,235863,137047,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/vocab.txt,231508,121507,"non-secret configuration, model metadata, CA bundle, or notices"
+data/RETRIEVAL_ELIGIBILITY_AND_LICENSES.json,200199,30389,"non-secret configuration, model metadata, CA bundle, or notices"
+r1api/db.py,20878,7897,source
+comp_pipeline/script/databank.py,20831,6813,source
+r1api/responses.py,18518,5961,source
+models/minilm/LICENSE-APACHE-2.0.txt,11338,4425,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/README.md,10454,4069,"non-secret configuration, model metadata, CA bundle, or notices"
+src/agent/llm_client.py,8547,3188,source
+r1api/predictor.py,8506,3246,source
+comp_pipeline/script/agent_tools.py,8008,2658,source
+production_budget.py,7101,2941,source
+PACKAGE_HASHES.json,6954,3524,original hash manifest includes private config digest; regenerated
+data/semantic_manifest.json,6869,2107,"non-secret configuration, model metadata, CA bundle, or notices"
+data/compact_assets.json,6818,2369,"non-secret configuration, model metadata, CA bundle, or notices"
+src/agent/agent.py,6761,2595,source
+comp_pipeline/script/embedding_index.py,6749,2759,source
+aims_openai_api.py,6503,2695,source
+comp_pipeline/script/openai_api.py,6503,2695,source
+src/agent/tools.py,6369,2253,source
+data/firewall_static_cache.json,6177,2269,"Generated, hash-bound blocked-ID firewall cache"
+comp_pipeline/script/dataroot.py,6170,2148,source
+data/active_permission_policy.json,5040,2252,"non-secret configuration, model metadata, CA bundle, or notices"
+telemetry.py,4718,1815,source
+src/agent/prompts.py,4674,2264,source
+production.py,4178,2102,source
+aims_r1_transport.py,4010,1772,source
+r1api/protocol.py,3889,1573,source
+r1api/semantic.py,3174,1549,source
+r1api/predictor_common.py,3162,1437,source
+r1api/question.py,3087,1331,source
+r1api/run_budget.py,3082,1227,source
+r1api/assets.py,2915,1351,source
+ble15_runtime.py,2573,1144,source
+src/agent/belief_state.py,2389,1088,source
+comp_pipeline/script/api_preflight.py,2235,971,source
+rescue_policy.json,1517,859,"non-secret configuration, model metadata, CA bundle, or notices"
+r1api/trace_store.py,1307,764,source
+src/config/config.py,1169,522,source
+AIMS_LICENSE.txt,1095,654,"non-secret configuration, model metadata, CA bundle, or notices"
+UPSTREAM_LICENSE.txt,1095,654,"non-secret configuration, model metadata, CA bundle, or notices"
+CA_LICENSE.txt,989,588,"non-secret configuration, model metadata, CA bundle, or notices"
+r1api/transport_note.json,780,473,"non-secret configuration, model metadata, CA bundle, or notices"
+r1api/original_cli_transport_note.json,778,472,"non-secret configuration, model metadata, CA bundle, or notices"
+r1api/util.py,772,393,source
+models/minilm/config.json,612,340,"non-secret configuration, model metadata, CA bundle, or notices"
+submission_config.json,552,396,private credential and runtime configuration (sanitized copy only)
+model.py,489,343,source
+AIMS_PROVENANCE.txt,455,288,"non-secret configuration, model metadata, CA bundle, or notices"
+PRIVATE_PACKAGE_NOTICE.txt,407,291,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/tokenizer_config.json,350,217,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/modules.json,349,140,"non-secret configuration, model metadata, CA bundle, or notices"
+r1api/excluded_families.json,247,138,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/1_Pooling/config.json,190,102,"non-secret configuration, model metadata, CA bundle, or notices"
+requirements.txt,155,117,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/config_sentence_transformers.json,116,85,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/special_tokens_map.json,112,67,"non-secret configuration, model metadata, CA bundle, or notices"
+models/minilm/sentence_bert_config.json,53,51,"non-secret configuration, model metadata, CA bundle, or notices"
+models.txt,39,41,"non-secret configuration, model metadata, CA bundle, or notices"
+prediction_config.json,19,21,"non-secret configuration, model metadata, CA bundle, or notices"
+comp_pipeline/__init__.py,0,2,source
+comp_pipeline/script/__init__.py,0,2,source
+r1api/__init__.py,0,2,source
+src/agent/__init__.py,0,2,source
+src/config/__init__.py,0,2,source

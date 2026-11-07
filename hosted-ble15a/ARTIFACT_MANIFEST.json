@@ -1,0 +1,490 @@
+{
+  "original_scored_archive": {
+    "name": "PAIEC_BLE15_A_PRODUCTION_001.zip",
+    "bytes": 695451321,
+    "sha256": "90a6a22560328e4ff5ec3f86375dbf567aecf802d2632fe6829878b339be7c3c",
+    "submission_id": 1032237,
+    "formative_brier_alc": "0.1590607804"
+  },
+  "model": {
+    "repository": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "license": "Apache-2.0",
+    "file_sha256": {
+      "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+      "LICENSE-APACHE-2.0.txt": "624b030fd62b8b989dd502d5bb6322cbc0dbb524ab9c9708f32efe33d7275735",
+      "README.md": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+      "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+      "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    }
+  },
+  "measurement_db_source": {
+    "repository": "aims-foundations/measurement-db",
+    "revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+    "distribution_note": "Gated upstream inputs; not a verified source of the derived byte-identical assets."
+  },
+  "exact_nonempty_duplicate_members": [
+    [
+      "AIMS_LICENSE.txt",
+      "UPSTREAM_LICENSE.txt"
+    ],
+    [
+      "aims_openai_api.py",
+      "comp_pipeline/script/openai_api.py"
+    ]
+  ],
+  "members": [
+    {
+      "path": "AIMS_LICENSE.txt",
+      "bytes": 1095,
+      "sha256": "1ab7537e8add1792395aaebf05f10451c9ae14fac31a01af66217731831c1ec0",
+      "delivery": "bundled"
+    },
+    {
+      "path": "AIMS_PROVENANCE.txt",
+      "bytes": 455,
+      "sha256": "8ef68f433bb56a13f07281bad905c181bd2f50a9d61f66f7789b890b04c8843d",
+      "delivery": "bundled"
+    },
+    {
+      "path": "CA_LICENSE.txt",
+      "bytes": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7",
+      "delivery": "bundled"
+    },
+    {
+      "path": "PRIVATE_PACKAGE_NOTICE.txt",
+      "bytes": 407,
+      "sha256": "db1a73bef80e9428af7e5f25e26eb3b5744b6aefbf03050364e79a4f47daf973",
+      "delivery": "bundled"
+    },
+    {
+      "path": "UPSTREAM_LICENSE.txt",
+      "bytes": 1095,
+      "sha256": "1ab7537e8add1792395aaebf05f10451c9ae14fac31a01af66217731831c1ec0",
+      "delivery": "bundled"
+    },
+    {
+      "path": "aims_openai_api.py",
+      "bytes": 6503,
+      "sha256": "0bdbe8fe2f74f04e5d0b703d000311cb28f748050953c32ebdb228cabce22497",
+      "delivery": "bundled"
+    },
+    {
+      "path": "aims_r1_transport.py",
+      "bytes": 4010,
+      "sha256": "3247f06f49554df381078e649ebd08ae350cb7030205ec20be527c83617aa2bc",
+      "delivery": "bundled"
+    },
+    {
+      "path": "ble15_runtime.py",
+      "bytes": 2573,
+      "sha256": "def125ec942a0cf000cb4f70fa4a54dd85afe723c9f773ea4fe6b9a8271120b5",
+      "delivery": "bundled"
+    },
+    {
+      "path": "cacert.pem",
+      "bytes": 235863,
+      "sha256": "2ef52ad56b4803e264045c915e55c236cbfa045b84b81efefc218a19eb44bd2b",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/agent_tools.py",
+      "bytes": 8008,
+      "sha256": "1026273f417668e2d5fcf3ff4873d0c656f1bacd4786b014e3df80014120a245",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/api_preflight.py",
+      "bytes": 2235,
+      "sha256": "dcd92a5bac93981b90f89a61bcc473f55362365ef0c48c2a8275798048f0409f",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/databank.py",
+      "bytes": 20831,
+      "sha256": "8db1312042e860cd87ec21ae35c288fdb64958a74c22153f7ec051341e4a40e0",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/dataroot.py",
+      "bytes": 6170,
+      "sha256": "08a9ee7945eadd132f6776753d1b8b32357fafe48d3b79df0b0dbbabdb930d0d",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/embedding_index.py",
+      "bytes": 6749,
+      "sha256": "e9649e044a6c9aedb7a0e3612265fee05f5ee610d8a599f136899a9239315588",
+      "delivery": "bundled"
+    },
+    {
+      "path": "comp_pipeline/script/openai_api.py",
+      "bytes": 6503,
+      "sha256": "0bdbe8fe2f74f04e5d0b703d000311cb28f748050953c32ebdb228cabce22497",
+      "delivery": "bundled"
+    },
+    {
+      "path": "data/RETRIEVAL_ELIGIBILITY_AND_LICENSES.json",
+      "bytes": 200199,
+      "sha256": "de3baa1e03732b89aa783024c3258ef4440b2971da154a47f1d922c665707d70",
+      "delivery": "bundled"
+    },
+    {
+      "path": "data/active_permission_policy.json",
+      "bytes": 5040,
+      "sha256": "5359ad08d02fa684e82dfe45960b9b5800d405b3ebd65db9b4d3be279ead5d77",
+      "delivery": "bundled"
+    },
+    {
+      "path": "data/compact_assets.json",
+      "bytes": 6818,
+      "sha256": "25ee5ebae9dc04b89efde7f41fb195fef059b84590f05d425856df5bc02713c0",
+      "delivery": "bundled"
+    },
+    {
+      "path": "data/evidence.xz.bin",
+      "bytes": 382120380,
+      "sha256": "71c4794b96e2acd0f4f49c64aa5f982d8765f00767c38337461c5790a48e7eba",
+      "delivery": "authorized-exact-data",
+      "classification": "XZ-compressed admitted evidence SQLite database"
+    },
+    {
+      "path": "data/firewall_static_cache.json",
+      "bytes": 6177,
+      "sha256": "1b09e48998484a1babd4f2b2cb7c22c9b242459df12e30bf186d1103688b4da4",
+      "delivery": "authorized-exact-data",
+      "classification": "Generated, hash-bound blocked-ID firewall cache"
+    },
+    {
+      "path": "data/protected_inputs.json",
+      "bytes": 547490,
+      "sha256": "26ec64c9bdcc2ef301fddf345f27109069e9808497340ab2dd4069699db217ed",
+      "delivery": "authorized-exact-data",
+      "classification": "Protected research input records used for exclusions"
+    },
+    {
+      "path": "data/semantic_items.json",
+      "bytes": 4914337,
+      "sha256": "e00695e97ab98c974753c6f96c194c29e9b360ff50fa1e37f70eeeae77f803ba",
+      "delivery": "authorized-exact-data",
+      "classification": "Derived semantic index metadata and item representations"
+    },
+    {
+      "path": "data/semantic_manifest.json",
+      "bytes": 6869,
+      "sha256": "b1437441f49d58a1e87574f1614928eafef1e4ebe923e5bee88dabdf6abed0a6",
+      "delivery": "bundled"
+    },
+    {
+      "path": "data/semantic_vectors.npy",
+      "bytes": 21195392,
+      "sha256": "eca8f8c6566d6d0e3a4e0387bf62db9a3d841377f08d9a8c6aa38c78ed2377c9",
+      "delivery": "authorized-exact-data",
+      "classification": "Generated MiniLM semantic index, exact ranking asset"
+    },
+    {
+      "path": "data/traces_chunked.sqlite",
+      "bytes": 311312384,
+      "sha256": "67459dbde2cd90cb6ee923f740162985545c2b24d5255e2efc6c6e38533ad7ac",
+      "delivery": "authorized-exact-data",
+      "classification": "Chunked SQLite retrieval traces"
+    },
+    {
+      "path": "model.py",
+      "bytes": 489,
+      "sha256": "2372c2df60e1f20e0e6b44a742bc2e4839825e0bc7bc9dccdb7d1d5cd04877f2",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models.txt",
+      "bytes": 39,
+      "sha256": "3d3b863a5f5f449d519a45b53097c2000041799595fb65380340023fb1df1f3e",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/1_Pooling/config.json",
+      "bytes": 190,
+      "sha256": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/LICENSE-APACHE-2.0.txt",
+      "bytes": 11338,
+      "sha256": "624b030fd62b8b989dd502d5bb6322cbc0dbb524ab9c9708f32efe33d7275735",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/README.md",
+      "bytes": 10454,
+      "sha256": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/config.json",
+      "bytes": 612,
+      "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/config_sentence_transformers.json",
+      "bytes": 116,
+      "sha256": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/model.safetensors",
+      "bytes": 90868376,
+      "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "delivery": "public-minilm",
+      "classification": "sole pretrained weight file",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/model.safetensors"
+    },
+    {
+      "path": "models/minilm/modules.json",
+      "bytes": 349,
+      "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/sentence_bert_config.json",
+      "bytes": 53,
+      "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/special_tokens_map.json",
+      "bytes": 112,
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/tokenizer.json",
+      "bytes": 466247,
+      "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/tokenizer_config.json",
+      "bytes": 350,
+      "sha256": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "delivery": "bundled"
+    },
+    {
+      "path": "models/minilm/vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "delivery": "bundled"
+    },
+    {
+      "path": "prediction_config.json",
+      "bytes": 19,
+      "sha256": "350bbeb329046c6d3d8eca2d3d86b5f7f28c095da060c3b21f9e9f2e077695bb",
+      "delivery": "bundled"
+    },
+    {
+      "path": "production.py",
+      "bytes": 4178,
+      "sha256": "e21911ad9ebaa73fc0646000cd7397eb1ba1e389cbe097ffffd4cb3068596e3d",
+      "delivery": "bundled"
+    },
+    {
+      "path": "production_budget.py",
+      "bytes": 7101,
+      "sha256": "c1e36c492ff3e0394dce99bf06f5ccd73ba21beabce6c0d9da6ba02ba591bd3a",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/assets.py",
+      "bytes": 2915,
+      "sha256": "4702fa8495cba1600cb08a5de1a43f68e6a5b9cf74d1f8679f0e0fa15b11d0b0",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/db.py",
+      "bytes": 20878,
+      "sha256": "3cf1930d59de7dbd85a0dbf4631226bbdd9af7bb2183579c3ef3eff0ff81144c",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/excluded_families.json",
+      "bytes": 247,
+      "sha256": "e3b47e901d4942ea39c5cd5c73056b7d387821e8d3fd03eeba4407eca95c3811",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/original_cli_transport_note.json",
+      "bytes": 778,
+      "sha256": "dd435316a7c77eb9eb3710abe25e9a299f1120cc186cc4e84d58cfc8e3e18b9b",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/predictor.py",
+      "bytes": 8506,
+      "sha256": "7bd312bdd4df437cb093dc7ec1ab182823f9dcda0e3e3ba8df4b757f0e5ed311",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/predictor_common.py",
+      "bytes": 3162,
+      "sha256": "f0cddc2da298b24df863656c1e1aa7e470f188b9dc34e5948a4c64725a8f0c35",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/protocol.py",
+      "bytes": 3889,
+      "sha256": "61e34b0436dcf59086aebde09624de86058bdebc2adaf2d0d18bde866f28a7cb",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/question.py",
+      "bytes": 3087,
+      "sha256": "5ac3f09493b189cc877d6d1c4b058c3d66090fb7c20b4101ce2e0a88452f7fe7",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/responses.py",
+      "bytes": 18518,
+      "sha256": "15f9c585324b810b7b1af212113c4b006049aa8d1b657da0b7fe1c1aba26fea5",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/run_budget.py",
+      "bytes": 3082,
+      "sha256": "f210d052bdb5289326d729c2153d81f8d00dd530a9876d6f0afcd441fd64178a",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/semantic.py",
+      "bytes": 3174,
+      "sha256": "048276d0b20cd4c2deeba60169eb8a501b82eb518af7b9af5de324e0774777e6",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/trace_store.py",
+      "bytes": 1307,
+      "sha256": "ed8d1759401a0750e9acecdd62b73fc53af26a7d826ff78ecfba290ac040f770",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/transport_note.json",
+      "bytes": 780,
+      "sha256": "30960d3c6b657bb2d7c3de861ab834ec6a839a534e9c19ed21fea68be5ec8b11",
+      "delivery": "bundled"
+    },
+    {
+      "path": "r1api/util.py",
+      "bytes": 772,
+      "sha256": "d4e9fc177df0a6ff2d4225dca4cb328372432f9fd8a8b46db4d34b77beb312e4",
+      "delivery": "bundled"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 155,
+      "sha256": "8c07f8a3b996a683f0ca80aa945e56768c17e8135263b5c57e8902b1c8886897",
+      "delivery": "bundled"
+    },
+    {
+      "path": "rescue_policy.json",
+      "bytes": 1517,
+      "sha256": "bec44933963c1ccab9e4224fc88cdd35160ad921595445049006b21b57483a02",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/agent/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/agent/agent.py",
+      "bytes": 6761,
+      "sha256": "5fc37cbfb70c1fe0282c2b4a2fb3bca32665a85fee26acd3de1a3d30d1dd4442",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/agent/belief_state.py",
+      "bytes": 2389,
+      "sha256": "cff1c678c2261d1e95173d59f792d7cc18d84c3e7d9990fb7c21d68e6fe06039",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/agent/llm_client.py",
+      "bytes": 8547,
+      "sha256": "5823a038c79a95cee5589f8692878dc7df979cfd8a0c751a0e4ac1c1c3cf4f64",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/agent/prompts.py",
+      "bytes": 4674,
+      "sha256": "653f7e2f1ff91e510b86c8434bfb4a4413b4aa1cd05ba76b8c857823d165b716",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/agent/tools.py",
+      "bytes": 6369,
+      "sha256": "fc202ee20f91e102ce62f51fbd5f5edbf8543771e5bd1a86a37c9005213c0603",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/config/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "delivery": "bundled"
+    },
+    {
+      "path": "src/config/config.py",
+      "bytes": 1169,
+      "sha256": "6a5b1354d2d9d3098cc8b6c56cd002c3c27c819710c84dcee2592c695d74a153",
+      "delivery": "bundled"
+    },
+    {
+      "path": "submission_config.json",
+      "bytes": 361,
+      "sha256": "7959ac097f3e2ea126f0315180539163342a7fd8af38acb43762e25bc323c4b4",
+      "delivery": "bundled",
+      "classification": "credential removed; paid inference disabled"
+    },
+    {
+      "path": "telemetry.py",
+      "bytes": 4718,
+      "sha256": "2939d24780e351d7fb5b4c74cec990b3784f6172374709fc74bb7416f8c3242d",
+      "delivery": "bundled"
+    }
+  ],
+  "original_package_hashes": "Regenerated from verified restored members; original private-config digest omitted.",
+  "omitted_from_public_supplement": [
+    "data/evidence.xz.bin",
+    "data/firewall_static_cache.json",
+    "data/protected_inputs.json",
+    "data/semantic_items.json",
+    "data/semantic_vectors.npy",
+    "data/traces_chunked.sqlite",
+    "models/minilm/model.safetensors"
+  ]
+}

@@ -29,3 +29,6 @@ __pycache__/
 build/
 dist/
 .DS_Store
+
+# Local scored-A reconstruction outputs are never release source.
+/hosted-ble15a/runtime/.env*

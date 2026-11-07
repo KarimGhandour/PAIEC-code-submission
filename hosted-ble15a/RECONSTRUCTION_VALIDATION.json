@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "rebuilt_bytes": 695451162,
+  "rebuilt_sha256": "d0c67d5896b7d738598a62cb81da18c367c78170bb19bfe280162d0cacf70235",
+  "verified_members": 72,
+  "official_zip_checker": "PASS",
+  "cold_hydrated_corpus_bytes": 6768676864,
+  "cold_hydrated_corpus_sha256": "f3a88eb32fe3128ce2d4f21a6493b6553b9fad5ae92646b1bb7587058bc10384",
+  "both_sqlite_quick_checks": "ok",
+  "static_and_dynamic_exclusion": "PASS",
+  "effective_budgets": [
+    0,
+    1,
+    3,
+    7,
+    15,
+    31
+  ],
+  "real_local_MiniLM_SQLite": "PASS",
+  "mocked_native_continuation_and_final_submit": "PASS",
+  "mocked_requests": 18,
+  "paid_requests": 0,
+  "official_smoke": "PASS",
+  "official_smoke_requested_workers": 4,
+  "official_smoke_actual_workers": 2,
+  "network_denied_during_runtime_tests": true,
+  "public_pinned_minilm_download_sha256_verified": true,
+  "official_tools_sha256": {
+    "check_submission_zip.py": "49e8a666df64671e1d32b262647b9525dfe58c93596f034289d264016ddd9eda",
+    "run_smoke_test.py": "db0fd19b45d982db510b7ac78e588a140b77c287ffc023e23d1731cda9ed8fc2",
+    "prediction_workers.py": "3bacbccf8d711309e9d7735311ba7e0bc003025086ed3cc311044e478d6f0b48"
+  }
+}

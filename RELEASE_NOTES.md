@@ -1,18 +1,25 @@
-# R1 Medium source and reproducibility release
+# BLE 1.5-A release candidate · v1.5.0-rc.1
 
-Repository: https://github.com/KarimGhandour/PAIEC-code-submission
-Release: https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1
+This release candidate accompanies scored Codabench submission **#1032237**,
+which achieved **0.1590607804 formative Brier ALC** across nine
+subject–benchmark groups and six acquisition budgets.
 
-The release tag identifies the finalized publication commit. Its frozen R1 source
-derives from audited source commit `5983168b02f24b493c7a54a905ae25bf9013d748`
-and the compact candidate hash recorded in `artifacts/manifests/selected_source.json`.
+It includes the scored Standard/Medium runtime source, with private configuration
+sanitized and paid inference disabled, plus the executable offline notebook,
+an HTML preview, aggregate results and reconstruction instructions.
 
-Exact credential-free source from the selected compact R1 candidate, plus offline
-regressions, synthetic six-budget/eight-tool tests, historical aggregate results,
-original scoring/bootstrap methods, rejected ledger/factor/xhigh methods and
-explicit data-availability boundaries. No private submission, key, dataset,
-model weights, protected outcomes or raw model sessions are attached.
+The frozen scored ZIP was 695,451,321 bytes with SHA-256
+`90a6a22560328e4ff5ec3f86375dbf567aecf802d2632fe6829878b339be7c3c`.
+Reconstructing the exact runtime inputs requires a pinned public MiniLM weight
+and six derived data and firewall files. Independent reproduction of the exact
+hosted runtime remains blocked without authorized copies of those six files or a
+verified byte-matching regeneration process.
 
-The historical confirmation Brier of 0.153728 was measured through Codex CLI.
-It is not an API or hidden-test result. This source release does not establish
-hosted success or empirical equivalence across model transports.
+The earlier R1 Medium code and public confirmation remain available under the
+[historical v1.0.0-r1 release](https://github.com/KarimGhandour/PAIEC-code-submission/releases/tag/v1.0.0-r1).
+Its 0.153728 historical public Brier and the formative BLE 1.5-A Brier ALC use
+different samples and estimands.
+
+- [BLE 1.5-A Explained](notebooks/01_BLE_1_5A_Explained.ipynb)
+- [Source equivalence](docs/release_manifest.md) and [reproduction](docs/reproduction.md)
+- [Release review](RELEASE_REVIEW.md) and [publishing procedure](docs/publishing.md)
