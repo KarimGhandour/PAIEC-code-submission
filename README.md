@@ -1,5 +1,7 @@
 # PAIEC — BLE 1.5-A
 
+[**Reproduce BLE 1.5-A — Source, Experiments & Reviewer Instructions**](https://github.com/KarimGhandour/PAIEC-BLE15A-Reproduction)
+
 **Audited belief revision for predicting AI system performance**
 
 **Official formative Brier ALC 0.1590607804 · Codabench #1032237 · 9 groups · 489 evaluated pairs · 6 budgets**
